@@ -1,0 +1,82 @@
+# DESTINATION: plugins/PlayerParticles/config.yml
+# PlayerParticles 8.12 template.
+
+# Maximum active particle groups by rank
+max-particles:
+  default: 1
+  vip: 3
+  mvp: 5
+  elite: 10
+  mod: 10
+  admin: 100
+
+# Update rate (server ticks)
+ticks-per-particle: 1
+
+# GUI button preset (style)
+gui-presets-style-options:
+  vip:
+    - flame
+    - heart
+    - note
+    - cloud
+    - crit
+    - enchant
+    - villager_happy
+    - wax_on
+    - composter
+    - sneeze
+  mvp:
+    - flame
+    - heart
+    - note
+    - cloud
+    - crit
+    - enchant
+    - villager_happy
+    - wax_on
+    - composter
+    - sneeze
+    - portal
+    - end_rod
+    - reverse_portal
+    - small_flame
+    - soul
+  elite:
+    - flame
+    - heart
+    - note
+    - cloud
+    - crit
+    - enchant
+    - villager_happy
+    - wax_on
+    - composter
+    - sneeze
+    - portal
+    - end_rod
+    - reverse_portal
+    - small_flame
+    - soul
+    - dragon_breath
+    - totem_of_undying
+    - white_ash
+    - falling_water
+    - electric_spark
+
+# Per-style permissions (auto-granted by rank in LuckPerms)
+permission-prefix: 'playerparticles.particles'
+
+# Particle visibility
+visible-distance: 32
+
+# Save interval
+save-interval-minutes: 5
+
+# Database
+database:
+  type: sqlite
+  prefix: 'pp_'
+
+# Languages
+locale: 'en_US'

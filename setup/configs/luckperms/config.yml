@@ -1,0 +1,53 @@
+# DESTINATION: plugins/LuckPerms/config.yml
+# LuckPerms template for LifeSteal SMP.
+
+server: lifesteal
+sync-minutes: 3
+watch-files: true
+storage-method: h2
+
+prefix-format: '%luckperms_prefix% '
+suffix-format: ' %luckperms_suffix%'
+
+primary-group-calculation: parents-by-weight
+
+meta-formatting:
+  prefix:
+    format: highest-on-track
+    duplicates: first-only
+  suffix:
+    format: highest-on-track
+    duplicates: first-only
+
+argument-based-command-permissions: true
+require-sender-group-membership-to-modify: true
+
+log:
+  console: true
+  notify: true
+  format: '[L] {who} {action} {target}'
+
+debug-permission-checks: false
+
+custom-translations-file: false
+
+# Group track
+groups:
+  group-name-rewrite:
+    default: 'default'
+
+remote-permission-management: true
+sql:
+  table-prefix: 'luckperms_'
+  pool-settings:
+    maximum-pool-size: 10
+    minimum-idle: 10
+
+# Web editor
+web-editor-store-bytebin-url: 'https://bytebin.lucko.me/'
+
+# Bukkit-specific
+auto-install-translations: true
+inject-luckperms-calculator: true
+allow-invalid-username: false
+debug-logins: false

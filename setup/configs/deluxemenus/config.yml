@@ -1,0 +1,27 @@
+# DESTINATION: plugins/DeluxeMenus/config.yml
+# DeluxeMenus 1.14.1 global settings.
+
+# Whether to check for updates on startup.
+check_updates: true
+
+# Debug logging.
+debug: false
+
+# Whether to use the soft-depend hooks (auto-detected, leave true).
+hook:
+  placeholderapi: true
+  vault: true
+
+# GUI menus are loaded from gui_menus/ - one per file.
+# Add filenames here so the plugin loads them.
+gui_menus:
+  main:
+    file: main.yml
+  warps:
+    file: warps.yml
+  profile:
+    file: profile.yml
+  shop:
+    file: shop.yml
+  rtp:
+    file: rtp.yml

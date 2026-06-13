@@ -1,0 +1,124 @@
+# DESTINATION: plugins/GriefPrevention/config.yml
+# GriefPrevention template for LifeSteal SMP.
+
+GriefPrevention:
+  Database:
+    URL: ''
+    UserName: ''
+    Password: ''
+  Claims:
+    PreventGlobalMonsterEggs: true
+    PreventTheft: true
+    ProtectCreatures: true
+    PvP:
+      RespectPvPProtections: true
+      ProtectFreshSpawns: true
+      ProtectPlayersInLandClaims:
+        PlayerOwnedClaims: true
+        AdministrativeClaims: true
+        AdministrativeSubdivisions: true
+      AllowCombatItemDrop: false
+      BlockedSlashCommands: 'home,sethome,spawn,tpa,tpaccept,back,warp,rtp'
+      CombatTimeoutSeconds: 15
+      AllowLavaNearPlayers:
+        Wilderness: false
+        PlayerOwnedClaims: false
+    Lava:
+      IgnitesItems: false
+      DoNotProtectInWorlds: []
+    Expiration:
+      ChestClaimDays: 14
+      UnusedClaimDays: 14
+      AllClaims:
+        DaysInactive: 60
+        ExceptWhenOwnerHasTotalClaimBlocks: 5000
+        ExceptWhenOwnerHasBonusClaimBlocks: 500
+    AutomaticNewPlayerClaims:
+      Enabled: true
+      Radius: 4
+      RadiusMinimum: 4
+    Blocks:
+      Initial: 100
+      PerHour: 120
+      Maximum: 80000
+      AccrualDuringIdle: false
+      AccruedIdleThreshold: 10
+      AccruedBlocksPer15Seconds: 4
+      AbandonReturnRatio: 0.9
+      AccrualPerHour:
+        Default: 120
+        Group:
+          vip: 150
+          mvp: 200
+          elite: 300
+    Trust:
+      AllowedToModifyClaimedPermissions: true
+      RestoreNatureAffectsTransitions: true
+    Mode:
+      Survival:
+        WorldsEnabled: true
+        NewPlayersAutoClaimRadius: 4
+        ClaimingRequiresMinimumClaimBlocks: 100
+        CreationRequiresWorldGuardBuildPermission: false
+        ClaimDeathDropProtection: 15
+      Creative:
+        WorldsEnabled: false
+      Worlds:
+        world: Survival
+        world_nether: Survival
+        world_the_end: Survival
+    MinimumSize:
+      X: 5
+      Z: 5
+      Y: 5
+    MaximumDepth: 0
+    InvestigationTool: STICK
+    ModificationTool: GOLDEN_SHOVEL
+    MaximumNumberOfClaimsPerPlayer: 25
+    SizeForAutomaticNewPlayerProtections: 4
+    PreventGlide: false
+    AllowAccessTrustNearby: true
+    EntityTrapping:
+      OnlyAffectsClaimsAtY: -1
+    ChestClaimExpirationDays: 14
+    ProtectFreshSpawns: true
+    HealFreshSpawns: true
+    AntiSpam: true
+    ClaimsAbandonReturnRatio: 0.9
+    SiegeEnabled: false
+    Slabs:
+      Enabled: true
+    Carpets:
+      Enabled: true
+  Spam:
+    Enabled: true
+    LoginCooldownSeconds: 60
+    LoginLogoutNotificationsPerMinute: 4
+    AllowedCommands: 'msg,r,mail,help,login,register'
+    BanOffenders: false
+    BanMessage: 'Banned for spam.'
+    WarningMessage: '&cPlease slow down.'
+  Mods:
+    BlockIdsRequiringAccessTrust: []
+    BlockIdsExplodableInClaim: []
+    EnvironmentEventItems: []
+  EconomyClaimBlocksPurchaseCost: 0
+  EconomyClaimBlocksSellValue: 0
+  ClaimsExtendIntoGroundDistance: 5
+  ClaimCleanupEnabled: true
+  RestoreNatureMode:
+    LimitWidthMinimum: 1
+    LimitWidthMaximum: 16
+    LimitDepthMaximum: 32
+  AdvancedItems:
+    Sticks: STICK
+    Shovel: GOLDEN_SHOVEL
+  ClaimsWorldModes:
+    world: Survival
+    world_nether: Survival
+    world_the_end: Survival
+  AllowFireSpread: true
+  BlockSurfaceMessages:
+    Enabled: true
+  Whisper:
+    Commands: 'msg,r,whisper,tell,pm,t,w'

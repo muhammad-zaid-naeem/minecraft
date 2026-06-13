@@ -1,0 +1,90 @@
+# DESTINATION: plugins/DeluxeMenus/gui_menus/warps.yml
+# Warps menu - opens with /menu warps or from main hub.
+
+menu_title: '&e&lWarps'
+open_command: warps-gui
+size: 27
+
+items:
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 0
+    slots: [0,1,2,3,4,5,6,7,8,9,17,18,19,20,21,22,23,24,25,26]
+    display_name: ' '
+
+  spawn:
+    material: GRASS_BLOCK
+    slot: 10
+    display_name: '&a&lSpawn'
+    lore:
+      - '&7Server spawn point.'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[player] warp spawn'
+      - '[close]'
+
+  pvp:
+    material: NETHERITE_SWORD
+    slot: 11
+    display_name: '&c&lPvP Arena'
+    lore:
+      - '&7Combat zone.'
+    hide_attributes: true
+    left_click_commands:
+      - '[player] warp pvp'
+      - '[close]'
+
+  bosses:
+    material: WITHER_SKELETON_SKULL
+    slot: 12
+    display_name: '&4&lBosses'
+    lore:
+      - '&7Boss arena.'
+    left_click_commands:
+      - '[player] warp bosses'
+      - '[close]'
+
+  info:
+    material: BOOK
+    slot: 13
+    display_name: '&a&lInformation'
+    left_click_commands:
+      - '[player] warp info'
+      - '[close]'
+
+  store:
+    material: EMERALD
+    slot: 14
+    display_name: '&6&lStore'
+    left_click_commands:
+      - '[player] warp store'
+      - '[close]'
+
+  market:
+    material: CHEST
+    slot: 15
+    display_name: '&e&lMarket'
+    lore:
+      - '&7Player shop district.'
+    left_click_commands:
+      - '[player] warp market'
+      - '[close]'
+
+  events:
+    material: BEACON
+    slot: 16
+    display_name: '&d&lEvents'
+    lore:
+      - '&7Event arena.'
+    left_click_commands:
+      - '[player] warp events'
+      - '[close]'
+
+  back:
+    material: ARROW
+    slot: 22
+    display_name: '&c&lBack'
+    left_click_commands:
+      - '[openguimenu] main'

@@ -1,0 +1,70 @@
+# DESTINATION: plugins/TAB/config/animations.yml
+# Animations referenced from config.yml via %animation:<name>%.
+
+brand:
+  change-interval: 200
+  texts:
+    - '&c&lL&fIFESTEAL'
+    - '&c&lLI&fFESTEAL'
+    - '&c&lLIF&fESTEAL'
+    - '&c&lLIFE&fSTEAL'
+    - '&c&lLIFES&fTEAL'
+    - '&c&lLIFEST&fEAL'
+    - '&c&lLIFESTE&fAL'
+    - '&c&lLIFESTEA&fL'
+    - '&c&lLIFESTEAL'
+    - '&c&lLIFESTEAL'
+    - '&c&lLIFESTEAL'
+
+arrow_right:
+  change-interval: 300
+  texts:
+    - '&7>>&f>>>'
+    - '&7>&f>>>>'
+    - '&f>>>>>'
+    - '&f>>>>&7>'
+    - '&f>>>&7>>'
+    - '&f>>&7>>>'
+    - '&f>&7>>>>'
+
+rainbow:
+  change-interval: 250
+  texts:
+    - '&c&l>> &f&lLIFESTEAL &c&l<<'
+    - '&6&l>> &f&lLIFESTEAL &6&l<<'
+    - '&e&l>> &f&lLIFESTEAL &e&l<<'
+    - '&a&l>> &f&lLIFESTEAL &a&l<<'
+    - '&b&l>> &f&lLIFESTEAL &b&l<<'
+    - '&9&l>> &f&lLIFESTEAL &9&l<<'
+    - '&5&l>> &f&lLIFESTEAL &5&l<<'
+
+pulse_red:
+  change-interval: 150
+  texts:
+    - '&c&l>>'
+    - '&4&l>>'
+    - '&c&l>>'
+    - '&f&l>>'
+
+blink_discord:
+  change-interval: 600
+  texts:
+    - '&9discord.gg/example'
+    - '&9discord.gg/example'
+    - '&9discord.gg/example'
+    - '&3discord.gg/example'
+    - '&9discord.gg/example'
+
+ticker_hint:
+  change-interval: 4000
+  texts:
+    - '&7Vote with &f/vote'
+    - '&7Open quests with &f/quests gui'
+    - '&7Open crates with &f/crate menu'
+    - '&7Browse auctions with &f/ah'
+    - '&7Open shop with &f/shop'
+    - '&7Make a clan with &f/clan create'
+    - '&7Open skills with &f/skills'
+    - '&7Wild teleport with &f/rtp'
+    - '&7Vanilla home with &f/home'
+    - '&7Send Discord link with &f/discord link'

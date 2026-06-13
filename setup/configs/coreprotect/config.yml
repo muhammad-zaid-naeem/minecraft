@@ -1,0 +1,58 @@
+# DESTINATION: plugins/CoreProtect/config.yml
+# CoreProtect-CE 23.2 template.
+
+# Database
+database:
+  type: sqlite
+  prefix: 'co_'
+  mysql:
+    host: 'localhost'
+    port: 3306
+    name: ''
+    user: ''
+    pass: ''
+
+# Defaults for /co lookup
+default-radius: 10
+default-time: 24h
+
+# What gets logged
+logging:
+  block-place: true
+  block-break: true
+  block-interactions: true
+  natural: false
+  worldedit: true
+  player-interactions: true
+  containers: true
+  signs: true
+  chat: true
+  commands: true
+  item-transactions: true
+
+# Inspector
+inspector:
+  enabled: true
+  toggle-command: '/co i'
+
+# Retention (CoreProtect-CE supports auto-purge)
+retention-days: 90
+auto-purge: true
+auto-purge-cron: '0 4 * * *'      # 4am daily
+
+# API
+api-enabled: true
+
+# Performance
+worker-threads: 2
+queue-flush-interval: 100
+
+# Lookups
+lookup:
+  results-per-page: 4
+  max-radius: 100
+  max-time: 30d
+
+# Misc
+language: 'en'
+disable-update-check: false

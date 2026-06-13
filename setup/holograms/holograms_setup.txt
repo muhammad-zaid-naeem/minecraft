@@ -1,0 +1,154 @@
+# DecentHolograms 2.10.0 Setup Script
+# Run from console or RCON (op required).
+# Lines starting with # are comments.
+#
+# Commands:
+#   /dh create <name> <x> <y> <z>           - create at world,x,y,z
+#   /dh line add <name> "<text>"            - append a line
+#   /dh setrange <name> <blocks>            - render distance
+#   /dh setupdateinterval <name> <ticks>    - refresh rate (20 = 1s, 100 = 5s)
+#   /dh delete <name>
+#   /dh list
+#
+# Placeholder requirements:
+#   - PlaceholderAPI must be installed (it is)
+#   - Vault expansion:        /papi ecloud download Vault    then  /papi reload
+#   - Player expansion:       /papi ecloud download Player
+#   - Statistic expansion:    /papi ecloud download Statistic
+#   - AuraSkills:             ships its own placeholders (auraskills_*)
+#   - VotingPlugin (if installed): votingplugin_*
+#
+# All holograms place into world "world" by default. Move with:
+#   /dh move <name>     (uses your current position)
+
+# === Welcome hologram (center of spawn) ===
+dh create welcome 0 105 0
+dh line add welcome "&6&lLIFESTEAL SMP"
+dh line add welcome "&fSurvive. Build. Kill. Repeat."
+dh line add welcome "&7play.lifestealsmp.example"
+dh line add welcome "&9discord.gg/example"
+dh setrange welcome 64
+dh setupdateinterval welcome 200
+
+# === Top Money leaderboard (east side, x=15) ===
+dh create top_money 15 103 0
+dh line add top_money "&6&l-- TOP MONEY --"
+dh line add top_money "&e#1 &f%vault_eco_top_balance_1_name% &7- &a$%vault_eco_top_balance_1_balance%"
+dh line add top_money "&e#2 &f%vault_eco_top_balance_2_name% &7- &a$%vault_eco_top_balance_2_balance%"
+dh line add top_money "&e#3 &f%vault_eco_top_balance_3_name% &7- &a$%vault_eco_top_balance_3_balance%"
+dh line add top_money "&e#4 &f%vault_eco_top_balance_4_name% &7- &a$%vault_eco_top_balance_4_balance%"
+dh line add top_money "&e#5 &f%vault_eco_top_balance_5_name% &7- &a$%vault_eco_top_balance_5_balance%"
+dh line add top_money "&e#6 &f%vault_eco_top_balance_6_name% &7- &a$%vault_eco_top_balance_6_balance%"
+dh line add top_money "&e#7 &f%vault_eco_top_balance_7_name% &7- &a$%vault_eco_top_balance_7_balance%"
+dh line add top_money "&e#8 &f%vault_eco_top_balance_8_name% &7- &a$%vault_eco_top_balance_8_balance%"
+dh line add top_money "&e#9 &f%vault_eco_top_balance_9_name% &7- &a$%vault_eco_top_balance_9_balance%"
+dh line add top_money "&e#10 &f%vault_eco_top_balance_10_name% &7- &a$%vault_eco_top_balance_10_balance%"
+dh setrange top_money 48
+dh setupdateinterval top_money 100
+
+# === Top Kills leaderboard ===
+dh create top_kills 15 103 5
+dh line add top_kills "&c&l-- TOP KILLS --"
+dh line add top_kills "&e#1 &f%statistic_player_kills:1% &7kills"
+dh line add top_kills "&e#2 &f%statistic_player_kills:2% &7kills"
+dh line add top_kills "&e#3 &f%statistic_player_kills:3% &7kills"
+dh line add top_kills "&e#4 &f%statistic_player_kills:4% &7kills"
+dh line add top_kills "&e#5 &f%statistic_player_kills:5% &7kills"
+dh line add top_kills "&e#6 &f%statistic_player_kills:6% &7kills"
+dh line add top_kills "&e#7 &f%statistic_player_kills:7% &7kills"
+dh line add top_kills "&e#8 &f%statistic_player_kills:8% &7kills"
+dh line add top_kills "&e#9 &f%statistic_player_kills:9% &7kills"
+dh line add top_kills "&e#10 &f%statistic_player_kills:10% &7kills"
+dh setrange top_kills 48
+dh setupdateinterval top_kills 100
+
+# === Top Level (AuraSkills overall) ===
+dh create top_level 15 103 10
+dh line add top_level "&b&l-- TOP LEVEL --"
+dh line add top_level "&e#1 &f%auraskills_top_overall_name_1% &7- Lv %auraskills_top_overall_value_1%"
+dh line add top_level "&e#2 &f%auraskills_top_overall_name_2% &7- Lv %auraskills_top_overall_value_2%"
+dh line add top_level "&e#3 &f%auraskills_top_overall_name_3% &7- Lv %auraskills_top_overall_value_3%"
+dh line add top_level "&e#4 &f%auraskills_top_overall_name_4% &7- Lv %auraskills_top_overall_value_4%"
+dh line add top_level "&e#5 &f%auraskills_top_overall_name_5% &7- Lv %auraskills_top_overall_value_5%"
+dh line add top_level "&e#6 &f%auraskills_top_overall_name_6% &7- Lv %auraskills_top_overall_value_6%"
+dh line add top_level "&e#7 &f%auraskills_top_overall_name_7% &7- Lv %auraskills_top_overall_value_7%"
+dh line add top_level "&e#8 &f%auraskills_top_overall_name_8% &7- Lv %auraskills_top_overall_value_8%"
+dh line add top_level "&e#9 &f%auraskills_top_overall_name_9% &7- Lv %auraskills_top_overall_value_9%"
+dh line add top_level "&e#10 &f%auraskills_top_overall_name_10% &7- Lv %auraskills_top_overall_value_10%"
+dh setrange top_level 48
+dh setupdateinterval top_level 100
+
+# === Top Votes (requires VotingPlugin) ===
+dh create top_votes -15 103 0
+dh line add top_votes "&d&l-- TOP VOTERS --"
+dh line add top_votes "&e#1 &f%votingplugin_top_monthly_1_player% &7- %votingplugin_top_monthly_1_amount%"
+dh line add top_votes "&e#2 &f%votingplugin_top_monthly_2_player% &7- %votingplugin_top_monthly_2_amount%"
+dh line add top_votes "&e#3 &f%votingplugin_top_monthly_3_player% &7- %votingplugin_top_monthly_3_amount%"
+dh line add top_votes "&e#4 &f%votingplugin_top_monthly_4_player% &7- %votingplugin_top_monthly_4_amount%"
+dh line add top_votes "&e#5 &f%votingplugin_top_monthly_5_player% &7- %votingplugin_top_monthly_5_amount%"
+dh line add top_votes "&e#6 &f%votingplugin_top_monthly_6_player% &7- %votingplugin_top_monthly_6_amount%"
+dh line add top_votes "&e#7 &f%votingplugin_top_monthly_7_player% &7- %votingplugin_top_monthly_7_amount%"
+dh line add top_votes "&e#8 &f%votingplugin_top_monthly_8_player% &7- %votingplugin_top_monthly_8_amount%"
+dh line add top_votes "&e#9 &f%votingplugin_top_monthly_9_player% &7- %votingplugin_top_monthly_9_amount%"
+dh line add top_votes "&e#10 &f%votingplugin_top_monthly_10_player% &7- %votingplugin_top_monthly_10_amount%"
+dh setrange top_votes 48
+dh setupdateinterval top_votes 200
+
+# === PvP Arena entrance ===
+dh create pvp_entry 10 102 3
+dh line add pvp_entry "&c&lPvP ARENA"
+dh line add pvp_entry "&fEnter at your own risk"
+dh line add pvp_entry "&7Combat tag = 15s"
+dh setrange pvp_entry 32
+
+# === Crates label ===
+dh create crates_label 0 103 -7
+dh line add crates_label "&5&lCRATES"
+dh line add crates_label "&fRight-click any crate"
+dh setrange crates_label 32
+
+# === Rules label ===
+dh create rules_label 3 102 -5
+dh line add rules_label "&6&lSERVER RULES"
+dh line add rules_label "&fClick to read"
+dh setrange rules_label 24
+
+# === RTP entrance ===
+dh create rtp_label -3 102 -5
+dh line add rtp_label "&2&lRANDOM TELEPORT"
+dh line add rtp_label "&fInto the wild"
+dh setrange rtp_label 24
+
+# === Discord info ===
+dh create discord_label 5 102 8
+dh line add discord_label "&9&lDISCORD"
+dh line add discord_label "&7discord.gg/example"
+dh line add discord_label "&fOnline: %votingplugin_total_votes_currentmonth%"
+dh setrange discord_label 24
+
+# === Shop label ===
+dh create shop_label 5 102 0
+dh line add shop_label "&a&lSERVER SHOP"
+dh line add shop_label "&fBuy with $ - sell loot"
+dh setrange shop_label 24
+
+# === Battle Pass label ===
+dh create bp_label -7 102 2
+dh line add bp_label "&c&lBATTLE PASS"
+dh line add bp_label "&fS01 - Tier %auraskills_overall_level%"
+dh setrange bp_label 24
+
+# === Auction House label ===
+dh create ah_label 8 102 -8
+dh line add ah_label "&e&lAUCTION HOUSE"
+dh line add ah_label "&fBid on rare loot"
+dh setrange ah_label 24
+
+# === Player Shops label ===
+dh create pshop_label -8 102 -8
+dh line add pshop_label "&3&lPLAYER SHOPS"
+dh line add pshop_label "&fBuy from players"
+dh setrange pshop_label 24
+
+# === Verification ===
+dh list

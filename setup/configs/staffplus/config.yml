@@ -1,0 +1,80 @@
+# DESTINATION: plugins/StaffPlus/config.yml
+# Staff+ template.
+
+staff-mode:
+  enabled: true
+  command: '/sm'
+  vanish-on-enter: true
+  fly-on-enter: true
+  god-mode-on-enter: true
+  inventory-restore: true
+  prevent-item-pickup: true
+  prevent-damage: true
+  prevent-block-break: true
+  prevent-block-place: true
+
+staff-chat:
+  prefix: '&c[STAFF] &r'
+  toggle-command: '/sc'
+  message-command: '/sc <msg>'
+  permission: 'staffplus.chat'
+  bridge-to-discord: true
+
+vanish:
+  command: '/vanish'
+  aliases: ['/v']
+  hide-from-tab: true
+  silent-quit-join: true
+
+gadgets:
+  compass:
+    name: '&aTeleport to Player'
+    material: COMPASS
+    slot: 0
+    action: TELEPORT_NEAREST_PLAYER
+  sword:
+    name: '&cExamine'
+    material: NETHERITE_SWORD
+    slot: 1
+    action: EXAMINE_INVENTORY
+  book:
+    name: '&eFreeze Player'
+    material: BOOK
+    slot: 2
+    action: FREEZE_TOGGLE
+  chest:
+    name: '&6Inventory See'
+    material: CHEST
+    slot: 3
+    action: INVSEE
+  spyglass:
+    name: '&7Follow Invisibly'
+    material: SPYGLASS
+    slot: 4
+    action: FOLLOW
+  paper:
+    name: '&aRandom TP'
+    material: PAPER
+    slot: 7
+    action: RTP_TO_PLAYER
+
+freeze:
+  message-on-freeze: '&cYou are frozen. Wait for a staff member.'
+  prevent-damage: true
+  prevent-commands: true
+  exit-message: '&aYou have been unfrozen.'
+
+examine:
+  show-inventory: true
+  show-armor: true
+  show-ender-chest: true
+  show-stats: true
+
+# Reports
+reports:
+  enabled: true
+  command: '/report'
+  cooldown-seconds: 60
+  max-per-hour: 5
+  notify-staff-chat: true
+  bridge-to-discord: true

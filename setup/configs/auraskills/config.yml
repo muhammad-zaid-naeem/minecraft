@@ -1,0 +1,86 @@
+# DESTINATION: plugins/AuraSkills/config.yml
+# AuraSkills 2.3.12 template.
+
+config_version: 38
+language: en
+auto_update_language_files: true
+
+skill-options:
+  enabled:
+    - farming
+    - mining
+    - foraging
+    - fishing
+    - excavation
+    - archery
+    - defense
+    - fighting
+    - endurance
+    - agility
+    - alchemy
+    - enchanting
+
+leveling:
+  max-level: 100
+  xp-required-base: 100
+  xp-required-multiplier: 1.1
+  level-up-message: '&aLeveled up &6{skill} &ato &6{level}'
+  level-up-sound: ENTITY_PLAYER_LEVELUP
+  level-up-effect: TOTEM_RAY
+  level-up-money: 10
+  per-skill-options:
+    farming: { base: 100, multiplier: 1.1 }
+    mining: { base: 100, multiplier: 1.1 }
+    foraging: { base: 100, multiplier: 1.1 }
+    fishing: { base: 100, multiplier: 1.1 }
+    excavation: { base: 100, multiplier: 1.1 }
+    archery: { base: 100, multiplier: 1.1 }
+    defense: { base: 100, multiplier: 1.1 }
+    fighting: { base: 100, multiplier: 1.1 }
+    endurance: { base: 100, multiplier: 1.1 }
+    agility: { base: 100, multiplier: 1.1 }
+    alchemy: { base: 100, multiplier: 1.1 }
+    enchanting: { base: 100, multiplier: 1.1 }
+
+stats:
+  health:
+    base: 20.0
+    max: 200.0
+    per-level: 0.2
+  strength:
+    base: 0.0
+    per-level: 0.5
+  regeneration:
+    base: 1.0
+    per-level: 0.05
+  luck:
+    base: 0.0
+    per-level: 0.1
+  wisdom:
+    base: 0.0
+    per-level: 0.5
+  toughness:
+    base: 0.0
+    per-level: 0.5
+
+# Action bar
+action-bar:
+  enabled: true
+  mode: ALL                 # ALL = always show; IDLE = only on action
+  format: '&6{skill} &7Lv&f{level} &b{progress}/{required}'
+
+# Leaderboard / placeholders
+leaderboards:
+  enabled: true
+  update-period: 300        # seconds
+  placeholder-prefix: 'auraskills'
+
+# Hook into other plugins
+hook:
+  placeholderapi: true
+  vault: true
+
+# Persistence
+storage:
+  type: sqlite
+  table-prefix: 'auraskills_'

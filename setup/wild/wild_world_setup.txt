@@ -1,0 +1,68 @@
+# Wild World Setup Script
+# Run from console or RCON AFTER Multiverse-Core is loaded.
+# Lines starting with # are comments.
+#
+# This script:
+#   1. Creates a new "wild" world using vanilla overworld generator.
+#   2. Sets gamerules + world flags.
+#   3. Sets a sane spawnpoint.
+#   4. Sets a world border so RTP stays within range.
+#
+# Generation can take 30-60 seconds depending on disk. Don't worry if the
+# console freezes for a moment - it's chunk-generation.
+
+# === Create the wild world (vanilla overworld type, random seed) ===
+mv create wild normal
+# alternative explicit seed: mv create wild normal -s 8888
+
+# === Set wild world properties ===
+mv modify set pvp true wild
+mv modify set hunger true wild
+mv modify set autoHeal true wild
+mv modify set difficulty hard wild
+mv modify set portalForm NONE wild
+mv modify set respawnWorld world wild
+mv modify set monsters true wild
+mv modify set animals true wild
+mv modify set alias &6Wild wild
+mv modify set keepSpawnInMemory false wild
+mv modify set color GOLD wild
+
+# === Set spawn (default 0,100,0 is fine; let Multiverse find a safe Y) ===
+# Move to a good spot first by warping into the world:
+mv tp @a wild
+# (or yourself: /mv tp <name> wild)
+# Then while at the desired spawn block, run:
+# /mv setspawn
+
+# === World border (forces RTP within 5000 blocks of 0,0) ===
+worldborder set 10000 wild
+worldborder center 0 0
+
+# === Gamerules - keep them survival-friendly ===
+gamerule keepInventory false wild
+gamerule mobGriefing true wild
+gamerule doDaylightCycle true wild
+gamerule doWeatherCycle true wild
+gamerule announceAdvancements true wild
+gamerule doFireTick true wild
+gamerule randomTickSpeed 3 wild
+gamerule playersSleepingPercentage 50 wild
+gamerule fallDamage true wild
+
+# === Disable land claims in wild (optional - if you want pure free-for-all) ===
+# Uncomment if you want NO GriefPrevention claims in wild world:
+# (run while standing in wild)
+# /gpreload  -- then edit plugins/GriefPrevention/config.yml:
+#    ClaimsWorldModes:
+#      wild: Disabled
+
+# === Pre-generate chunks (optional, requires Chunky plugin) ===
+# /chunky world wild
+# /chunky radius 5000
+# /chunky start
+
+# === Verify ===
+mv list
+mv info wild
+worldborder get

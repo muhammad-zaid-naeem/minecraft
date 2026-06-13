@@ -1,0 +1,62 @@
+# DESTINATION: plugins/MythicMobs/Mobs/LootTables.yml
+# Reusable named loot tables.
+
+common_mob_loot:
+  Drops:
+    - DIAMOND 0-1 0.05
+    - IRON_INGOT 1-3 0.5
+    - GOLD_INGOT 1-2 0.3
+    - command{c="eco give <trigger.name> 10"} 1.0
+
+rare_mob_loot:
+  Drops:
+    - DIAMOND 2-6 0.3
+    - EMERALD 1-3 0.1
+    - NETHERITE_SCRAP 0-1 0.05
+    - command{c="eco give <trigger.name> 100"} 1.0
+
+boss_pyrolord_drops:
+  Drops:
+    - Pyrosword 1 1.0
+    - command{c="eco give <trigger.name> 5000"} 1.0
+    - command{c="crate key give <trigger.name> legendary 3"} 1.0
+    - command{c="mm i give <trigger.name> phoenix_book 1"} 1.0
+
+boss_frostmonarch_drops:
+  Drops:
+    - FrostBow 1 1.0
+    - command{c="eco give <trigger.name> 6000"} 1.0
+    - command{c="crate key give <trigger.name> legendary 3"} 1.0
+    - command{c="mm i give <trigger.name> glacial_book 1"} 1.0
+
+boss_void_drops:
+  Drops:
+    - VoidBlade 1 1.0
+    - command{c="eco give <trigger.name> 8000"} 1.0
+    - command{c="crate key give <trigger.name> legendary 4"} 1.0
+    - command{c="mm i give <trigger.name> vampire_book 1"} 1.0
+
+boss_earth_drops:
+  Drops:
+    - EarthHammer 1 1.0
+    - command{c="eco give <trigger.name> 10000"} 1.0
+    - command{c="crate key give <trigger.name> legendary 5"} 1.0
+    - command{c="mm i give <trigger.name> veinmine_book 1"} 1.0
+
+boss_dragon_drops:
+  Drops:
+    - DragonScale_Helmet 1 1.0
+    - DragonScale_Chestplate 1 1.0
+    - DragonScale_Leggings 1 1.0
+    - DragonScale_Boots 1 1.0
+    - command{c="eco give <trigger.name> 25000"} 1.0
+    - command{c="crate key give <trigger.name> legendary 8"} 1.0
+    - command{c="mm i give <trigger.name> soulbound_book 1"} 1.0
+    - command{c="mm i give <trigger.name> phoenix_pet_egg 1"} 0.5
+
+rare_chest_loot:
+  Drops:
+    - DIAMOND 8-16 1.0
+    - GOLDEN_APPLE 1-2 0.6
+    - NETHERITE_INGOT 0-1 0.2
+    - command{c="crate key give <trigger.name> rare 1"} 0.5

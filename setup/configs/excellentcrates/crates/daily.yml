@@ -1,0 +1,61 @@
+# DESTINATION: plugins/ExcellentCrates/crates/daily.yml
+name: '&e&lDaily Crate'
+description:
+  - '&7Open with: &eDaily Key'
+  - '&7Free login bonus every 24h.'
+
+block:
+  enabled: true
+  type: CHEST
+  hologram:
+    enabled: true
+    lines:
+      - '&e&lDaily Crate'
+      - '&fRight-click to open'
+
+key:
+  ids:
+    - daily_key
+
+opening:
+  type: ROULETTE
+  config:
+    duration: 80
+    sound-tick: BLOCK_NOTE_BLOCK_PLING
+    sound-win: ENTITY_PLAYER_LEVELUP
+
+rewards:
+  money_small:
+    chance: 30.0
+    name: '&a$200-$500'
+    commands: ['eco give %player_name% 350']
+
+  food_bundle:
+    chance: 20.0
+    name: '&6Food Bundle'
+    items:
+      - 'GOLDEN_CARROT:16'
+      - 'BREAD:16'
+      - 'COOKED_BEEF:8'
+
+  basic_gear:
+    chance: 15.0
+    name: '&7Iron Set'
+    items:
+      - 'IRON_HELMET:1'
+      - 'IRON_CHESTPLATE:1'
+      - 'IRON_LEGGINGS:1'
+      - 'IRON_BOOTS:1'
+      - 'IRON_SWORD:1'
+
+  vote_key:
+    chance: 25.0
+    name: '&a1 Vote Key'
+    commands: ['crate key give %player_name% vote 1']
+
+  rare_key:
+    chance: 10.0
+    name: '&b1 Rare Key'
+    commands: ['crate key give %player_name% rare 1']
+    broadcast: true
+    broadcast-message: '&b%player_name% &7got a &bRare Key &7from the daily crate.'

@@ -1,0 +1,202 @@
+# DESTINATION: plugins/TAB/config/config.yml
+# TAB by NEZNAMY (v6.0.3) - tab list + scoreboard + nametags all-in-one.
+# Note the nested "config/" folder under plugins/TAB/. TAB 6.x splits its
+# files into plugins/TAB/config/{config,groups,animations,messages,users}.yml.
+
+# === TAB HEADER + FOOTER ===
+# Multiple designs supported via display-condition.
+header-footer:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+  designs:
+    default:
+      header:
+        - '<#FFFFFF>&m                                                </#FFFFFF>'
+        - '&c&lLIFESTEAL SMP'
+        - '&r&7>> %animation:brand%&7 &l%player%&7 <<'
+        - '&7Survive. Build. Kill. Repeat.'
+        - ''
+        - '&7Online: &f%online%&7/&f%maxplayers%   &7Staff: &f%staffonline%'
+      footer:
+        - ''
+        - '&7Discord: %animation:blink_discord%'
+        - '&7Hint: %animation:ticker_hint%'
+        - '&7Ping: &a%ping%ms   &7Memory: &f%memory-used%/%memory-max% MB'
+        - '<#FFFFFF>&m                                                </#FFFFFF>'
+    pvp:
+      display-condition: '%world%=pvp_world'
+      header:
+        - '<#FF0000>&m                                                </#FF0000>'
+        - '&4&lPVP ARENA'
+        - '&7Combat tag: &c15s   &7No /spawn while tagged'
+        - ''
+      footer:
+        - ''
+        - '&7Ping: &a%ping%ms'
+        - '<#FF0000>&m                                                </#FF0000>'
+
+# === TAB LIST FORMATTING ===
+tablist-name-formatting:
+  enabled: true
+  anti-override: true
+  disable-condition: '%world%=disabledworld'
+
+# === NAMETAG TEAMS (sorting + collision) ===
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  anti-override: true
+  case-sensitive-sorting: true
+  sorting-types:
+    - GROUPS:owner,admin,mod,elite,mvp,vip,default
+    - PLACEHOLDER_HIGH_TO_LOW:%vault_eco_balance%
+
+# === PLAYER LIST OBJECTIVE (yellow number to right of name) ===
+playerlist-objective:
+  enabled: true
+  value: '%ping%'
+  fancy-value: '&7%ping%ms'
+
+# === BELOW-NAME (heart count etc.) ===
+belowname-objective:
+  enabled: true
+  value: '%lifestealz_hearts%'
+  fancy-value: '&c%lifestealz_hearts% HP'
+  title: '&cHearts'
+
+prevent-spectator-effect:
+  enabled: false
+
+# === BOSSBAR (off - MythicMobs owns the bossbar) ===
+bossbar:
+  enabled: false
+
+# === SIDEBAR SCOREBOARD ===
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: true
+  hidden-by-default: false
+  delay-on-join-milliseconds: 0
+  scoreboards:
+
+    pvp:
+      display-condition: '%world%=pvp_world'
+      title: '&c&l>> PVP ARENA <<'
+      lines:
+        - '<#FF0000>&m-----------------</#FF0000>'
+        - '&7Player&8: &f%player%'
+        - '&7Hearts&8: &c%lifestealz_hearts%'
+        - ''
+        - '&7Streak&8: &6%tab_killstreak%'
+        - '&7Kills&8: &c%statistic_player_kills%'
+        - '&7K/D&8: &e%math_0_(%statistic_player_kills%/(%statistic_deaths%+1))%'
+        - ''
+        - '&cNo /spawn while tagged'
+        - '<#FF0000>&m-----------------</#FF0000>'
+
+    nether:
+      display-condition: '%world%=world_nether'
+      title: '&4&l>> NETHER <<'
+      lines:
+        - '<#FF5555>&m-----------------</#FF5555>'
+        - '&7Player&8: &f%player%'
+        - '&7Rank&8: %luckperms-prefix%'
+        - '&7Balance&8: &a$%vault_eco_balance%'
+        - ''
+        - '&7Watch out for Infernals.'
+        - ''
+        - '&7Online&8: &f%online%&7/&f%maxplayers%'
+        - '<#FF5555>&m-----------------</#FF5555>'
+
+    end:
+      display-condition: '%world%=world_the_end'
+      title: '&5&l>> THE END <<'
+      lines:
+        - '<#AA00AA>&m-----------------</#AA00AA>'
+        - '&7Player&8: &f%player%'
+        - '&7Balance&8: &a$%vault_eco_balance%'
+        - ''
+        - '&7Final boss&8: &cDragon of Ages'
+        - ''
+        - '&7Online&8: &f%online%&7/&f%maxplayers%'
+        - '<#AA00AA>&m-----------------</#AA00AA>'
+
+    survival:
+      title: '%animation:rainbow%'
+      lines:
+        - '<#FFFFFF>&m-----------------</#FFFFFF>'
+        - '&7Player&8: &f%player%'
+        - '&7Rank&8: %luckperms-prefix%'
+        - ''
+        - '&7Balance&8: &a$%vault_eco_balance%'
+        - '&7Level&8: &b%auraskills_overall_level%'
+        - ''
+        - '&7Kills&8: &c%statistic_player_kills%'
+        - '&7Deaths&8: &c%statistic_deaths%'
+        - '&7K/D&8: &e%math_0_(%statistic_player_kills%/(%statistic_deaths%+1))%'
+        - ''
+        - '&7Hearts&8: &c%lifestealz_hearts%'
+        - '&7Clan&8: &6%simpleclans_clan_tag_label%'
+        - ''
+        - '&7Hint&8: %animation:ticker_hint%'
+        - ''
+        - '&7Online&8: &f%online%&7/&f%maxplayers%'
+        - '<#FFFFFF>&m-----------------</#FFFFFF>'
+        - '&edisc.gg/example'
+
+# === LAYOUT (custom tab grid - leave OFF unless you want fancy hub-style tab) ===
+layout:
+  enabled: false
+
+# === PING SPOOF (off) ===
+ping-spoof:
+  enabled: false
+
+# === GLOBAL PLAYERLIST (proxy only) ===
+global-playerlist:
+  enabled: false
+
+# === PLACEHOLDER REFRESH ===
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%online%': 1000
+  '%maxplayers%': 60000
+  '%vault_eco_balance%': 2000
+  '%ping%': 1000
+  '%statistic_player_kills%': 5000
+  '%statistic_deaths%': 5000
+  '%auraskills_overall_level%': 2000
+  '%lifestealz_hearts%': 2000
+  '%memory-used%': 5000
+  '%memory-max%': 60000
+  '%staffonline%': 5000
+
+assign-groups-by-permissions: false
+primary-group-finding-list:
+  - owner
+  - admin
+  - mod
+  - elite
+  - mvp
+  - vip
+  - default
+
+permission-refresh-interval: 1000
+
+debug: false
+mysql:
+  enabled: false
+
+proxy-support:
+  enabled: false
+
+config-version: 6
+
+per-world-playerlist:
+  enabled: false
+
+compensate-for-packetevents-bug: false
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true

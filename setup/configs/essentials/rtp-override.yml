@@ -1,0 +1,44 @@
+# DESTINATION: merge into plugins/Essentials/config.yml (replace the rtp: block)
+# EssentialsX RTP override - point /rtp at the new "wild" world only.
+
+# RTP cooldown + max retries + biome blacklist (top-level).
+rtp:
+  cooldown: 60
+  max-tries: 50
+  border-min: 500
+  border-max: 5000
+  blacklist-biomes:
+    - ocean
+    - deep_ocean
+    - frozen_ocean
+    - warm_ocean
+    - lukewarm_ocean
+    - cold_ocean
+    - deep_lukewarm_ocean
+    - deep_cold_ocean
+    - deep_frozen_ocean
+    - river
+    - frozen_river
+
+  # Per-world override: when you run /rtp from ANY world, send to wild.
+  # If a player runs /rtp from "wild" itself, also stays in wild.
+  world-options:
+    world:
+      cooldown: 60
+      target-world: wild
+      min-range: 500
+      max-range: 5000
+      max-tries: 50
+    wild:
+      cooldown: 60
+      target-world: wild
+      min-range: 500
+      max-range: 5000
+      max-tries: 50
+    world_nether:
+      cooldown: 60
+      target-world: wild
+      min-range: 500
+      max-range: 5000
+    world_the_end:
+      enabled: false             # no RTP from the end - too easy to escape dragon

@@ -1,0 +1,112 @@
+# DESTINATION: plugins/DiscordSRV/config.yml
+# DiscordSRV 1.30.5 template for LifeSteal SMP.
+
+# PASTE YOUR BOT TOKEN BELOW. Keep this file out of public repos.
+BotToken: "REPLACE_ME"
+
+# Discord channel IDs (right-click channel in Discord -> Copy ID).
+Channels:
+  global: "111111111111111111"
+  staff: "222222222222222222"
+  console: "333333333333333333"
+  link: "444444444444444444"
+  joinleave: "555555555555555555"
+  stafflogs: "666666666666666666"
+
+# Two-way chat format
+DiscordChatChannelMinecraftToDiscordFormat: "**%username%**: %message%"
+DiscordChatChannelDiscordToMinecraftFormat: '&9[Discord] &f%username%&7: &f%message%'
+
+# Linking
+EmbedAvatarUrl: ""
+NicknameSynchronizationEnabled: true
+RequireLinkedAccountToChat: false
+ChannelLockingViaChannelTopic: false
+ChatChannelHideDeletedMessages: true
+Experiment_WebhookChatMessageDelivery: true
+
+# Roles - map LuckPerms group -> Discord role IDs
+GroupRoleSynchronizationEnabled: true
+GroupRoleSynchronizationOneWay: false
+GroupRoleSynchronizationGroupsAndRolesToSync:
+  default: "0"
+  vip: "1100000000000000001"
+  mvp: "1100000000000000002"
+  elite: "1100000000000000003"
+  mod: "1100000000000000004"
+  admin: "1100000000000000005"
+  owner: "1100000000000000006"
+
+# Join / leave broadcast
+JoinMessage:
+  Enabled: true
+  Format: "**%username%** joined the server."
+LeaveMessage:
+  Enabled: true
+  Format: "**%username%** left the server."
+FirstJoinMessage:
+  Enabled: true
+  Format: "Welcome, **%username%**, to LifeSteal SMP!"
+
+# Player death messages
+MinecraftDiscordMessageDeathMessages:
+  Enabled: true
+  Format: '%death_message%'
+
+# Status channel
+ChannelUpdater:
+  Enabled: true
+  UpdateInterval: 300
+  Channels:
+    "777777777777777777":
+      format: "online-%online%-of-%max%"
+
+# Console channel
+DiscordConsoleChannelUsageLogging: false
+DiscordConsoleChannelLevelFilter: "INFO"
+
+# Webhook handling
+ConsoleChannelUsageWarningWebhook: true
+
+# Commands forwarding (in-Discord to in-MC)
+DiscordCannedResponses:
+  "!ip": "play.lifestealsmp.example"
+  "!discord": "discord.gg/example"
+  "!website": "https://lifestealsmp.example"
+  "!rules": "Use /rules in-game."
+  "!help": "Use /help in-game or open a ticket."
+
+# Slash commands
+SlashCommandPrefixes:
+  - "lifesteal"
+SlashCommandRoles:
+  link: ["@everyone"]
+  list: ["@everyone"]
+
+# Avatar / format
+EmbedAvatarUrl: ""
+Embeds:
+  joinmessage:
+    color: "#00ff00"
+  leavemessage:
+    color: "#ff0000"
+  death:
+    color: "#888888"
+
+# Misc
+SafetySettings:
+  Allow:
+    - PERMISSION_VIEW_CHANNEL
+    - PERMISSION_SEND_MESSAGES
+    - PERMISSION_MANAGE_ROLES
+    - PERMISSION_MANAGE_CHANNELS
+Debug:
+  - Discord
+  - LuckPerms
+  - GroupSync
+DebugLevel: WARN
+
+# Plugin hook flags
+PluginHookGroupNotificationsEnabled: true
+PluginHookGroupSynchronizationCycleTime: 5
+PluginHookLuckPermsBypassPrimaryGroupChecks: true

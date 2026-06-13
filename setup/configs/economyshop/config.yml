@@ -1,0 +1,61 @@
+# DESTINATION: plugins/EconomyShop/config.yml
+# EconomyShop GUI 1.1.4 template.
+
+# Locale
+locale: en_US
+
+# Menu
+menu:
+  title: '&8Server Shop'
+  rows: 6
+  filler:
+    enabled: true
+    item: BLACK_STAINED_GLASS_PANE
+    name: ' '
+  navigation:
+    back-button-slot: 45
+    next-button-slot: 53
+
+# Currency
+currency-symbol: '$'
+currency-format: '%,.2f'
+
+# Sounds
+sounds:
+  buy: ENTITY_EXPERIENCE_ORB_PICKUP
+  sell: ENTITY_VILLAGER_YES
+  fail: BLOCK_NOTE_BLOCK_BASS
+
+# Transactions logging
+log-transactions: true
+log-file: 'plugins/EconomyShop/transactions.log'
+
+# Confirmations
+confirm-purchase-over: 1000
+confirm-sell-over: 1000
+
+# Categories (definitions will be added via /eshop create + /eshop additem)
+categories:
+  Blocks:
+    icon: STONE
+    slot: 10
+  Tools:
+    icon: IRON_PICKAXE
+    slot: 11
+  Combat:
+    icon: DIAMOND_SWORD
+    slot: 12
+  Food:
+    icon: COOKED_BEEF
+    slot: 13
+  Special:
+    icon: NETHER_STAR
+    slot: 14
+
+# Permissions
+permissions:
+  use-permission: 'essentials.shop'
+  admin-permission: 'economyshop.admin'
+
+# Auto-save
+save-interval-minutes: 5

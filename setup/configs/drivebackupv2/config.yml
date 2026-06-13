@@ -1,0 +1,74 @@
+# DESTINATION: plugins/DriveBackupV2/config.yml
+# DriveBackupV2 template.
+
+version: 4
+
+# Schedule
+scheduled-backups: true
+backup-scheduling:
+  - schedule: '0 */6 * * *'        # every 6 hours
+    days:                          # 0=Sunday .. 6=Saturday
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+
+# Trigger when a player joins after a long absence
+on-join-backup-if-inactive-hours: 24
+
+# Retention: keep last 14 backups
+max-backups-kept: 14
+zip-compression: true
+
+# Paths to back up
+backup-list:
+  - path: 'world'
+    formats: ['zip']
+  - path: 'world_nether'
+    formats: ['zip']
+  - path: 'world_the_end'
+    formats: ['zip']
+  - path: 'plugins'
+    blacklist:
+      - 'plugins/CoreProtect/database.db-wal'
+      - 'plugins/CoreProtect/database.db-shm'
+      - 'plugins/spark/'
+      - 'plugins/bStats/'
+      - 'plugins/.paper-remapped/'
+    formats: ['zip']
+
+# Cloud destinations
+googledrive:
+  enabled: true
+  credential-file: 'plugins/DriveBackupV2/cred.json'
+  folder-name: 'LifeSteal SMP'
+
+onedrive:
+  enabled: false
+
+dropbox:
+  enabled: false
+
+# Local
+local-keep-count: 3
+
+# Notifications
+auto-restart-after-backup: false
+broadcast-on-start: true
+broadcast-message: '&7[Backup] Starting scheduled backup...'
+broadcast-on-success: true
+broadcast-success-message: '&aBackup complete: %name%'
+broadcast-on-fail: true
+broadcast-fail-message: '&cBackup failed: %reason%'
+
+# Discord webhook for backup status
+discord:
+  enabled: true
+  webhook-url: 'https://discord.com/api/webhooks/PASTE/HERE'
+
+# Behaviour
+save-world-during-backup: true
+disable-saving-during-backup: false

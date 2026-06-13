@@ -1,0 +1,75 @@
+# DESTINATION: plugins/MythicMobs/Skills/BossSkills.yml
+# Boss skill definitions.
+
+PyroNova:
+  Skills:
+    - effect:particles{p=lava;a=120;hs=2} @self
+    - effect:sound{s=ENTITY_BLAZE_SHOOT;v=2;p=0.5} @self
+    - damage{a=15;element=fire} @PlayersInRadius{r=5}
+    - potion{type=FIRE;duration=80;lvl=1} @PlayersInRadius{r=5}
+
+IceShards:
+  Skills:
+    - effect:particles{p=snowflake;a=80} @self
+    - effect:sound{s=BLOCK_GLASS_BREAK;v=2;p=1.5} @self
+    - shoot{velocity=2;ydelta=0.3;onHitSkill=IceShardHit} @target ~repeat=3:interval=8
+
+IceShardHit:
+  Skills:
+    - damage{a=8} @trigger
+    - potion{type=SLOW;duration=80;lvl=2} @trigger
+    - effect:particles{p=snowflake;a=10} @trigger
+
+VoidStep:
+  Skills:
+    - effect:particles{p=portal;a=30} @self
+    - teleport{tobehind=true;distance=2} @target
+    - effect:sound{s=ENTITY_ENDERMAN_TELEPORT;v=2;p=1} @self
+    - damage{a=12} @target
+
+EarthQuake:
+  Skills:
+    - effect:particles{p=block_crack;a=80;mat=DIRT} @self
+    - effect:sound{s=ENTITY_ZOMBIE_BREAK_WOODEN_DOOR;v=3;p=0.4} @self
+    - damage{a=20} @PlayersInRadius{r=6}
+    - potion{type=SLOW;duration=100;lvl=2} @PlayersInRadius{r=8}
+
+DragonBreath:
+  Skills:
+    - effect:particles{p=dragon_breath;a=200;hs=4} @self
+    - effect:sound{s=ENTITY_ENDER_DRAGON_GROWL;v=3;p=0.8} @self
+    - damage{a=18;element=fire} @ConeFromOrigin{a=60;r=15}
+    - potion{type=FIRE;duration=80;lvl=1} @ConeFromOrigin{a=60;r=15}
+
+MinionSummonShadow:
+  Skills:
+    - effect:particles{p=portal;a=50} @self
+    - summon{type=ShadowZombie;amount=3;radius=4} @self
+    - message{m="&8The shadows answer the call..."} @PlayersInRadius{r=64}
+
+PyroDeathFinale:
+  Skills:
+    - effect:particles{p=lava;a=300;hs=4} @self
+    - effect:sound{s=ENTITY_BLAZE_DEATH;v=3;p=0.4} @self
+    - message{m="&c&l!!! Pyro Lord has fallen !!!"} @PlayersInRadius{r=128}
+
+FrostDeathFinale:
+  Skills:
+    - effect:particles{p=snowflake;a=300} @self
+    - message{m="&b&l!!! Frost Monarch has melted !!!"} @PlayersInRadius{r=128}
+
+VoidDeathFinale:
+  Skills:
+    - effect:particles{p=portal;a=400} @self
+    - message{m="&5&l!!! The Void has been silenced !!!"} @PlayersInRadius{r=128}
+
+EarthDeathFinale:
+  Skills:
+    - effect:particles{p=explosion;a=10} @self
+    - message{m="&6&l!!! The Earth Shaker is still !!!"} @PlayersInRadius{r=128}
+
+DragonDeathFinale:
+  Skills:
+    - effect:particles{p=dragon_breath;a=500;hs=10} @self
+    - effect:sound{s=ENTITY_ENDER_DRAGON_DEATH;v=5;p=1} @self
+    - message{m="&4&l!!! Dragon of Ages slain by the heroes of LifeSteal !!!"} @PlayersInRadius{r=256}

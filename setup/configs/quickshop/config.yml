@@ -1,0 +1,106 @@
+# DESTINATION: plugins/QuickShop/config.yml
+# QuickShop-Hikari 6.2.0.11 template.
+
+config-version: 175
+language: 'en-US'
+
+plugin:
+  economy:
+    type: vault
+    processor: AUTO
+    currency: ''
+    formatter: vault
+  worldedit:
+    enable: true
+  worldguard:
+    enable: false
+
+shop:
+  finding:
+    distance: 25
+    items-per-page: 8
+  cost: 20
+  cost-goes-to: 'server'                  # money sink
+  tax: 0.05                               # 5% of every sale
+  tax-account: 'server'
+  per-player-shop-sign: false
+  protection-checking: true
+  protection-checking-blacklist-worlds: []
+  alternate-currency-symbol: '$'
+  alternate-currency-symbol-list:
+    - 'world,USD,$'
+  alternate-currency-symbol-default: '$'
+  display-item-type-blacklist: []
+  log-actions: true
+  enable-stock-control: true
+  shop-creation:
+    cost: 20
+    payment-type: vault
+  empty-shop-list: 'No shops available.'
+  refund: true
+  refund-from-tax-account: true
+  refund-fee: 0.0
+  display:
+    enabled: true
+    type: REALITEM
+    interval: 20
+  blacklist:
+    materials:
+      - BARRIER
+      - DRAGON_EGG
+      - SPAWN_EGG_BAT
+    custom-name:
+      - 'Lock'
+  limits:
+    use-old-canmodifyshop: false
+    default: 3
+    per-rank:
+      vip: 10
+      mvp: 20
+      elite: 50
+      mod: 100
+      admin: 100
+
+# UI
+gui:
+  type: HOPPER_OR_CHEST
+  enable: true
+
+# Updates
+auto-update: true
+matcher:
+  use-bukkit-matcher: false
+  use-built-in-name-matching: true
+
+# Logging
+log:
+  enable: true
+  output-method: 'CSV'
+  output-path: 'plugins/QuickShop/logs/'
+  retention-days: 30
+
+# Database
+database:
+  type: sqlite
+  prefix: 'qs_'
+  mysql:
+    host: 'localhost'
+    port: 3306
+    database: ''
+    user: ''
+    password: ''
+
+# Allow quote display
+quote:
+  display: true
+  blacklist: []
+
+# Notifications
+notification:
+  out-of-stock: true
+  out-of-space: true
+  bypass-cooldown: 60
+
+# Misc
+debug: false
+locale: 'en-US'

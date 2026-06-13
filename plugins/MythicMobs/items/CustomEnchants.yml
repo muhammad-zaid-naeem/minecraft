@@ -1,0 +1,95 @@
+# DESTINATION: plugins/MythicMobs/Items/CustomEnchants.yml
+# 10 custom enchantment "books" - apply via right-click on a target item.
+# (MythicMobs doesn't natively register vanilla enchantments; instead we use
+# named items that trigger Skills on hit.)
+
+lifesteal_book:
+  Id: ENCHANTED_BOOK
+  Display: '&c&lEnchant: Lifesteal'
+  Lore:
+    - '&7Apply to a sword.'
+    - '&7Heals 5% of damage dealt.'
+    - '&7Max level: 5'
+    - '&7Upgrade cost: $2500'
+  Options:
+    HideFlags: true
+
+vampire_book:
+  Id: ENCHANTED_BOOK
+  Display: '&4&lEnchant: Vampire'
+  Lore:
+    - '&7Apply to a sword.'
+    - '&7Lifesteal 10% + Blindness 1s'
+    - '&7Conflicts with: Lifesteal'
+    - '&7Upgrade cost: $5000'
+
+berserk_book:
+  Id: ENCHANTED_BOOK
+  Display: '&6&lEnchant: Berserk'
+  Lore:
+    - '&7Apply to a sword.'
+    - '&710% chance: double damage'
+    - '&7Max level: 3'
+    - '&7Upgrade cost: $4000'
+
+glacial_book:
+  Id: ENCHANTED_BOOK
+  Display: '&b&lEnchant: Glacial'
+  Lore:
+    - '&7Apply to a sword or bow.'
+    - '&7Slows target on hit (2s)'
+    - '&7Max level: 3'
+    - '&7Upgrade cost: $3000'
+
+phoenix_book:
+  Id: ENCHANTED_BOOK
+  Display: '&c&lEnchant: Phoenix'
+  Lore:
+    - '&7Apply to a chestplate.'
+    - '&7Heal 5 HP when below 30%'
+    - '&7Cooldown: 30s'
+    - '&7Upgrade cost: $6000'
+
+thunderlord_book:
+  Id: ENCHANTED_BOOK
+  Display: '&e&lEnchant: Thunderlord'
+  Lore:
+    - '&7Apply to a sword.'
+    - '&75% chance: lightning strike on hit'
+    - '&7Max level: 3'
+    - '&7Upgrade cost: $4500'
+
+windslash_book:
+  Id: ENCHANTED_BOOK
+  Display: '&3&lEnchant: WindSlash'
+  Lore:
+    - '&7Apply to a sword.'
+    - '&7Cone damage in front of you on swing'
+    - '&7+1 knockback'
+    - '&7Upgrade cost: $4000'
+
+soulbound_book:
+  Id: ENCHANTED_BOOK
+  Display: '&5&lEnchant: Soulbound'
+  Lore:
+    - '&7Apply to any item.'
+    - '&7Item drops with you on death'
+    - '&7One-use; consumed on death'
+    - '&7Upgrade cost: $8000'
+
+telepathy_book:
+  Id: ENCHANTED_BOOK
+  Display: '&a&lEnchant: Telepathy'
+  Lore:
+    - '&7Apply to a pickaxe / axe / shovel.'
+    - '&7Mined blocks go to inventory'
+    - '&7Upgrade cost: $3500'
+
+veinmine_book:
+  Id: ENCHANTED_BOOK
+  Display: '&6&lEnchant: VeinMine'
+  Lore:
+    - '&7Apply to a pickaxe.'
+    - '&7Mines all connected ore blocks'
+    - '&7Conflicts with: Fortune III+'
+    - '&7Upgrade cost: $5500'

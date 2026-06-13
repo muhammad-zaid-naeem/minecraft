@@ -1,0 +1,1169 @@
+Starting org.bukkit.craftbukkit.Main
+*** Warning, you've not updated in a while! ***
+*** Please download a new build as per instructions from https://papermc.io/downloads/paper ***
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[15:08:23 INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.11+10-LTS; Eclipse Adoptium Temurin-21.0.11+10) on Windows 11 10.0 (amd64)
+[15:08:23 INFO]: [bootstrap] Loading Paper 1.21.1-133-ver/1.21.1@3cb8529 (2025-03-28T16:14:36Z) for Minecraft 1.21.1
+[15:08:28 INFO]: [PluginInitializerManager] Initializing plugins...
+[15:08:31 INFO]: [PluginRemapper] Remapping plugin 'plugins\AdvancedBan-Bundle-2.3.0-RELEASE.jar'...
+[15:08:31 INFO]: [PluginRemapper] Remapping plugin 'plugins\AuraSkills-2.3.12.jar'...
+[15:08:31 INFO]: [PluginRemapper] Remapping plugin 'plugins\CombatLog+.jar'...
+[15:08:31 INFO]: [PluginRemapper] Remapping plugin 'plugins\DecentHolograms-2.10.0.jar'...
+[15:08:33 INFO]: [PluginRemapper] Done remapping plugin 'plugins\CombatLog+.jar' in 2078ms.
+[15:08:33 INFO]: [PluginRemapper] Remapping plugin 'plugins\DiscordSRV-Build-1.30.5.jar'...
+[15:08:36 INFO]: [PluginRemapper] Remapping plugin 'plugins\DriveBackupV2.jar'...
+[15:08:46 INFO]: [PluginRemapper] Done remapping plugin 'plugins\AuraSkills-2.3.12.jar' in 15281ms.
+[15:08:46 INFO]: [PluginRemapper] Remapping plugin 'plugins\EconomyShop-1.1.4.jar'...
+[15:08:54 INFO]: [PluginRemapper] Done remapping plugin 'plugins\AdvancedBan-Bundle-2.3.0-RELEASE.jar' in 23355ms.
+[15:08:54 INFO]: [PluginRemapper] Remapping plugin 'plugins\ExcellentCrates-6.6.1.jar'...
+[15:09:05 INFO]: [PluginRemapper] Done remapping plugin 'plugins\ExcellentCrates-6.6.1.jar' in 10823ms.
+[15:09:05 INFO]: [PluginRemapper] Remapping plugin 'plugins\GriefPrevention.jar'...
+[15:09:09 INFO]: [PluginRemapper] Done remapping plugin 'plugins\GriefPrevention.jar' in 4120ms.
+[15:09:09 INFO]: [PluginRemapper] Remapping plugin 'plugins\MythicMobs-5.12.1.jar'...
+[15:09:10 INFO]: [PluginRemapper] Done remapping plugin 'plugins\EconomyShop-1.1.4.jar' in 24165ms.
+[15:09:10 INFO]: [PluginRemapper] Remapping plugin 'plugins\nuvotifier.jar'...
+[15:09:16 INFO]: [PluginRemapper] Done remapping plugin 'plugins\nuvotifier.jar' in 6154ms.
+[15:09:16 INFO]: [PluginRemapper] Remapping plugin 'plugins\PlaceholderAPI-2.12.2.jar'...
+[15:09:19 INFO]: [PluginRemapper] Done remapping plugin 'plugins\PlaceholderAPI-2.12.2.jar' in 2628ms.
+[15:09:19 INFO]: [PluginRemapper] Remapping plugin 'plugins\PlayerParticles-8.12.jar'...
+[15:09:21 INFO]: [PluginRemapper] Done remapping plugin 'plugins\PlayerParticles-8.12.jar' in 2307ms.
+[15:09:21 INFO]: [PluginRemapper] Remapping plugin 'plugins\Quests-5.3.1.jar'...
+[15:09:24 INFO]: [PluginRemapper] Done remapping plugin 'plugins\DiscordSRV-Build-1.30.5.jar' in 50894ms.
+[15:09:24 INFO]: [PluginRemapper] Remapping plugin 'plugins\QuickShop-Hikari-6.2.0.11.jar'...
+[15:09:25 INFO]: [PluginRemapper] Done remapping plugin 'plugins\Quests-5.3.1.jar' in 3801ms.
+[15:09:25 INFO]: [PluginRemapper] Remapping plugin 'plugins\SimpleClans.jar'...
+[15:09:28 INFO]: [PluginRemapper] Done remapping plugin 'plugins\QuickShop-Hikari-6.2.0.11.jar' in 4564ms.
+[15:09:28 INFO]: [PluginRemapper] Remapping plugin 'plugins\Staff+.jar'...
+[15:09:29 INFO]: [PluginRemapper] Done remapping plugin 'plugins\Staff+.jar' in 1075ms.
+[15:09:29 INFO]: [PluginRemapper] Remapping plugin 'plugins\Vault.jar'...
+[15:09:30 INFO]: [PluginRemapper] Done remapping plugin 'plugins\SimpleClans.jar' in 4513ms.
+[15:09:30 INFO]: [PluginRemapper] Remapping plugin 'plugins\ZNPCsPlus-2.0.0.jar'...
+[15:09:30 INFO]: [PluginRemapper] Done remapping plugin 'plugins\Vault.jar' in 365ms.
+[15:09:33 INFO]: [PluginRemapper] Done remapping plugin 'plugins\ZNPCsPlus-2.0.0.jar' in 3326ms.
+[15:09:43 INFO]: [PluginRemapper] Done remapping plugin 'plugins\MythicMobs-5.12.1.jar' in 34347ms.
+[15:09:45 INFO]: [PluginRemapper] Done remapping plugin 'plugins\DriveBackupV2.jar' in 68798ms.
+[15:09:45 ERROR]: [PluginRemapper] Encountered exception remapping plugins
+java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to remap plugin jar 'plugins\DecentHolograms-2.10.0.jar'
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:649) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.RuntimeException: Failed to remap plugin jar 'plugins\DecentHolograms-2.10.0.jar'
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:358) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.lang.RuntimeException: Failed to execute task eu/decentsoftware/holograms/nms/v26_1/AbstractDisplayRenderer$1
+	at net.neoforged.art.internal.AsyncHelper.invokeAll(AsyncHelper.java:56) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.consumeAll(AsyncHelper.java:36) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:177) ~[paper-1.21.1.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:95) ~[paper-1.21.1.jar:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:355) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Unsupported class file major version 69
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.neoforged.art.internal.AsyncHelper.invokeAll(AsyncHelper.java:52) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.consumeAll(AsyncHelper.java:36) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:177) ~[paper-1.21.1.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:95) ~[paper-1.21.1.jar:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:355) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:200) ~[asm-9.7.1.jar:9.7.1]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180) ~[asm-9.7.1.jar:9.7.1]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166) ~[asm-9.7.1.jar:9.7.1]
+	at net.neoforged.art.internal.ClassProviderImpl$ClassInfo.<init>(ClassProviderImpl.java:104) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.ClassProviderBuilderImpl.lambda$addClass$1(ClassProviderBuilderImpl.java:64) ~[AutoRenamingTool-2.0.3.jar:?]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[?:?]
+	at net.neoforged.art.internal.ClassProviderBuilderImpl.addClass(ClassProviderBuilderImpl.java:64) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.lambda$run$2(RenamerImpl.java:178) ~[paper-1.21.1.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.lambda$null$0(AsyncHelper.java:33) ~[AutoRenamingTool-2.0.3.jar:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	... 3 more
+[15:09:56 INFO]: [PluginInitializerManager] Initialized 28 plugins
+[15:09:56 INFO]: [PluginInitializerManager] Bukkit plugins (28):
+ - AdvancedBan (2.3.0), AuraSkills (2.3.12), CombatLog (1.0), CoreProtect (23.2), DiscordSRV (1.30.5), DriveBackupV2 (1.8.1), EconomyShop (1.1.4), Essentials (2.22.0), EssentialsChat (2.22.0), EssentialsSpawn (2.22.0), ExcellentCrates (6.6.1), FastAsyncWorldEdit (2.15.2+e9ed0d1), GriefPrevention (16.18.5), GrimAC (2.3.74-c83870b), LifeStealZ (2.13.0), LuckPerms (5.5.53), MythicMobs (5.12.1-46bae256), PlaceholderAPI (2.12.2), PlayerParticles (8.12), Quests (5.3.1-b564), QuickShop-Hikari (6.2.0.11), SimpleClans (2.19.2-05e7abc), StaffPlus (4.0.0), Vault (1.7.3-b131), ViaBackwards (5.9.2-SNAPSHOT), ViaVersion (5.9.2-SNAPSHOT), Votifier (2.7.3), ZNPCsPlus (2.0.0)
+[15:11:20 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:11:29 INFO]: Loaded 1290 recipes
+[15:11:30 INFO]: Loaded 1399 advancements
+[15:11:31 INFO]: Starting minecraft server version 1.21.1
+[15:11:31 INFO]: Loading properties
+[15:11:31 INFO]: This server is running Paper version 1.21.1-133-ver/1.21.1@3cb8529 (2025-03-28T16:14:36Z) (Implementing API version 1.21.1-R0.1-SNAPSHOT)
+[15:11:33 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[15:11:33 INFO]: Server Ping Player Sample Count: 12
+[15:11:33 INFO]: Using 4 threads for Netty based IO
+[15:11:38 INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[15:11:39 INFO]: Default game type: SURVIVAL
+[15:11:39 INFO]: Generating keypair
+[15:11:40 INFO]: Starting Minecraft server on *:25565
+[15:11:40 INFO]: Using default channel type
+[15:11:40 INFO]: Paper: Using Java compression from Velocity.
+[15:11:40 INFO]: Paper: Using Java cipher from Velocity.
+[15:11:40 ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins\.paper-remapped\ExcellentCrates-6.6.1.jar' in 'plugins\.paper-remapped'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [nightcore]. Please download and install these plugins to run 'ExcellentCrates'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:547) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:292) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1214) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:329) ~[paper-1.21.1.jar:1.21.1-133-3cb8529]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[15:11:53 INFO]: [SpigotLibraryLoader] [MythicMobs] Loading 4 libraries... please wait
+[15:11:54 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.pom
+[15:11:55 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.16.0/adventure-bom-4.16.0.pom
+[15:11:56 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.pom
+[15:11:56 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/examination-api/1.3.0/examination-api-1.3.0.pom
+[15:11:57 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/22.0.0/annotations-22.0.0.pom
+[15:11:57 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/examination-string/1.3.0/examination-string-1.3.0.pom
+[15:11:58 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.1.0/annotations-24.1.0.pom
+[15:11:58 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.pom
+[15:11:58 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.pom
+[15:11:59 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.13.1/adventure-api-4.13.1.pom
+[15:11:59 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.13.1/adventure-bom-4.13.1.pom
+[15:12:00 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.13.1/adventure-key-4.13.1.pom
+[15:12:00 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.0.1/annotations-24.0.1.pom
+[15:12:01 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.pom
+[15:12:01 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.pom
+[15:12:02 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.13.1/adventure-text-serializer-gson-4.13.1.pom
+[15:12:02 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.pom
+[15:12:03 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.pom
+[15:12:03 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.pom
+[15:12:04 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.pom
+[15:12:04 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.pom
+[15:12:05 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.pom
+[15:12:05 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.pom
+[15:12:06 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/option/1.0.0/option-1.0.0.pom
+[15:12:06 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.pom
+[15:12:06 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.0/gson-parent-2.8.0.pom
+[15:12:07 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[15:12:07 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[15:12:08 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[15:12:08 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[15:12:08 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[15:12:08 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[15:12:08 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[15:12:09 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[15:12:10 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[15:12:10 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[15:12:10 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[15:12:10 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[15:12:10 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[15:12:11 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[15:12:11 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[15:12:11 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/option/1.0.0/option-1.0.0.jar
+[15:12:11 INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-api\4.16.0\adventure-api-4.16.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-key\4.16.0\adventure-key-4.16.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\examination-api\1.3.0\examination-api-1.3.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\examination-string\1.3.0\examination-string-1.3.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\org\jetbrains\annotations\24.1.0\annotations-24.1.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-platform-bukkit\4.3.2\adventure-platform-bukkit-4.3.2.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-platform-api\4.3.2\adventure-platform-api-4.3.2.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-text-serializer-bungeecord\4.3.2\adventure-text-serializer-bungeecord-4.3.2.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-text-serializer-legacy\4.13.1\adventure-text-serializer-legacy-4.13.1.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-nbt\4.13.1\adventure-nbt-4.13.1.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-text-serializer-gson-legacy-impl\4.13.1\adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-platform-facet\4.3.2\adventure-platform-facet-4.3.2.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-platform-viaversion\4.3.2\adventure-platform-viaversion-4.3.2.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-text-minimessage\4.16.0\adventure-text-minimessage-4.16.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-text-serializer-gson\4.16.0\adventure-text-serializer-gson-4.16.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\adventure-text-serializer-json\4.16.0\adventure-text-serializer-json-4.16.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\net\kyori\option\1.0.0\option-1.0.0.jar
+[15:12:14 INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library D:\server\libraries\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar
+[15:12:18 INFO]: [ViaVersion] Loading server plugin ViaVersion v5.9.2-SNAPSHOT
+[15:12:18 INFO]: [ViaVersion] ViaVersion 5.9.2-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[15:12:23 INFO]: [ViaVersion] Loading block connection mappings ...
+[15:12:25 INFO]: [ViaBackwards] Loading translations...
+[15:12:25 INFO]: [ViaBackwards] Registering protocols...
+[15:12:27 INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.53
+[15:12:28 INFO]: [LuckPerms] Loading configuration...
+[15:12:29 INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[15:12:29 INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.12.2
+[15:12:31 INFO]: [Essentials] Loading server plugin Essentials v2.22.0
+[15:12:31 INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.9.2-SNAPSHOT
+[15:12:31 INFO]: [DiscordSRV] Loading server plugin DiscordSRV v1.30.5
+[15:12:31 INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.15.2+e9ed0d1
+[15:12:36 INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@6665feb6]
+[15:12:36 INFO]: [ZNPCsPlus] Loading server plugin ZNPCsPlus v2.0.0
+[15:12:51 INFO]: [MythicMobs] Loading server plugin MythicMobs v5.12.1-46bae256
+[15:12:51 INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[15:12:52 INFO]: [MythicMobs] 񖶄񖶄M�6񖶄y񖶄t�6񖶄h񘄼񖶄i񖶄񗝠c񖶄񙧑 񖶄L񖶄񙧑o񖶄񗝠a񘄼񖶄d񘬌�0e񖶄d񖶄�6![0m
+[15:12:52 INFO]: [SimpleClans] Loading server plugin SimpleClans v2.19.2-05e7abc
+[15:12:52 INFO]: [QuickShop-Hikari] Loading server plugin QuickShop-Hikari v6.2.0.11
+[15:12:52 INFO]: [QuickShop-Hikari/Bootstrap] QuickShop-Hikari - Bootstrap -> Execute the initialization sequence
+[15:12:52 INFO]: [QuickShop-Hikari/Bootstrap] Bootloader preparing for startup, please wait...
+[15:12:52 INFO]: [QuickShop-Hikari/Bootstrap] Initializing libraries...
+[15:12:54 INFO]: [QuickShop-Hikari] Maven repository mirror test result:
+[15:12:54 INFO]: [QuickShop-Hikari] [US] APACHE: 443ms
+[15:12:54 INFO]: [QuickShop-Hikari] [US] CENTRAL: 611ms
+[15:12:54 INFO]: [QuickShop-Hikari] [EU] GOOGLE: 771ms
+[15:12:54 INFO]: [QuickShop-Hikari] [CN] ALIYUN: 1102ms
+[15:12:54 INFO]: [QuickShop-Hikari] [CN] HUAWEI: 1503ms
+[15:12:54 INFO]: [QuickShop-Hikari] [CN] TENCENT: 1841ms
+[15:12:55 INFO]: [QuickShop-Hikari/Bootstrap] Loading 11 libraries (0 skipped libraries)...
+[15:12:55 INFO]: [QuickShop-Hikari/Bootstrap] Loading library org.apache.commons:commons-lang3:3.18.0 [1/11]
+[15:12:55 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar
+[15:12:55 INFO]: [QuickShop-Hikari/Bootstrap] Loading library org.apache.commons:commons-compress:1.25.0 [2/11]
+[15:12:56 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar
+[15:12:56 INFO]: [QuickShop-Hikari/Bootstrap] Loading library com.google.code.gson:gson:2.10.1 [3/11]
+[15:12:56 INFO]: [QuickShop-Hikari] Downloaded library file:/D:/server/libraries/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
+[15:12:56 INFO]: [QuickShop-Hikari/Bootstrap] Loading library com.google.guava:guava:33.1.0-jre [4/11]
+[15:12:58 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar
+[15:12:58 INFO]: [QuickShop-Hikari/Bootstrap] Loading library com.rollbar:rollbar-java:1.9.0 [5/11]
+[15:12:58 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/com/rollbar/rollbar-java/1.9.0/rollbar-java-1.9.0.jar
+[15:12:58 INFO]: [QuickShop-Hikari/Bootstrap] Loading library com.h2database:h2:2.1.214 [6/11]
+[15:12:59 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/com/h2database/h2/2.1.214/h2-2.1.214.jar
+[15:12:59 INFO]: [QuickShop-Hikari/Bootstrap] Loading library com.konghq:unirest-java:3.14.5 [7/11]
+[15:12:59 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/com/konghq/unirest-java/3.14.5/unirest-java-3.14.5.jar
+[15:12:59 INFO]: [QuickShop-Hikari/Bootstrap] Loading library net.sourceforge.csvjdbc:csvjdbc:1.0.42 [8/11]
+[15:13:00 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/net/sourceforge/csvjdbc/csvjdbc/1.0.42/csvjdbc-1.0.42.jar
+[15:13:00 INFO]: [QuickShop-Hikari/Bootstrap] Loading library org.dom4j:dom4j:2.1.4 [9/11]
+[15:13:00 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.4/dom4j-2.1.4.jar
+[15:13:00 INFO]: [QuickShop-Hikari/Bootstrap] Loading library com.vdurmont:semver4j:3.1.0 [10/11]
+[15:13:00 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/com/vdurmont/semver4j/3.1.0/semver4j-3.1.0.jar
+[15:13:00 INFO]: [QuickShop-Hikari/Bootstrap] Loading library com.ghostchu.crowdin:crowdinota:1.0.3 [11/11]
+[15:13:02 INFO]: [QuickShop-Hikari] Downloaded library https://repo.maven.apache.org/maven2/com/ghostchu/crowdin/crowdinota/1.0.3/crowdinota-1.0.3.jar
+[15:13:02 INFO]: [QuickShop-Hikari/Bootstrap] Initialing Unirest...
+[15:13:04 INFO]: [QuickShop-Hikari/Bootstrap] Initializing platform...
+[15:13:04 INFO]: [QuickShop-Hikari/Bootstrap] Platform detected: Paper
+[15:13:04 INFO]: [QuickShop-Hikari] Slf4jLogger initialized
+[15:13:04 INFO]: [QuickShop-Hikari/Bootstrap] Platform initialized: com.ghostchu.quickshop.platform.paper.PaperPlatform
+[15:13:04 INFO]: [QuickShop-Hikari/Bootstrap] Boot QuickShop instance...
+[15:13:04 INFO]: [QuickShop-Hikari/Bootstrap] Creating QuickShop instance...
+[15:13:04 INFO]: [QuickShop-Hikari] Registering Bukkit Service: com.ghostchu.quickshop.api.QuickShopProvider
+[15:13:04 INFO]: [QuickShop-Hikari] Reading the configuration...
+[15:13:04 WARN]: [QuickShop-Hikari] Configuration file doesn't exist, creating new one. File Name:config.yml
+[15:13:08 INFO]: [QuickShop-Hikari] QuickShop Hikari - Early boot step - Booting up
+[15:13:08 INFO]: [QuickShop-Hikari] Self testing...
+[15:13:08 INFO]: [QuickShop-Hikari] Setting up privacy controller...
+[15:13:08 INFO]: [QuickShop-Hikari] Setting up QuickShop registry....
+[15:13:08 INFO]: [QuickShop-Hikari] Setting up metrics manager...
+[15:13:08 INFO]: [QuickShop-Hikari] Loading player name and unique id mapping...
+[15:13:08 INFO]: [QuickShop-Hikari] Loading translations (This may take a while)...
+[15:13:08 INFO]: [QuickShop-Hikari] Please wait us fetch the translation updates from Crowdin OTA service...
+[15:13:08 INFO]: [CrowdinOTA] Downloading Crowdin distribution manifest from remote server...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translations for 36 locales...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for uk-UA...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for fi-FI...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for lt-LT...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for en-US...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for sr-SP...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for no-NO...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for af-ZA...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for zh-CN...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for hi-IN...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for ar-SA...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for cs-CZ...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for ja-JP...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for bg-BG...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for nl-NL...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for he-IL...
+[15:13:09 INFO]: [OTAFileInstance-0] Downloading translation for el-GR...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for uk-UA.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for ca-ES...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for en-US.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for de-DE...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for hu-HU...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for fi-FI.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for zh-HK...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for af-ZA.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for zh-TW...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for hi-IN.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for ko-KR...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for sr-SP.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for no-NO.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for pt-BR...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for es-ES...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for lt-LT.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for it-IT...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for ja-JP.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for fa-IR...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for nl-NL.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for pl-PL...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for cs-CZ.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for ru-RU...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for bg-BG.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for pt-PT...
+[15:13:10 INFO]: [OTAFileInstance-0] Downloaded translation for he-IL.
+[15:13:10 INFO]: [OTAFileInstance-0] Downloading translation for ro-RO...
+[15:13:11 INFO]: [OTAFileInstance-0] Downloaded translation for de-DE.
+[15:13:11 INFO]: [OTAFileInstance-0] Downloading translation for sv-SE...
+[15:13:11 INFO]: [OTAFileInstance-0] Downloaded translation for el-GR.
+[15:13:11 INFO]: [OTAFileInstance-0] Downloading translation for da-DK...
+[15:13:11 INFO]: [OTAFileInstance-0] Downloaded translation for ca-ES.
+[15:13:11 INFO]: [OTAFileInstance-0] Downloaded translation for hu-HU.
+[15:13:11 INFO]: [OTAFileInstance-0] Downloading translation for fr-FR...
+[15:13:11 INFO]: [OTAFileInstance-0] Downloading translation for tr-TR...
+[15:13:11 INFO]: [OTAFileInstance-0] Downloaded translation for zh-HK.
+[15:13:11 INFO]: [OTAFileInstance-0] Downloading translation for vi-VN...
+[15:13:11 INFO]: [OTAFileInstance-0] Downloaded translation for pt-BR.
+[15:13:11 INFO]: [OTAFileInstance-0] Downloading translation for th-TH...
+[15:13:11 INFO]: [OTAFileInstance-0] Downloaded translation for es-ES.
+[15:13:11 INFO]: [OTAFileInstance-0] Downloaded translation for it-IT.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for fa-IR.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for pl-PL.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for ru-RU.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for pt-PT.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for zh-TW.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for ro-RO.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for sv-SE.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for da-DK.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for fr-FR.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for tr-TR.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for th-TH.
+[15:13:12 INFO]: [OTAFileInstance-0] Downloaded translation for ar-SA.
+[15:13:13 INFO]: [OTAFileInstance-0] Downloaded translation for ko-KR.
+[15:13:17 INFO]: [OTAFileInstance-0] Downloaded translation for vi-VN.
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translations for 36 locales...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for fi-FI...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for uk-UA...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for lt-LT...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for en-US...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for af-ZA...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for sr-SP...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for el-GR...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for no-NO...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for nl-NL...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for hi-IN...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for ja-JP...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for zh-CN...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for ar-SA...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for he-IL...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for bg-BG...
+[15:13:17 INFO]: [OTAFileInstance-1] Downloading translation for cs-CZ...
+[15:13:18 INFO]: [OTAFileInstance-1] Downloaded translation for fi-FI.
+[15:13:18 INFO]: [OTAFileInstance-1] Downloading translation for ca-ES...
+[15:13:18 INFO]: [OTAFileInstance-1] Downloaded translation for en-US.
+[15:13:18 INFO]: [OTAFileInstance-1] Downloading translation for de-DE...
+[15:13:18 INFO]: [OTAFileInstance-1] Downloaded translation for sr-SP.
+[15:13:18 INFO]: [OTAFileInstance-1] Downloading translation for hu-HU...
+[15:13:18 INFO]: [OTAFileInstance-1] Downloaded translation for af-ZA.
+[15:13:18 INFO]: [OTAFileInstance-1] Downloading translation for zh-HK...
+[15:13:19 INFO]: [OTAFileInstance-1] Downloaded translation for nl-NL.
+[15:13:19 INFO]: [OTAFileInstance-1] Downloading translation for zh-TW...
+[15:13:19 INFO]: [OTAFileInstance-1] Downloaded translation for el-GR.
+[15:13:19 INFO]: [OTAFileInstance-1] Downloading translation for ko-KR...
+[15:13:19 INFO]: [OTAFileInstance-1] Downloaded translation for uk-UA.
+[15:13:19 INFO]: [OTAFileInstance-1] Downloading translation for pt-BR...
+[15:13:19 INFO]: [OTAFileInstance-1] Downloaded translation for hi-IN.
+[15:13:19 INFO]: [OTAFileInstance-1] Downloading translation for es-ES...
+[15:13:19 INFO]: [OTAFileInstance-1] Downloaded translation for no-NO.
+[15:13:19 INFO]: [OTAFileInstance-1] Downloading translation for it-IT...
+[15:13:19 INFO]: [OTAFileInstance-1] Downloaded translation for lt-LT.
+[15:13:19 INFO]: [OTAFileInstance-1] Downloading translation for fa-IR...
+[15:13:19 INFO]: [OTAFileInstance-1] Downloaded translation for zh-CN.
+[15:13:19 INFO]: [OTAFileInstance-1] Downloading translation for pl-PL...
+[15:13:19 INFO]: [OTAFileInstance-1] Downloaded translation for ar-SA.
+[15:13:19 INFO]: [OTAFileInstance-1] Downloading translation for ru-RU...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for cs-CZ.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloading translation for pt-PT...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for ja-JP.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloading translation for ro-RO...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for ca-ES.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloading translation for sv-SE...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for bg-BG.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloading translation for da-DK...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for zh-HK.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloading translation for tr-TR...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for zh-TW.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloading translation for fr-FR...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for de-DE.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloading translation for vi-VN...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for hu-HU.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloading translation for th-TH...
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for es-ES.
+[15:13:20 INFO]: [OTAFileInstance-1] Downloaded translation for it-IT.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for ko-KR.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for fa-IR.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for pt-BR.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for pl-PL.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for ru-RU.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for sv-SE.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for ro-RO.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for da-DK.
+[15:13:21 INFO]: [OTAFileInstance-1] Downloaded translation for he-IL.
+[15:13:22 INFO]: [OTAFileInstance-1] Downloaded translation for fr-FR.
+[15:13:22 INFO]: [OTAFileInstance-1] Downloaded translation for vi-VN.
+[15:13:22 INFO]: [OTAFileInstance-1] Downloaded translation for pt-PT.
+[15:13:23 INFO]: [OTAFileInstance-1] Downloaded translation for th-TH.
+[15:13:23 INFO]: [OTAFileInstance-1] Downloaded translation for tr-TR.
+[15:13:23 INFO]: [QuickShop-Hikari] Loading up translations from Crowdin OTA, this may need a while...
+[15:13:31 INFO]: [QuickShop-Hikari] Loading up translations from Crowdin OTA, this may need a while...
+[15:13:42 INFO]: [QuickShop-Hikari] Register InventoryWrapper...
+[15:13:42 INFO]: [QuickShop-Hikari] Initializing NexusManager...
+[15:13:42 INFO]: [QuickShop-Hikari] QuickShop Hikari - Early boot step - Complete
+[15:13:42 INFO]: [QuickShop-Hikari/Bootstrap] QuickShop-Hikari - Bootstrap -> Complete (49892ms). Waiting for enable...
+[15:13:42 INFO]: [PlayerParticles] Loading server plugin PlayerParticles v8.12
+[15:13:42 INFO]: [Votifier] Loading server plugin Votifier v2.7.3
+[15:13:42 INFO]: [Quests] Loading server plugin Quests v5.3.1-b564
+[15:13:42 INFO]: [LifeStealZ] Loading server plugin LifeStealZ v2.13.0
+[15:13:42 INFO]: [LifeStealZ] Loading LifeStealZ...
+[15:13:42 INFO]: [GrimAC] Loading server plugin GrimAC v2.3.74-c83870b
+[15:13:43 ERROR]: [GrimAC] [STDERR] SLF4J(W): No SLF4J providers were found.
+[15:13:43 WARN]: Nag author(s): '[GrimAC]' of 'GrimAC v2.3.74-c83870b' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[15:13:43 ERROR]: [GrimAC] [STDERR] SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+[15:13:43 ERROR]: [GrimAC] [STDERR] SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+[15:13:44 INFO]: [GrimAC] Loading PacketEvents...
+[15:13:45 INFO]: [38;2;85;255;255m[packetevents] [0mLoading packetevents...
+[15:13:56 INFO]: [38;2;85;255;255m[packetevents] [0mLoaded packetevents v2.12.3+e18eca8-SNAPSHOT for GrimAC
+[15:13:56 INFO]: [38;2;85;255;255m[packetevents] [0mLoading block mappings for V_1_20_5/15...
+[15:13:57 INFO]: [38;2;85;255;255m[packetevents] [0mFinished loading block mappings for V_1_20_5/15 in 1203.6312ms
+[15:13:57 WARN]: [GrimAC] Deprecated Grim command-execute string listener registered; use the Supplier<String> verbose handler and call verbose.get() only when text is needed.
+[15:13:58 INFO]: [GriefPrevention] Loading server plugin GriefPrevention v16.18.5
+[15:13:58 INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.22.0
+[15:13:58 INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.22.0
+[15:13:58 INFO]: [EconomyShop] Loading server plugin EconomyShop v1.1.4
+[15:13:58 INFO]: [DriveBackupV2] Loading server plugin DriveBackupV2 v1.8.1
+[15:13:58 INFO]: [StaffPlus] Loading server plugin StaffPlus v4.0.0
+[15:13:58 INFO]: Hooked into PlaceholderAPI 2.12.2
+[15:13:58 INFO]: [CoreProtect] Loading server plugin CoreProtect v23.2
+[15:13:58 INFO]: [CombatLog] Loading server plugin CombatLog v1.0
+[15:13:58 INFO]: [AuraSkills] Loading server plugin AuraSkills v2.3.12
+[15:13:58 INFO]: [AdvancedBan] Loading server plugin AdvancedBan v2.3.0
+[15:13:58 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:13:58 INFO]: [LuckPerms] Enabling LuckPerms v5.5.53
+[15:14:01 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
+[15:14:01 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.53[0m
+[15:14:01 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Bukkit - Paper[0m
+[15:14:01 INFO]: 
+[15:14:02 INFO]: [LuckPerms] Loading storage provider... [H2]
+[15:14:06 INFO]: [LuckPerms] Loading internal permission managers...
+[15:14:08 INFO]: [LuckPerms] Performing initial data load...
+[15:14:09 INFO]: [LuckPerms] Successfully enabled. (took 11128ms)
+[15:14:09 INFO]: [Vault] Enabling Vault v1.7.3-b131
+[15:14:09 INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[15:14:10 INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[15:14:10 INFO]: [Vault] Enabled Version 1.7.3-b131
+[15:14:10 INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[15:14:10 INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.15.2+e9ed0d1
+[15:14:12 INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[15:14:15 INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[15:14:15 INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[15:14:16 INFO]: WEPIF: Vault detected! Using Vault for permissions
+[15:14:22 INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_R1.PaperweightFaweAdapter as the Bukkit adapter
+[15:14:27 INFO]: [StaffPlus] Enabling StaffPlus v4.0.0
+[15:14:27 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mVersion 'craftbukkit' detected - using modern Spigot API.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_en'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_sv'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_de'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_nl'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_es'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_hr'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_no'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_fr'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_hu'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_it'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_zh'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mCreating language file 'lang_pt'.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mStaff+ has been enabled! Initialization took 513ms.[0m
+[15:14:28 INFO]: [38;2;0;170;0m[Staff+] [38;2;85;255;85mPlugin created by Anonimus1221.[0m
+[15:14:28 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:14:28 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:14:28 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15:14:28 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:14:28 INFO]: Preparing level "world"
+[15:14:30 INFO]: Preparing start region for dimension minecraft:overworld
+[15:14:35 INFO]: Time elapsed: 4931 ms
+[15:14:35 INFO]: Preparing start region for dimension minecraft:the_nether
+[15:14:36 INFO]: Time elapsed: 1966 ms
+[15:14:36 INFO]: Preparing start region for dimension minecraft:the_end
+[15:14:37 INFO]: Time elapsed: 613 ms
+[15:14:37 INFO]: [ViaVersion] Enabling ViaVersion v5.9.2-SNAPSHOT
+[15:14:37 INFO]: [ViaVersion] ViaVersion detected server version: 1.21-1.21.1 (767)
+[15:14:37 INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.2
+[15:14:39 INFO]: [PlaceholderAPI] Fetching available expansion information...
+[15:14:39 INFO]: [Essentials] Enabling Essentials v2.22.0
+[15:14:41 ERROR]: [Essentials] [38;2;255;85;85mYou are running an unsupported server version![0m
+[15:14:42 INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[15:14:42 INFO]: [Essentials] No kits found to migrate.
+[15:14:42 INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[15:14:42 INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[15:14:42 INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[15:14:42 INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[15:14:42 INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[15:14:42 INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[15:14:42 INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[15:14:42 INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[15:14:42 INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[15:14:42 INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[15:14:42 INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[15:14:42 INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[15:14:42 INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[15:14:42 INFO]: [Essentials] Selected Paper 1.13+ Tile Entity Provider as the provider for TileEntityProvider
+[15:14:42 INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[15:14:42 INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[15:14:42 INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[15:14:42 INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[15:14:42 INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[15:14:42 INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[15:14:42 INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[15:14:42 INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[15:14:42 INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[15:14:42 INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[15:14:44 INFO]: [Essentials] Loaded 46312 items from items.json.
+[15:14:44 INFO]: [Essentials] Using locale en_US
+[15:14:44 INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[15:14:45 INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[15:14:45 INFO]: [Vault] [Economy] Essentials Economy hooked.
+[15:14:45 INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[15:14:45 INFO]: [ViaBackwards] Enabling ViaBackwards v5.9.2-SNAPSHOT
+[15:14:45 INFO]: [DiscordSRV] Enabling DiscordSRV v1.30.5
+[15:14:45 INFO]: [ZNPCsPlus] Enabling ZNPCsPlus v2.0.0
+[15:14:45 INFO]: [38;2;255;255;85m  ___       __   __  __[0m
+[15:14:45 INFO]: [38;2;255;255;85m   _/ |\ | |__) |   (__` [38;2;255;170;0m__|__   [38;2;255;255;85mZNPCsPlus [38;2;255;170;0mv2.0.0[0m
+[15:14:45 INFO]: [38;2;255;255;85m  /__ | \| |    |__ .__) [38;2;255;170;0m  |     [38;2;170;170;170mMaintained with [38;2;255;85;85m? [38;2;170;170;170m by Pyr#6969[0m
+[15:14:45 INFO]: 
+[15:14:45 INFO]: [38;2;255;255;255m * Initializing libraries...[0m
+[15:14:48 INFO]: [38;2;255;255;255m * Initializing components...[0m
+[15:14:48 ERROR]: [DiscordSRV] No bot token has been set in the config; a bot token is required to connect to Discord.
+[15:14:49 INFO]: [38;2;255;255;255m * Registering components...[0m
+[15:14:50 INFO]: [DiscordSRV] DiscordSRV is up-to-date. (da9e027f7acd76e0f91d53a11e5b53832ac36e92)
+[15:14:50 INFO]: [38;2;255;255;255m * Starting tasks...[0m
+[15:14:50 INFO]: [38;2;255;255;255m * Loading data...[0m
+[15:14:50 INFO]: [38;2;255;255;255m * Loading complete! (5104ms)[0m
+[15:14:50 INFO]: 
+[15:14:50 INFO]: [MythicMobs] Enabling MythicMobs v5.12.1-46bae256
+[15:14:51 INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.21.1)...[0m
+[15:14:51 INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality[0m
+[15:14:59 INFO]: [MythicMobs] Mythic GriefPrevention Support has been enabled![0m
+[15:14:59 INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
+[15:14:59 INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled![0m
+[15:14:59 INFO]: [MythicMobs] Mythic Vault Support has been enabled![0m
+[15:15:07 INFO]: [MythicMobs] Loading Packs...[0m
+[15:15:07 INFO]: [MythicMobs] Spawners folder not found in base pack! Creating...[0m
+[15:15:07 INFO]: [MythicMobs] Menus folder not found in base pack! Creating...[0m
+[15:15:07 INFO]: [MythicMobs] placeholders.yml file not found in base pack! Creating...[0m
+[15:15:14 INFO]: [MythicMobs] Loading Items...[0m
+[15:15:14 INFO]: [MythicMobs] Loading Item Groups...[0m
+[15:15:14 INFO]: [MythicMobs] All items loaded after 486ms![0m
+[15:15:14 INFO]: [MythicMobs] Loading Skills...[0m
+[15:15:16 INFO]: [MythicMobs] Loading Drop Tables...[0m
+[15:15:16 INFO]: [MythicMobs] Loading Random Spawns...[0m
+[15:15:16 INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[15:15:16 INFO]: [MythicMobs] Second passes loaded after 139ms![0m
+[15:15:16 INFO]: [MythicMobs] [32m?[37m Loaded 8 mobs.[0m
+[15:15:16 INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[15:15:16 INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[15:15:16 INFO]: [MythicMobs] [32m?[37m Loaded 3 skills.[0m
+[15:15:16 INFO]: [MythicMobs] [32m?[37m Loaded 0 random spawns.[0m
+[15:15:16 INFO]: [MythicMobs] [32m?[37m Loaded 3 mythic items.[0m
+[15:15:16 INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[15:15:16 INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[15:15:16 INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
+[15:15:17 INFO]: [MythicMobs] Started up bStats Metrics[0m
+[15:15:17 INFO]: [MythicMobs] [32m? MythicMobs v5.12.1 ( build 46bae256 ) has been successfully loaded![0m[0m
+[15:15:17 INFO]: [SimpleClans] Enabling SimpleClans v2.19.2-05e7abc
+[15:15:20 INFO]: [SimpleClans] SQLite Connection successful
+[15:15:20 INFO]: [SimpleClans] Creating table: sc_clans
+[15:15:20 INFO]: [SimpleClans] Creating table: sc_players
+[15:15:20 INFO]: [SimpleClans] Creating table: sc_kills
+[15:15:20 WARN]: [SimpleClans] Starting Migration to UUID Players !
+[15:15:20 WARN]: [SimpleClans] ==================== ATTENTION DONT STOP BUKKIT ! ==================== 
+[15:15:20 WARN]: [SimpleClans] ==================== ATTENTION DONT STOP BUKKIT ! ==================== 
+[15:15:20 WARN]: [SimpleClans] ==================== ATTENTION DONT STOP BUKKIT ! ==================== 
+[15:15:20 WARN]: [SimpleClans] ==================== END OF MIGRATION ====================
+[15:15:20 WARN]: [SimpleClans] ==================== END OF MIGRATION ====================
+[15:15:20 WARN]: [SimpleClans] ==================== END OF MIGRATION ====================
+[15:15:20 INFO]: [SimpleClans] Registering 4 chat handlers...
+[15:15:21 INFO]: [SimpleClans] [ACF] Enabled Asynchronous Tab Completion Support!
+[15:15:21 INFO]: [SimpleClans] Registering 12 command contexts...
+[15:15:22 INFO]: [SimpleClans] Registering 15 base commands...
+[15:15:22 INFO]: [SimpleClans] Registering 32 command conditions...
+[15:15:22 INFO]: [SimpleClans] Registering 19 command completions...
+[15:15:22 INFO]: [SimpleClans] Multithreading: true
+[15:15:22 INFO]: [SimpleClans] BungeeCord: false
+[15:15:22 INFO]: [SimpleClans] HEX support: true
+[15:15:22 INFO]: [SimpleClans] Help us translate SimpleClans to your language! Access https://crowdin.com/project/simpleclans/
+[15:15:22 INFO]: [SimpleClans] PlaceholderAPI found. Registering hook...
+[15:15:23 INFO]: [SimpleClans] Registering 7 placeholder resolvers...
+[15:15:23 INFO]: [PlaceholderAPI] Successfully registered internal expansion: simpleclans [2.19.2-05e7abc]
+[15:15:23 INFO]: [QuickShop-Hikari] Enabling QuickShop-Hikari v6.2.0.11
+[15:15:23 INFO]: [QuickShop-Hikari/Bootstrap] QuickShop-Hikari - Bootstrap -> Execute the enable sequence
+[15:15:23 INFO]: [QuickShop-Hikari] QuickShop Hikari
+[15:15:23 WARN]: [QuickShop-Hikari] Configuration file doesn't exist, creating new one. File Name:gui.yml
+[15:15:23 INFO]: [QuickShop-Hikari] Registering Bukkit Service: com.ghostchu.quickshop.api.QuickShopProvider
+[15:15:23 INFO]: [QuickShop-Hikari] Starting plugin self-test, please wait...
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] Spigot Based Server Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] Old QuickShop Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] ModdedServer Based Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] ModdedServer Database Driver Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] CoreSupport Test
+[15:15:23 WARN]: [QuickShop-Hikari] [WARN] Virtual DisplayItem Support Test: ProtocolLib and packetevents are not installed on your server, Virtual DisplayItem will not work, resetting to no display items..
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] ProtocolLib Incorrect Locate Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] GameVersion supporting Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] PacketListenerAPI Conflict Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] Permission Manager Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] Reremake Test
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] EcoEnchants V11 Check
+[15:15:23 INFO]: [QuickShop-Hikari] [OK] End of life Test
+[15:15:23 INFO]: [QuickShop-Hikari] Reading the configuration...
+[15:15:23 INFO]: [QuickShop-Hikari] Contributors: Ghost_chu, PotatoCraft Studio, Netherfoam, Timtower, KaiNoMood (KaiKikuchi), sandtechnology, jho5245, cakoyo, Andre601, Ectabro, Chris6ix, portlek, log4b0at, deadman96385, tiararinne, DoctaEnkoda, CarmJos, YuanYuanOwO, Mgazul, mart-r, Tim269, raphtaliapt, creatorfromhell, LoneDev6, Steven-OS, confuxeon, ibmibmibm, judgetread, mfnalex, Warriorrrr, PyvesB, yannicklamprecht, ORelio, RMSCA, Starmism, yiwenwang2090, PaulBGD, Nlkomaru, harry0198, Draesia, Localized community members on Crowdin
+[15:15:23 INFO]: [QuickShop-Hikari] Original author: Netherfoam, Timtower, KaiNoMood, sandtechnology
+[15:15:23 INFO]: [QuickShop-Hikari] Let's start loading the plugin
+[15:15:24 INFO]: [QuickShop-Hikari] Setting up ItemExpressionRegistry...
+[15:15:24 INFO]: [QuickShop-Hikari] Setting up database...
+[15:15:24 INFO]: [QuickShop-Hikari] Create database backup...
+[15:15:24 INFO]: [com.ghostchu.quickshop.shade.carm.easysql.hikari.HikariDataSource] HikariPool-1 - Starting...
+[15:15:25 INFO]: [com.ghostchu.quickshop.shade.carm.easysql.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[15:15:25 INFO]: [QuickShop-Hikari] Checking and updating database columns, it may take a while...
+[15:15:25 INFO]: [QuickShop-Hikari] Database upgrade script running... Current Database Version: 19
+[15:15:25 INFO]: [QuickShop-Hikari] Finished!
+[15:15:25 INFO]: [QuickShop-Hikari] Selected permission provider: Bukkit
+[15:15:25 INFO]: [QuickShop-Hikari] Registering commands...
+[15:15:25 INFO]: [QuickShop-Hikari] Loaded 1 rules for listener blacklist.
+[15:15:25 INFO]: [QuickShop-Hikari] EventManager selected: QSEventManager
+[15:15:27 INFO]: [QuickShop-Hikari] Loading shops from database...
+[15:15:27 INFO]: [QuickShop-Hikari] Used 10ms to fetch 0 shops from database.
+[15:15:27 INFO]: [QuickShop-Hikari] Loading shops into memory...
+[15:15:27 INFO]: [QuickShop-Hikari] Used 0ms to load 0 shops into memory (0 shops will be loaded after chunks/world loaded).
+[15:15:27 INFO]: [QuickShop-Hikari] Registering listeners...
+[15:15:27 WARN]: [QuickShop-Hikari] Configuration file doesn't exist, creating new one. File Name:interaction.yml
+[15:15:27 INFO]: [QuickShop-Hikari] Registering DisplayCheck task....
+[15:15:27 INFO]: [QuickShop-Hikari] Cleaning MsgUtils...
+[15:15:27 INFO]: [QuickShop-Hikari] Cleaning purchase messages from the database that are over a week old...
+[15:15:27 INFO]: [QuickShop-Hikari] Log actions is enabled. Actions will be logged in the qs.log file!
+[15:15:27 INFO]: [QuickShop-Hikari] [Shop Purger] Purge not enabled!
+[15:15:27 INFO]: [PlaceholderAPI] Successfully registered internal expansion: qs [6.2.0.11]
+[15:15:27 INFO]: [QuickShop-Hikari] Successfully loaded PlaceHolderAPI support!
+[15:15:27 INFO]: [QuickShop-Hikari] [OK] Virtual DisplayItem Support Test
+[15:15:27 INFO]: [QuickShop-Hikari] Initializing built-in hooks...
+[15:15:27 INFO]: [QuickShop-Hikari/Bootstrap] QuickShop-Hikari - Bootstrap -> All Complete. (4299ms)
+[15:15:27 INFO]: [PlayerParticles] Enabling PlayerParticles v8.12
+[15:15:28 INFO]: [PlayerParticles] Data handler connected using SQLite.
+[15:15:30 INFO]: [PlaceholderAPI] Successfully registered internal expansion: playerparticles [8.12]
+[15:15:30 INFO]: [Votifier] Enabling Votifier v2.7.3
+[15:15:30 INFO]: [Votifier] Configuring Votifier for the first time...
+[15:15:30 INFO]: [Votifier] ------------------------------------------------------------------------------
+[15:15:30 INFO]: [Votifier] Assigning NuVotifier to listen on port 8192. If you are hosting Craftbukkit on a
+[15:15:30 INFO]: [Votifier] shared server please check with your hosting provider to verify that this port
+[15:15:30 INFO]: [Votifier] is available for your use. Chances are that your hosting provider will assign
+[15:15:30 INFO]: [Votifier] a different port, which you need to specify in config.yml
+[15:15:30 INFO]: [Votifier] ------------------------------------------------------------------------------
+[15:15:30 INFO]: [Votifier] Your default NuVotifier token is 8j8gdoldlef80gjhh399b863hr.
+[15:15:30 INFO]: [Votifier] You will need to provide this token when you submit your server to a voting
+[15:15:30 INFO]: [Votifier] list.
+[15:15:30 INFO]: [Votifier] ------------------------------------------------------------------------------
+[15:15:30 INFO]: [Votifier] Loaded token for website: default
+[15:15:31 INFO]: [Votifier] Using NIO transport to accept votes.
+[15:15:32 INFO]: [Votifier] Method none selected for vote forwarding: Votes will not be received from a forwarder.
+[15:15:32 INFO]: [Votifier] Votifier enabled on socket /[0:0:0:0:0:0:0:0]:8192.
+[15:15:32 INFO]: [Quests] Enabling Quests v5.3.1-b564
+[15:15:34 INFO]: [Quests] Attempting to initialize Legacy Material Support. Ignore any warning(s) that follow.
+[15:15:34 WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[15:15:59 INFO]: [Quests] Loaded language en-US. Translations via Crowdin
+[15:15:59 INFO]: [Quests] Successfully linked Quests with ZNPCsPlus
+[15:16:00 INFO]: [Quests] Loading storage implementation: YAML
+[15:16:00 INFO]: [LifeStealZ] Enabling LifeStealZ v2.13.0
+[15:16:00 INFO]: [LifeStealZ] Using language file: plugins\LifeStealZ\lang\en-US.yml
+[15:16:00 INFO]: [LifeStealZ] Using SQLite storage
+[15:16:02 INFO]: [LifeStealZ] 
+[90m==========================================[0m
+[1mA new version of LifeStealZ is available![0m
+[1mNew Version: [0m[37m2.13.0 -> [1m[31m2.21.1[0m
+[1mDownload here: [0m[37m[0mhttps://modrinth.com/plugin/lifestealz/version/2.21.1
+[90m==========================================[0m
+[15:16:02 INFO]: [PlaceholderAPI] Successfully registered internal expansion: lifestealz [2.13.0]
+[15:16:02 INFO]: [LifeStealZ] PlaceholderAPI found! Enabled PlaceholderAPI support!
+[15:16:02 INFO]: [LifeStealZ] LifeStealZ enabled!
+[15:16:02 INFO]: [GrimAC] Enabling GrimAC v2.3.74-c83870b
+[15:16:02 INFO]: [GrimAC] Registering packets...
+[15:16:02 INFO]: [GrimAC] Registering tick schedulers...
+[15:16:05 INFO]: [38;2;170;170;170mGrim Version: [38;2;85;255;255m2.3.74-c83870b[0m
+[15:16:05 INFO]: [grim-datastore] [grim-datastore] SQLite engine 3.46.0 � using modern dialect
+[15:16:06 INFO]: [grim-datastore] [v2-bootstrap] grim:grim_settings (settings): 0 migration(s)
+[15:16:06 INFO]: [grim-datastore] [v2-bootstrap] grim:grim_players (players): 0 migration(s)
+[15:16:06 INFO]: [grim-datastore] [v2-bootstrap] grim:grim_sessions (sessions): 0 migration(s)
+[15:16:06 INFO]: [grim-datastore] [v2-bootstrap] grim:grim_violations (violations): 0 migration(s)
+[15:16:06 INFO]: [grim-datastore] [v2-bootstrap] grim:verbose_schemas (verbose_schemas): 0 migration(s)
+[15:16:06 INFO]: [grim-datastore] [v2-bootstrap] grim:server_startups (server_startups): 0 migration(s)
+[15:16:07 INFO]: [grim-datastore] [grim-datastore] v2 cutover complete: 1 v2 backend(s), ac.grim.grimac.internal.storage.core.V2Routes@2e678682 routes installed, 0 legacy backends
+[15:16:07 WARN]: [grim-datastore] [grim-datastore] storage startup claimed: serverName='ChangeMe' instanceId=1f6804d7-a23f-4fa8-9e4b-10db3b3d3c66 startupId=44bcac2b-1e87-4b86-903a-72c2f535481f; recovered 0 previous open session(s).
+[15:16:08 INFO]: [GrimAC] Registering singular bukkit event... (PistonEvent)
+[15:16:08 INFO]: [GrimAC] LuckPerms detected
+[15:16:08 INFO]: [PlaceholderAPI] Successfully registered internal expansion: grim [2.3.74-c83870b]
+[15:16:08 INFO]: [GriefPrevention] Enabling GriefPrevention v16.18.5
+[15:16:08 INFO]: [GriefPrevention] Finished loading configuration.
+[15:16:08 INFO]: [GriefPrevention] 0 total claims loaded.
+[15:16:08 INFO]: [GriefPrevention] Customizable messages loaded.
+[15:16:08 INFO]: [GriefPrevention] Finished loading data (File Mode).
+[15:16:08 INFO]: [GriefPrevention] Boot finished.
+[15:16:08 INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.22.0
+[15:16:08 INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[15:16:08 INFO]: [EssentialsChat] Enabling EssentialsChat v2.22.0
+[15:16:08 INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[15:16:08 INFO]: [EconomyShop] Enabling EconomyShop v1.1.4
+[15:16:08 INFO]: [EconomyShop] Economy provider: Vault (EssentialsX Economy)
+[15:16:09 INFO]: [EconomyShop] SQLite storage initialized at D:\server\plugins\EconomyShop\data.db
+[15:16:09 INFO]: [EconomyShop] Storage initialized: sqlite
+[15:16:09 INFO]: [EconomyShop] Loaded 0 shop categories.
+[15:16:09 INFO]: [EconomyShop] First install detected � seeding default shop...
+[15:16:11 INFO]: [EconomyShop] Default shop seeded with 9 categories and ~190 items (end-game tier omitted � set them yourself).
+[15:16:11 INFO]: [EconomyShop] Loaded 9 shop categories.
+[15:16:11 INFO]: [EconomyShop] Loaded 216 shop items.
+[15:16:11 INFO]: [EconomyShop] Hooked into LuckPerms.
+[15:16:11 INFO]: [PlaceholderAPI] Successfully registered internal expansion: economyshop [1.1.4]
+[15:16:11 INFO]: [EconomyShop] Hooked into PlaceholderAPI.
+[15:16:11 INFO]: [EconomyShop] EconomyShop v1.1.4 enabled!
+[15:16:11 INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.8.1
+[15:16:13 INFO]: [38;2;255;170;0m[[38;2;170;0;0mDriveBackupV2[38;2;255;170;0m] [38;2;0;170;170mConfig loaded![0m
+[15:16:13 INFO]: [38;2;255;170;0m[[38;2;170;0;0mDriveBackupV2[38;2;255;170;0m] [38;2;0;170;170mScheduling a backup to run every 60 minutes[0m
+[15:16:13 INFO]: [38;2;255;170;0m[[38;2;170;0;0mDriveBackupV2[38;2;255;170;0m] [38;2;0;170;170mMetrics started[0m
+[15:16:13 INFO]: [CoreProtect] Enabling CoreProtect v23.2
+[15:16:14 INFO]: [CoreProtect] CoreProtect Community Edition has been successfully enabled![38;2;255;255;255m [0m
+[15:16:14 INFO]: [CoreProtect] Using SQLite for data storage.
+[15:16:14 INFO]: --------------------
+[15:16:14 INFO]: [CoreProtect] Enjoy CoreProtect? Join our Discord!
+[15:16:14 INFO]: [CoreProtect] Discord: www.coreprotect.net/discord/
+[15:16:14 INFO]: --------------------
+[15:16:14 INFO]: [CombatLog] Enabling CombatLog v1.0
+[15:16:14 INFO]: [AuraSkills] Enabling AuraSkills v2.3.12
+[15:16:17 INFO]: [AuraSkills] Loaded 21 message files
+[15:16:22 INFO]: [AuraSkills] Successfully registered hook LuckPerms
+[15:16:22 INFO]: [PlaceholderAPI] Successfully registered internal expansion: auraskills [2.3.12]
+[15:16:22 INFO]: [PlaceholderAPI] Successfully registered internal expansion: aureliumskills [2.3.12]
+[15:16:22 INFO]: [AuraSkills] Successfully registered hook PlaceholderAPI
+[15:16:22 INFO]: [AuraSkills] Successfully registered hook Vault
+[15:16:22 INFO]: [AuraSkills] Successfully registered hook MythicMobs
+[15:16:23 INFO]: [AuraSkills] Loaded 160 config options in 168 ms
+[15:16:23 INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.1! Trying to find NMS support
+[15:16:23 INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R1' loaded!
+[15:16:23 INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AuraSkills' to create a bStats instance!
+[15:16:23 INFO]: [AuraSkills] Loaded 3 blocked/disabled worlds
+[15:16:23 INFO]: [AuraSkills] [ACF] Enabled Asynchronous Tab Completion Support!
+[15:16:24 INFO]: [AdvancedBan] Enabling AdvancedBan v2.3.0
+[15:16:25 INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[15:16:27 INFO]: [hsqldb.db.HSQLDB9EC07B9CF5.ENGINE] Checkpoint start
+[15:16:27 INFO]: [hsqldb.db.HSQLDB9EC07B9CF5.ENGINE] checkpointClose start
+[15:16:27 INFO]: [hsqldb.db.HSQLDB9EC07B9CF5.ENGINE] checkpointClose synched
+[15:16:27 INFO]: [hsqldb.db.HSQLDB9EC07B9CF5.ENGINE] checkpointClose script done
+[15:16:27 INFO]: [hsqldb.db.HSQLDB9EC07B9CF5.ENGINE] checkpointClose end
+[15:16:27 INFO]: [hsqldb.db.HSQLDB9EC07B9CF5.ENGINE] Checkpoint end - txts: 1
+[15:16:27 INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+[15:16:27 INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[15:16:28 INFO]: 
+ 
+[38;2;85;85;85m[]=====[[38;2;170;170;170mEnabling AdvancedBan[38;2;85;85;85m]=====[]
+| [38;2;255;85;85mInformation:
+[38;2;85;85;85m|   [38;2;255;85;85mName: [38;2;170;170;170mAdvancedBan
+[38;2;85;85;85m|   [38;2;255;85;85mDeveloper: [38;2;170;170;170mLeoko
+[38;2;85;85;85m|   [38;2;255;85;85mVersion: [38;2;170;170;170m2.3.0
+[38;2;85;85;85m|   [38;2;255;85;85mStorage: [38;2;170;170;170mHSQLDB (local)
+[38;2;85;85;85m| [38;2;255;85;85mSupport:
+[38;2;85;85;85m|   [38;2;255;85;85mGithub: [38;2;170;170;170mhttps://github.com/DevLeoko/AdvancedBan/issues
+[38;2;85;85;85m|   [38;2;255;85;85mDiscord: [38;2;170;170;170mhttps://discord.gg/ycDG6rS
+[38;2;85;85;85m| [38;2;255;85;85mTwitter: [38;2;170;170;170m@LeokoGar
+[38;2;85;85;85m| [38;2;255;85;85mUpdate:
+[38;2;85;85;85m|   [38;2;170;170;170mYou have the newest version
+[38;2;85;85;85m[]================================[][0m
+ 
+[15:16:31 INFO]: [spark] Starting background profiler...
+[15:16:31 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[15:16:32 INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[15:16:32 INFO]: [38;2;255;170;0m0 placeholder hook(s) registered![0m
+[15:16:32 INFO]: Done preparing level "world" (123.765s)
+[15:16:32 INFO]: Starting remote control listener
+[15:16:32 INFO]: Thread RCON Listener started
+[15:16:32 INFO]: RCON running on 0.0.0.0:25575
+[15:16:32 INFO]: Running delayed init tasks
+[15:16:32 INFO]: [com.fastasyncworldedit.bukkit.regions.GriefPreventionFeature] Plugin 'GriefPrevention' found. Using it now.
+[15:16:32 INFO]: [com.fastasyncworldedit.bukkit.FaweBukkit] Attempting to use plugin 'GriefPrevention'
+[15:16:32 INFO]: [QuickShop-Hikari] Start to caching usernames (async)...
+[15:16:32 INFO]: [38;2;255;170;0m[[38;2;170;0;0mDriveBackupV2[38;2;255;170;0m] [38;2;0;170;170mChecking for updates...[0m
+[15:16:32 INFO]: [EconomyShop] Loaded 0 chest shops into cache.
+[15:16:32 INFO]: [Vault] Checking for Updates ... 
+[15:16:32 INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[15:16:32 INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[15:16:32 INFO]: [Essentials] [38;2;255;170;0mFetching version information...[0m
+[15:16:32 INFO]: [DiscordSRV] Disabling DiscordSRV v1.30.5
+[15:16:33 INFO]: [Vault] No new version available
+[15:16:33 INFO]: [SimpleClans] Registered GriefPreventionProvider successfully
+[15:16:34 INFO]: [38;2;85;255;85mYou are using the latest version of GrimAC[0m
+[15:16:34 INFO]: [CoreProtect] FastAsyncWorldEdit logging successfully initialized.
+[15:16:35 INFO]: [QuickShop-Hikari] A new version of QuickShop has been released! [6.3.0.0-SNAPSHOT-7]
+[15:16:35 INFO]: [QuickShop-Hikari] Update here: https://modrinth.com/plugin/quickshop-hikari
+[15:16:35 INFO]: [QuickShop-Hikari] Using economy system: EssentialsX Economy
+[15:16:35 INFO]: [QuickShop-Hikari] Selected economy bridge: BuiltIn-Vault
+[15:16:37 INFO]: [AuraSkills] Loaded 11 skills with 314 total sources
+[15:16:37 INFO]: [AuraSkills] Loaded 9 stats and 17 traits
+[15:16:38 INFO]: [AuraSkills] Loaded 22 pattern rewards and 0 level rewards
+[15:16:38 INFO]: [AuraSkills] Loaded 53 loot entries in 4 pools and 2 tables
+[15:16:39 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:16:39 INFO]: [AuraSkills] Loaded 7 menus
+[15:16:39 INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
+[15:16:39 INFO]: Done (501.112s)! For help, type "help"
+[15:16:39 WARN]: Can't keep up! Is the server overloaded? Running 7641ms or 152 ticks behind
+[15:16:39 INFO]: Timings Reset
+[15:16:41 INFO]: [MythicMobs] Loaded 3 dialog definition(s)[0m
+[15:16:42 INFO]: [Quests] Loaded 4 Quest(s), 7 Action(s), 1 Condition(s) and 804 Phrase(s)
+[15:16:42 INFO]: [38;2;255;85;85mIncorrect argument for command
+[38;2;170;170;170mgamerule [4m[38;2;255;85;85mminecraft:send_command_feedback false[0m[3m[38;2;255;85;85m<--[HERE][0m
+[15:16:42 WARN]: [MythicMobs] Dialog 'QuestOffer': could not find skill 'ExampleQuestAccepted'[0m[0m
+[15:16:42 WARN]: [MythicMobs] Dialog 'QuestOffer': could not find skill 'ExampleQuestDeclined'[0m[0m
+[15:16:42 WARN]: [MythicMobs] Dialog 'CharacterSetup': could not find skill 'ExampleCharacterConfirmed'[0m[0m
+[15:17:15 WARN]: org.sqlite.SQLiteException: [SQLITE_CANTOPEN] Unable to open the database file (unable to open database file)
+[15:17:15 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+[15:17:15 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+[15:17:15 WARN]: 	at org.sqlite.core.DB.throwex(DB.java:1150)
+[15:17:15 WARN]: 	at org.sqlite.core.NativeDB._exec_utf8(Native Method)
+[15:17:15 WARN]: 	at org.sqlite.core.NativeDB._exec(NativeDB.java:97)
+[15:17:15 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeLargeUpdate$2(JDBC3Statement.java:135)
+[15:17:15 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+[15:17:15 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeLargeUpdate(JDBC3Statement.java:122)
+[15:17:15 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeUpdate(JDBC3Statement.java:109)
+[15:17:15 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.database.Database.performCheckpoint(Database.java:117)
+[15:17:15 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.process.Process.processConsumer(Process.java:78)
+[15:17:15 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.Consumer.run(Consumer.java:133)
+[15:17:15 WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[15:17:15 WARN]: org.sqlite.SQLiteException: [SQLITE_CANTOPEN] Unable to open the database file (unable to open database file)
+[15:17:15 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+[15:17:15 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+[15:17:15 WARN]: 	at org.sqlite.core.DB.throwex(DB.java:1150)
+[15:17:15 WARN]: 	at org.sqlite.core.NativeDB._exec_utf8(Native Method)
+[15:17:15 WARN]: 	at org.sqlite.core.NativeDB._exec(NativeDB.java:97)
+[15:17:15 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeLargeUpdate$2(JDBC3Statement.java:135)
+[15:17:15 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+[15:17:15 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeLargeUpdate(JDBC3Statement.java:122)
+[15:17:15 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeUpdate(JDBC3Statement.java:109)
+[15:17:15 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.database.Database.performCheckpoint(Database.java:117)
+[15:17:15 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.process.Process.processConsumer(Process.java:78)
+[15:17:15 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.Consumer.run(Consumer.java:133)
+[15:17:15 WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[15:17:20 WARN]: org.sqlite.SQLiteException: [SQLITE_CANTOPEN] Unable to open the database file (unable to open database file)
+[15:17:20 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+[15:17:20 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+[15:17:20 WARN]: 	at org.sqlite.core.DB.throwex(DB.java:1150)
+[15:17:20 WARN]: 	at org.sqlite.core.NativeDB._exec_utf8(Native Method)
+[15:17:20 WARN]: 	at org.sqlite.core.NativeDB._exec(NativeDB.java:97)
+[15:17:20 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeLargeUpdate$2(JDBC3Statement.java:135)
+[15:17:20 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+[15:17:20 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeLargeUpdate(JDBC3Statement.java:122)
+[15:17:20 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeUpdate(JDBC3Statement.java:109)
+[15:17:20 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.database.Database.performCheckpoint(Database.java:117)
+[15:17:20 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.process.Process.processConsumer(Process.java:78)
+[15:17:20 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.Consumer.run(Consumer.java:133)
+[15:17:20 WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[15:17:20 WARN]: org.sqlite.SQLiteException: [SQLITE_CANTOPEN] Unable to open the database file (unable to open database file)
+[15:17:20 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+[15:17:20 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+[15:17:20 WARN]: 	at org.sqlite.core.DB.throwex(DB.java:1150)
+[15:17:20 WARN]: 	at org.sqlite.core.NativeDB._exec_utf8(Native Method)
+[15:17:20 WARN]: 	at org.sqlite.core.NativeDB._exec(NativeDB.java:97)
+[15:17:20 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeLargeUpdate$2(JDBC3Statement.java:135)
+[15:17:20 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+[15:17:20 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeLargeUpdate(JDBC3Statement.java:122)
+[15:17:20 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeUpdate(JDBC3Statement.java:109)
+[15:17:20 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.database.Database.performCheckpoint(Database.java:117)
+[15:17:20 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.process.Process.processConsumer(Process.java:78)
+[15:17:20 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.Consumer.run(Consumer.java:133)
+[15:17:20 WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[15:21:42 WARN]: Can't keep up! Is the server overloaded? Running 2606ms or 52 ticks behind
+[15:38:30 WARN]: [LuckPerms] Processing login for Itx_Zaid_3 took 1976ms.
+[15:38:31 INFO]: UUID of player Itx_Zaid_3 is 7f94479b-0c13-375d-900c-8ce4d1066788
+[15:38:33 WARN]: Can't keep up! Is the server overloaded? Running 2581ms or 51 ticks behind
+[15:38:49 INFO]: [SimpleClans] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[15:38:49 INFO]: [SimpleClans] [ACF] java.lang.NoSuchFieldException: locale
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2784)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at SimpleClans.jar//net.sacredlabyrinth.phaed.simpleclans.acf.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:324)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1117)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at SimpleClans.jar//net.sacredlabyrinth.phaed.simpleclans.acf.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:135)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at SimpleClans.jar//net.sacredlabyrinth.phaed.simpleclans.acf.ACFPaperScheduler.lambda$createLocaleTask$1(ACFPaperScheduler.java:56)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at io.papermc.paper.threadedregions.scheduler.FoliaAsyncScheduler$AsyncScheduledTask.run(FoliaAsyncScheduler.java:217)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+[15:38:49 INFO]: [SimpleClans] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[15:38:53 INFO]: [38;2;255;170;0m[[38;2;170;0;0mDriveBackupV2[38;2;255;170;0m] [38;2;0;170;170mEnabling automatic backups[0m
+[15:38:56 INFO]: [38;2;255;255;85mItx_Zaid_3 joined the game[0m
+[15:38:56 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 1.21.1-133-3cb8529 (MC: 1.21.1) ---
+[15:38:56 ERROR]: The server has not responded for 10 seconds! Creating thread dump
+[15:38:56 ERROR]: ------------------------------
+[15:38:56 ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[15:38:57 ERROR]: Handling packet for connection: net.minecraft.server.network.ServerConfigurationPacketListenerImpl@2ea9bb3b
+[15:38:57 ERROR]: ------------------------------
+[15:38:57 ERROR]: Current Thread: Server thread
+[15:38:57 ERROR]: 	PID: 63 | Suspended: false | Native: false | State: RUNNABLE
+[15:38:57 ERROR]: 	Stack:
+[15:38:57 ERROR]: 		net.minecraft.server.level.ChunkMap.updatePlayerStatus(ChunkMap.java:758)
+[15:38:57 ERROR]: 		net.minecraft.server.level.ChunkMap.addEntity(ChunkMap.java:878)
+[15:38:57 ERROR]: 		net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:393)
+[15:38:57 ERROR]: 		net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:173)
+[15:38:57 ERROR]: 		net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:22)
+[15:38:57 ERROR]: 		net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:13)
+[15:38:57 ERROR]: 		net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:56)
+[15:38:57 ERROR]: 		net.minecraft.network.protocol.PacketUtils$$Lambda/0x000002255aa566a0.run(Unknown Source)
+[15:38:57 ERROR]: 		net.minecraft.server.TickTask.run(TickTask.java:18)
+[15:38:57 ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:151)
+[15:38:57 ERROR]: 		net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1535)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:201)
+[15:38:57 ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:125)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1512)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1505)
+[15:38:57 ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:135)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1464)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1471)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1316)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:329)
+[15:38:57 ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x0000022558ce36d8.run(Unknown Source)
+[15:38:57 ERROR]: 		java.base@21.0.11/java.lang.Thread.runWith(Thread.java:1596)
+[15:38:57 ERROR]: 		java.base@21.0.11/java.lang.Thread.run(Thread.java:1583)
+[15:38:57 ERROR]: ------------------------------
+[15:38:57 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[15:38:57 ERROR]: ------------------------------
+[15:38:58 INFO]: Itx_Zaid_3[/127.0.0.1:63942] logged in with entity id 146 at ([world]-5.422215235561286, 108.0625, -7.450637185597459)
+[15:38:58 WARN]: [Essentials] Permissions lag notice with (LuckPermsHandler). Response took 163.699500ms. Summary: Getting prefix for Itx_Zaid_3
+[15:39:01 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 1.21.1-133-3cb8529 (MC: 1.21.1) ---
+[15:39:02 ERROR]: The server has not responded for 15 seconds! Creating thread dump
+[15:39:02 ERROR]: ------------------------------
+[15:39:02 ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[15:39:02 ERROR]: ------------------------------
+[15:39:02 ERROR]: Current Thread: Server thread
+[15:39:02 ERROR]: 	PID: 63 | Suspended: false | Native: false | State: RUNNABLE
+[15:39:02 ERROR]: 	Stack:
+[15:39:02 ERROR]: 		net.minecraft.world.entity.SpawnPlacementTypes.<clinit>(SpawnPlacementTypes.java:12)
+[15:39:02 ERROR]: 		net.minecraft.world.entity.SpawnPlacements.<clinit>(SpawnPlacements.java:80)
+[15:39:02 ERROR]: 		net.minecraft.world.level.NaturalSpawner.isValidSpawnPostitionForType(NaturalSpawner.java:361)
+[15:39:02 ERROR]: 		net.minecraft.world.level.NaturalSpawner.spawnCategoryForPosition(NaturalSpawner.java:273)
+[15:39:02 ERROR]: 		net.minecraft.world.level.NaturalSpawner.spawnCategoryForChunk(NaturalSpawner.java:206)
+[15:39:02 ERROR]: 		net.minecraft.world.level.NaturalSpawner.spawnForChunk(NaturalSpawner.java:177)
+[15:39:02 ERROR]: 		net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:511)
+[15:39:02 ERROR]: 		net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:408)
+[15:39:02 ERROR]: 		net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:689)
+[15:39:02 ERROR]: 		net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1804)
+[15:39:02 ERROR]: 		net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:473)
+[15:39:02 ERROR]: 		net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1596)
+[15:39:02 ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1302)
+[15:39:02 ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:329)
+[15:39:02 ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x0000022558ce36d8.run(Unknown Source)
+[15:39:02 ERROR]: 		java.base@21.0.11/java.lang.Thread.runWith(Thread.java:1596)
+[15:39:02 ERROR]: 		java.base@21.0.11/java.lang.Thread.run(Thread.java:1583)
+[15:39:02 ERROR]: ------------------------------
+[15:39:02 ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[15:39:02 ERROR]: ------------------------------
+[15:39:17 WARN]: Can't keep up! Is the server overloaded? Running 28369ms or 567 ticks behind
+[15:39:22 INFO]: Itx_Zaid_3 issued server command: /sc
+[15:39:36 INFO]: Itx_Zaid_3 issued server command: /shop
+[15:39:44 INFO]: Itx_Zaid_3 issued server command: /gms
+[15:39:46 INFO]: Itx_Zaid_3 issued server command: /shop
+[15:39:58 WARN]: Can't keep up! Is the server overloaded? Running 26109ms or 522 ticks behind
+[15:40:57 INFO]: Itx_Zaid_3 issued server command: /shop
+[15:41:20 INFO]: Itx_Zaid_3 lost connection: Disconnected
+[15:41:21 INFO]: [38;2;255;255;85mItx_Zaid_3 left the game[0m
+[15:42:02 WARN]: Can't keep up! Is the server overloaded? Running 2855ms or 57 ticks behind
+[15:42:45 WARN]: Can't keep up! Is the server overloaded? Running 2788ms or 55 ticks behind
+[15:44:52 WARN]: Can't keep up! Is the server overloaded? Running 3035ms or 60 ticks behind
+[15:52:24 INFO]: UUID of player Itx_Zaid_3 is 7f94479b-0c13-375d-900c-8ce4d1066788
+[15:52:28 INFO]: [38;2;255;255;85mItx_Zaid_3 joined the game[0m
+[15:52:28 INFO]: Itx_Zaid_3[/127.0.0.1:50930] logged in with entity id 352 at ([world]0.4304442782979217, 104.0, 0.8525607587855439)
+[15:52:29 WARN]: [Essentials] Permissions lag notice with (LuckPermsHandler). Response took 65.809100ms. Summary: Getting prefix for Itx_Zaid_3
+[15:52:30 WARN]: Can't keep up! Is the server overloaded? Running 2525ms or 50 ticks behind
+[15:52:48 INFO]: Itx_Zaid_3 issued server command: /plugins
+[15:53:02 INFO]: Named entity WitherSkeleton['Skeletal Knight'/374, uuid='c68c64ce-8fd6-415f-b25b-a6abb3d2da1a', l='ServerLevel[world]', x=-47.72, y=70.00, z=-88.50, cpos=[-3, -6], tl=444, v=true] died: Skeletal Knight suffocated in a wall
+[15:53:07 INFO]: Itx_Zaid_3 issued server command: /znpcs list
+[15:53:23 INFO]: Itx_Zaid_3 issued server command: /shop
+[15:53:34 INFO]: Itx_Zaid_3 issued server command: /ec
+[15:53:47 INFO]: Itx_Zaid_3 issued server command: /ec
+[15:55:40 INFO]: Itx_Zaid_3 issued server command: /sc reload
+[15:57:58 INFO]: Named entity WitherSkeleton['Skeletal Knight'/811, uuid='a9b0169b-4ede-4c62-83fa-19c2fddbd97d', l='ServerLevel[world]', x=-30.50, y=11.00, z=-13.50, cpos=[-2, -1], tl=441, v=true] died: Skeletal Knight suffocated in a wall
+[15:58:49 WARN]: org.sqlite.SQLiteException: [SQLITE_CANTOPEN] Unable to open the database file (unable to open database file)
+[15:58:49 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+[15:58:49 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+[15:58:49 WARN]: 	at org.sqlite.core.DB.throwex(DB.java:1150)
+[15:58:49 WARN]: 	at org.sqlite.core.NativeDB._exec_utf8(Native Method)
+[15:58:49 WARN]: 	at org.sqlite.core.NativeDB._exec(NativeDB.java:97)
+[15:58:49 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeLargeUpdate$2(JDBC3Statement.java:135)
+[15:58:49 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+[15:58:49 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeLargeUpdate(JDBC3Statement.java:122)
+[15:58:49 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeUpdate(JDBC3Statement.java:109)
+[15:58:49 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.database.Database.performCheckpoint(Database.java:117)
+[15:58:49 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.process.Process.processConsumer(Process.java:78)
+[15:58:49 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.Consumer.run(Consumer.java:133)
+[15:58:49 WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[15:59:41 WARN]: org.sqlite.SQLiteException: [SQLITE_CANTOPEN] Unable to open the database file (unable to open database file)
+[15:59:41 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+[15:59:41 WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+[15:59:41 WARN]: 	at org.sqlite.core.DB.throwex(DB.java:1150)
+[15:59:41 WARN]: 	at org.sqlite.core.NativeDB._exec_utf8(Native Method)
+[15:59:41 WARN]: 	at org.sqlite.core.NativeDB._exec(NativeDB.java:97)
+[15:59:41 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeLargeUpdate$2(JDBC3Statement.java:135)
+[15:59:41 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+[15:59:41 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeLargeUpdate(JDBC3Statement.java:122)
+[15:59:41 WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.executeUpdate(JDBC3Statement.java:109)
+[15:59:41 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.database.Database.performCheckpoint(Database.java:117)
+[15:59:41 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.process.Process.processConsumer(Process.java:78)
+[15:59:41 WARN]: 	at CoreProtect-CE-23.2.jar//net.coreprotect.consumer.Consumer.run(Consumer.java:133)
+[15:59:41 WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[16:00:52 INFO]: Itx_Zaid_3 lost connection: Disconnected
+[16:00:55 INFO]: [38;2;255;255;85mItx_Zaid_3 left the game[0m
+[16:06:23 INFO]: Thread RCON Client /127.0.0.1 started
+[16:06:25 INFO]: [3m[38;2;170;170;170m[Rcon: Saved the game][0m
+[16:06:25 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[16:06:28 INFO]: Thread RCON Client /127.0.0.1 started
+[16:06:29 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[16:06:29 INFO]: [Not Secure] [Rcon] Server restarting in 5 seconds...
+[16:06:34 INFO]: Thread RCON Client /127.0.0.1 started
+[16:06:34 INFO]: [3m[38;2;170;170;170m[Rcon: Stopping the server][0m
+[16:06:34 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[16:06:34 INFO]: Stopping server
+[16:06:34 INFO]: [AdvancedBan] Disabling AdvancedBan v2.3.0
+[16:06:34 INFO]: [hsqldb.db.HSQLDB9EC07B9CF5.ENGINE] Database closed
+[16:06:34 INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[16:06:34 INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[16:06:34 INFO]: 
+ 
+[38;2;85;85;85m[]=====[[38;2;170;170;170mDisabling AdvancedBan[38;2;85;85;85m]=====[]
+| [38;2;255;85;85mInformation:
+[38;2;85;85;85m|   [38;2;255;85;85mName: [38;2;170;170;170mAdvancedBan
+[38;2;85;85;85m|   [38;2;255;85;85mDeveloper: [38;2;170;170;170mLeoko
+[38;2;85;85;85m|   [38;2;255;85;85mVersion: [38;2;170;170;170m2.3.0
+[38;2;85;85;85m|   [38;2;255;85;85mStorage: [38;2;170;170;170mHSQLDB (local)
+[38;2;85;85;85m| [38;2;255;85;85mSupport:
+[38;2;85;85;85m|   [38;2;255;85;85mGithub: [38;2;170;170;170mhttps://github.com/DevLeoko/AdvancedBan/issues
+[38;2;85;85;85m|   [38;2;255;85;85mDiscord: [38;2;170;170;170mhttps://discord.gg/ycDG6rS
+[38;2;85;85;85m| [38;2;255;85;85mTwitter: [38;2;170;170;170m@LeokoGar
+[38;2;85;85;85m[]================================[][0m
+ 
+[16:06:34 INFO]: [AuraSkills] Disabling AuraSkills v2.3.12
+[16:06:35 INFO]: [CombatLog] Disabling CombatLog v1.0
+[16:06:35 INFO]: [CoreProtect] Disabling CoreProtect v23.2
+[16:06:35 INFO]: [CoreProtect] Finishing up data logging. Please wait...
+[16:06:36 INFO]: [CoreProtect] Success! Disabled CoreProtect v23.2
+[16:06:36 INFO]: [StaffPlus] Disabling StaffPlus v4.0.0
+[16:06:36 INFO]: [38;2;170;0;0m[Staff+] [38;2;255;85;85mStaff+ is now disabling![0m
+[16:06:36 INFO]: [DriveBackupV2] Disabling DriveBackupV2 v1.8.1
+[16:06:36 INFO]: [38;2;255;170;0m[[38;2;170;0;0mDriveBackupV2[38;2;255;170;0m] [38;2;0;170;170mStopping plugin![0m
+[16:06:36 INFO]: [EconomyShop] Disabling EconomyShop v1.1.4
+[16:06:36 INFO]: [EconomyShop] EconomyShop disabled.
+[16:06:36 INFO]: [EssentialsChat] Disabling EssentialsChat v2.22.0
+[16:06:36 INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.22.0
+[16:06:36 INFO]: [GriefPrevention] Disabling GriefPrevention v16.18.5
+[16:06:36 INFO]: [GriefPrevention] GriefPrevention disabled.
+[16:06:36 INFO]: [GrimAC] Disabling GrimAC v2.3.74-c83870b
+[16:06:36 INFO]: [GrimAC] Terminating PacketEvents...
+[16:06:37 INFO]: [LifeStealZ] Disabling LifeStealZ v2.13.0
+[16:06:37 INFO]: [LifeStealZ] Canceling all running tasks...
+[16:06:37 INFO]: [LifeStealZ] LifeStealZ disabled!
+[16:06:37 INFO]: [Quests] Disabling Quests v5.3.1-b564
+[16:06:42 INFO]: [Quests] Saving Quester data...
+[16:06:42 INFO]: [Quests] Closing storage...
+[16:06:42 INFO]: [Votifier] Disabling Votifier v2.7.3
+[16:06:44 INFO]: [Votifier] Votifier disabled.
+[16:06:44 INFO]: [PlayerParticles] Disabling PlayerParticles v8.12
+[16:06:44 INFO]: [QuickShop-Hikari] Disabling QuickShop-Hikari v6.2.0.11
+[16:06:44 INFO]: [QuickShop-Hikari/Bootstrap] QuickShop-Hikari - Bootstrap -> Execute the shutdown sequence
+[16:06:44 INFO]: [QuickShop-Hikari] QuickShop is finishing remaining work, this may need a while...
+[16:06:44 INFO]: [QuickShop-Hikari] Shutting down error reporter...
+[16:06:44 INFO]: [QuickShop-Hikari] Unregistering PlaceHolderAPI hooks...
+[16:06:44 INFO]: [QuickShop-Hikari] Successfully unregistered PlaceholderAPI hook!
+[16:06:44 INFO]: [QuickShop-Hikari] Unloading all loaded shops...
+[16:06:44 INFO]: [QuickShop-Hikari] Stopping shop auto save...
+[16:06:44 INFO]: [QuickShop-Hikari] Saving all in-memory changed shops...
+[16:06:44 INFO]: [QuickShop-Hikari] Shops needed saved: 0
+[16:06:44 INFO]: [QuickShop-Hikari] Cleaning up shop manager...
+[16:06:44 INFO]: [QuickShop-Hikari] Unloading loaded shops...
+[16:06:44 INFO]: [QuickShop-Hikari] Saving shops, please allow up to 30 seconds for flush changes into database...
+[16:06:44 INFO]: [QuickShop-Hikari] Stopping log watcher...
+[16:06:44 INFO]: [QuickShop-Hikari] Shutting down scheduled timers...
+[16:06:44 INFO]: [QuickShop-Hikari] Shutting down event calendar watcher...
+[16:06:44 INFO]: [QuickShop-Hikari] Shutting down update watcher...
+[16:06:44 INFO]: [QuickShop-Hikari] Shutting down 3rd-party integrations...
+[16:06:44 INFO]: [QuickShop-Hikari] Unload PlaceHolderAPI module successfully!
+[16:06:44 INFO]: [QuickShop-Hikari] Shutting down database connections...
+[16:06:44 INFO]: [com.ghostchu.quickshop.shade.carm.easysql.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[16:06:44 INFO]: [com.ghostchu.quickshop.shade.carm.easysql.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[16:06:44 INFO]: [QuickShop-Hikari/Bootstrap] Cleaning up resources...
+[16:06:44 INFO]: [QuickShop-Hikari/Bootstrap] QuickShop-Hikari - Bootstrap -> All Complete (243ms)
+[16:06:44 INFO]: [SimpleClans] Disabling SimpleClans v2.19.2-05e7abc
+[16:06:44 INFO]: [MythicMobs] Disabling MythicMobs v5.12.1-46bae256
+[16:06:44 INFO]: [MythicMobs] [35m[1m------------------------------------------------------------[0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m- [0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m- [33mUnloading Mythic...[0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m- [0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m------------------------------------------------------------[0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m- [0mSpawners saved and unloaded...[0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m- [0mMobs saved and unloaded...[0m[0m
+[16:06:44 INFO]: [MythicMobs] Saving plugin data...[0m
+[16:06:44 INFO]: [MythicMobs] [32m?[37mSaving Finished[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m- [0mVariables saved...[0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m- [0mAll active settings have been saved![0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m- [0mMythic has been unloaded![0m[0m
+[16:06:44 INFO]: [MythicMobs] [35m[1m------------------------------------------------------------[0m[0m
+[16:06:45 INFO]: [MythicMobs] Saving plugin data...[0m
+[16:06:45 INFO]: [MythicMobs] [32m?[37mSaving Finished[0m
+[16:06:45 WARN]: io.lumine.mythic.bukkit.utils.terminable.composite.CompositeClosingException: Exception(s) occurred whilst closing: [java.lang.NullPointerException: Cannot invoke "java.util.concurrent.ConcurrentHashMap.clear()" because "this.lastStateByPlayer" is null]
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.AbstractCompositeTerminable.close(AbstractCompositeTerminable.java:38)
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.CompositeTerminable.closeAndReportException(CompositeTerminable.java:63)
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.close(LuminePlugin.java:100)
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.onDisable(LuminePlugin.java:95)
+[16:06:45 WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[16:06:45 WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[16:06:45 WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[16:06:45 WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[16:06:45 WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[16:06:45 WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:610)
+[16:06:45 WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1045)
+[16:06:45 WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:847)
+[16:06:45 WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1351)
+[16:06:45 WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:329)
+[16:06:45 WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[16:06:45 WARN]: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.ConcurrentHashMap.clear()" because "this.lastStateByPlayer" is null
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.listeners.triggers.PlayerInputTriggerListener.unload(PlayerInputTriggerListener.java:63)
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.PluginModule.close(PluginModule.java:50)
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.AbstractCompositeTerminable.close(AbstractCompositeTerminable.java:31)
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.CompositeTerminable.closeAndReportException(CompositeTerminable.java:63)
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.close(LuminePlugin.java:100)
+[16:06:45 WARN]: 	at MythicMobs-5.12.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.onDisable(LuminePlugin.java:95)
+[16:06:45 WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[16:06:45 WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[16:06:45 WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[16:06:45 WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[16:06:45 WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[16:06:45 WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:610)
+[16:06:45 WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1045)
+[16:06:45 WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:847)
+[16:06:45 WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1351)
+[16:06:45 WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:329)
+[16:06:45 WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[16:06:45 INFO]: [ZNPCsPlus] Disabling ZNPCsPlus v2.0.0
+[16:06:45 INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.15.2+e9ed0d1
+[16:06:45 INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[16:06:45 INFO]: [ViaBackwards] Disabling ViaBackwards v5.9.2-SNAPSHOT
+[16:06:45 INFO]: [Essentials] Disabling Essentials v2.22.0
+[16:06:45 INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[16:06:45 INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.12.2
+[16:06:45 INFO]: [Vault] Disabling Vault v1.7.3-b131
+[16:06:45 INFO]: [LuckPerms] Disabling LuckPerms v5.5.53
+[16:06:45 INFO]: [LuckPerms] Starting shutdown process...
+[16:06:45 INFO]: [LuckPerms] Closing storage...
+[16:06:45 INFO]: [LuckPerms] Goodbye!
+[16:06:45 INFO]: [ViaVersion] Disabling ViaVersion v5.9.2-SNAPSHOT
+[16:06:45 INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[16:06:45 INFO]: Saving players
+[16:06:45 INFO]: Saving worlds
+[16:06:45 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:06:45 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[16:06:45 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[16:06:45 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[16:06:46 INFO]: [ChunkHolderManager] Saved 0 block chunks, 89 entity chunks, 0 poi chunks in world 'world' in 0.51s
+[16:06:46 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:06:46 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[16:06:46 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[16:06:46 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[16:06:46 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[16:06:46 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:06:46 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[16:06:46 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[16:06:46 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[16:06:46 INFO]: [ChunkHolderManager] Saved 0 block chunks, 23 entity chunks, 0 poi chunks in world 'world_the_end' in 0.12s
+[16:06:46 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:06:46 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:06:46 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:06:46 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

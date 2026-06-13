@@ -1,0 +1,66 @@
+# DESTINATION: plugins/TAB/config/groups.yml
+# Per-rank prefix, suffix and nametag for TAB 6.x.
+# Group names match LuckPerms group names exactly. Lowercase per ranks_setup.txt.
+
+# Fallback for anyone not in a defined group below.
+_DEFAULT_:
+  tabprefix: '%luckperms-prefix%'
+  tagprefix: '%luckperms-prefix%'
+  tabsuffix: '%luckperms-suffix%'
+  tagsuffix: '%luckperms-suffix%'
+  customtabname: '%player%'
+
+owner:
+  tabprefix: '&4&l[OWNER] '
+  tagprefix: '&4&l[OWNER] '
+  customtabname: '&4&l%player%'
+  belowname: '&7Owner'
+  abovename: '&4&l[OWNER]'
+
+admin:
+  tabprefix: '&c[ADMIN] '
+  tagprefix: '&c[ADMIN] '
+  customtabname: '&c%player%'
+  belowname: '&7Admin'
+  abovename: '&c[ADMIN]'
+
+mod:
+  tabprefix: '&2[MOD] '
+  tagprefix: '&2[MOD] '
+  customtabname: '&2%player%'
+  belowname: '&7Moderator'
+  abovename: '&2[MOD]'
+
+elite:
+  tabprefix: '&5[ELITE] '
+  tagprefix: '&5[ELITE] '
+  customtabname: '&5%player%'
+  belowname: '&7Elite'
+
+mvp:
+  tabprefix: '&b[MVP] '
+  tagprefix: '&b[MVP] '
+  customtabname: '&b%player%'
+  belowname: '&7MVP'
+
+vip:
+  tabprefix: '&a[VIP] '
+  tagprefix: '&a[VIP] '
+  customtabname: '&a%player%'
+  belowname: '&7VIP'
+
+default:
+  tabprefix: '&7[Player] '
+  tagprefix: '&7[Player] '
+  customtabname: '&f%player%'
+  belowname: '&7Player'
+
+# Per-world overrides example (uncomment to use).
+# per-world:
+#   pvp_world:
+#     owner:
+#       tabprefix: '&4&l[OWNER] '
+#       belowname: '&cIn PVP'
+#     default:
+#       tabprefix: '&7'
+#       belowname: '&cFighting'

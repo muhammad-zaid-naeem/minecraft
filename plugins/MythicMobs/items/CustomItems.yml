@@ -1,0 +1,162 @@
+# DESTINATION: plugins/MythicMobs/Items/CustomItems.yml
+# 10 custom items.
+
+Pyrosword:
+  Id: NETHERITE_SWORD
+  Display: '&c&lPyrosword'
+  Lore:
+    - '&7Boss drop: PyroLord'
+    - ''
+    - '&7+12 damage  |  Fire Aspect III'
+  Attributes:
+    MainHand:
+      Damage: 12
+  Enchantments:
+    - SHARPNESS:8
+    - FIRE_ASPECT:3
+    - KNOCKBACK:2
+    - UNBREAKING:5
+  Options:
+    Unbreakable: true
+    HideFlags: true
+
+FrostBow:
+  Id: BOW
+  Display: '&b&lFrostBow'
+  Lore:
+    - '&7Boss drop: FrostMonarch'
+    - ''
+    - '&7Inflicts Slowness IV on hit.'
+  Enchantments:
+    - POWER:6
+    - PUNCH:3
+    - INFINITY:1
+    - UNBREAKING:5
+  Skills:
+    - potion{type=SLOW;duration=80;lvl=3} @target ~onHit
+  Options:
+    Unbreakable: true
+    HideFlags: true
+
+VoidBlade:
+  Id: NETHERITE_SWORD
+  Display: '&5&lVoidBlade'
+  Lore:
+    - '&7Boss drop: VoidEntity'
+    - ''
+    - '&7+14 damage  |  Lifesteal 20%'
+  Attributes:
+    MainHand:
+      Damage: 14
+  Enchantments:
+    - SHARPNESS:7
+    - UNBREAKING:5
+  Skills:
+    - lifesteal{p=20} @target ~onHit
+  Options:
+    Unbreakable: true
+    HideFlags: true
+
+EarthHammer:
+  Id: NETHERITE_AXE
+  Display: '&6&lEarthHammer'
+  Lore:
+    - '&7Boss drop: EarthShaker'
+    - ''
+    - '&7+18 damage  |  3-block AoE'
+  Attributes:
+    MainHand:
+      Damage: 18
+  Enchantments:
+    - SHARPNESS:8
+    - UNBREAKING:5
+  Skills:
+    - damage{a=10} @EntitiesInRadius{r=3} ~onHit
+  Options:
+    Unbreakable: true
+    HideFlags: true
+
+DragonScale_Helmet:
+  Id: NETHERITE_HELMET
+  Display: '&4&lDragonScale Helmet'
+  Lore:
+    - '&7Set: DragonScale'
+    - '&7+5 armor / Prot VI / Aqua Affinity'
+    - '&7Night Vision while worn'
+  Enchantments:
+    - PROTECTION:6
+    - AQUA_AFFINITY:1
+    - UNBREAKING:5
+    - RESPIRATION:3
+  Skills:
+    - potion{type=NIGHT_VISION;duration=400;lvl=1} @self ~onTimer:200
+  Options:
+    Unbreakable: true
+    HideFlags: true
+
+DragonScale_Chestplate:
+  Id: NETHERITE_CHESTPLATE
+  Display: '&4&lDragonScale Chestplate'
+  Lore:
+    - '&7Set: DragonScale'
+    - '&7Prot VI / Thorns III'
+  Enchantments:
+    - PROTECTION:6
+    - THORNS:3
+    - UNBREAKING:5
+  Options:
+    Unbreakable: true
+    HideFlags: true
+
+DragonScale_Leggings:
+  Id: NETHERITE_LEGGINGS
+  Display: '&4&lDragonScale Leggings'
+  Lore:
+    - '&7Set: DragonScale'
+    - '&7Prot VI / Fire Prot IV'
+  Enchantments:
+    - PROTECTION:6
+    - FIRE_PROTECTION:4
+    - UNBREAKING:5
+  Options:
+    Unbreakable: true
+    HideFlags: true
+
+DragonScale_Boots:
+  Id: NETHERITE_BOOTS
+  Display: '&4&lDragonScale Boots'
+  Lore:
+    - '&7Set: DragonScale'
+    - '&7Prot VI / Feather Falling V / Depth Strider III'
+  Enchantments:
+    - PROTECTION:6
+    - FEATHER_FALLING:5
+    - DEPTH_STRIDER:3
+    - UNBREAKING:5
+  Options:
+    Unbreakable: true
+    HideFlags: true
+
+LuckyCharm:
+  Id: NETHER_STAR
+  Display: '&e&lLucky Charm'
+  Lore:
+    - '&7Increases drop chance while held'
+    - '&7Stat: +20 luck'
+  Attributes:
+    MainHand:
+      Luck: 20
+  Options:
+    HideFlags: true
+
+GodApple:
+  Id: ENCHANTED_GOLDEN_APPLE
+  Display: '&6&lPhoenix Apple'
+  Lore:
+    - '&7Single-use: absorption + regen V (30s)'
+    - '&7Boss drop: PyroLord (rare)'
+  Skills:
+    - potion{type=ABSORPTION;duration=600;lvl=4} @self ~onUse
+    - potion{type=REGENERATION;duration=600;lvl=4} @self ~onUse
+  Options:
+    HideFlags: true

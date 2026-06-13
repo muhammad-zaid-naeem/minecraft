@@ -1,0 +1,59 @@
+# DESTINATION: plugins/Quests/config.yml
+# Quests (Pikamug) 5.3.1 template.
+
+language: en
+locale: en_US
+
+quester:
+  show-quest-info-on-join: true
+  notify-on-quest-creation: true
+  notify-on-quest-completion: true
+
+quests:
+  concurrent-quests: 5
+  quests-per-page: 7
+  allow-quitting: true
+  ignore-locked-quests: true
+  enable-questpoints: true
+  redo-delay: 0
+  daily-reset-time: '00:00 UTC'
+  weekly-reset-day: MONDAY
+
+database:
+  type: sqlite
+  host: ''
+  port: 3306
+  name: 'quests'
+  user: ''
+  password: ''
+
+# Quest auto-distribution
+quest-auto-give:
+  daily:
+    enabled: true
+    reset-cron: '0 0 * * *'
+  weekly:
+    enabled: true
+    reset-cron: '0 0 * * 1'
+
+# Hooks
+hook:
+  citizens: false
+  zNPCsPlus: true
+  placeholderapi: true
+  vault: true
+  worldguard: false
+  griefprevention: true
+
+# Battle pass branch (use Quests as the BP engine)
+battle-pass:
+  enabled: true
+  season-length-days: 90
+  start-date: '2026-01-01'
+  free-track:
+    enabled: true
+  premium-track:
+    enabled: true
+    cost: 1500
+    cost-currency: questpoints
+  rewards-yml: 'battlepass_rewards.yml'

@@ -1,0 +1,296 @@
+# DESTINATION: plugins/DeluxeMenus/gui_menus/main.yml
+# Main hub menu - opens with /menu
+
+menu_title: '&c&lLifeSteal &7Hub'
+open_command:
+  - menu
+  - hub
+size: 54
+
+items:
+
+  filler:
+    material: BLACK_STAINED_GLASS_PANE
+    slot: 0
+    slots: [0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,45,46,47,48,49,50,51,52,53]
+    display_name: ' '
+
+  player_head:
+    material: PLAYER_HEAD
+    slot: 4
+    display_name: '&e%player_name%'
+    lore:
+      - '&7Rank&8: %luckperms_prefix%'
+      - '&7Balance&8: &a$%vault_eco_balance%'
+      - '&7Level&8: &b%auraskills_overall_level%'
+      - '&7Kills&8: &c%statistic_player_kills%'
+      - '&7Deaths&8: &c%statistic_deaths%'
+      - ''
+      - '&8Click for full profile'
+    owner: '%player_name%'
+    left_click_commands:
+      - '[openguimenu] profile'
+      - '[sound] UI_BUTTON_CLICK'
+
+  shop:
+    material: EMERALD
+    slot: 19
+    display_name: '&a&lServer Shop'
+    lore:
+      - '&7Buy and sell items'
+      - '&7with the server.'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] shop'
+      - '[close]'
+      - '[sound] UI_BUTTON_CLICK'
+
+  ah:
+    material: GOLD_INGOT
+    slot: 20
+    display_name: '&6&lAuction House'
+    lore:
+      - '&7Bid on player listings.'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] ah'
+      - '[close]'
+
+  pshops:
+    material: CHEST
+    slot: 21
+    display_name: '&3&lPlayer Shops'
+    lore:
+      - '&7Browse community shops.'
+      - ''
+      - '&eClick to browse'
+    left_click_commands:
+      - '[player] qs list'
+      - '[close]'
+
+  crates:
+    material: ENDER_CHEST
+    slot: 22
+    display_name: '&5&lCrates'
+    lore:
+      - '&7Open your keys.'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] crate menu'
+      - '[close]'
+
+  quests:
+    material: WRITTEN_BOOK
+    slot: 23
+    display_name: '&d&lQuests'
+    lore:
+      - '&7Daily and weekly tasks.'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] quests gui'
+      - '[close]'
+
+  skills:
+    material: EXPERIENCE_BOTTLE
+    slot: 24
+    display_name: '&b&lSkills'
+    lore:
+      - '&7Your AuraSkills levels.'
+      - ''
+      - '&eOverall&8: &b%auraskills_overall_level%'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] skills'
+      - '[close]'
+
+  warps:
+    material: COMPASS
+    slot: 25
+    display_name: '&e&lWarps'
+    lore:
+      - '&7Server warps menu.'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[openguimenu] warps'
+
+  wild:
+    material: GRASS_BLOCK
+    slot: 28
+    display_name: '&2&lWild (RTP)'
+    lore:
+      - '&7Random teleport into the'
+      - '&awild &7resource world.'
+      - ''
+      - '&7Cooldown&8: &c60s'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[player] wild'
+      - '[close]'
+
+  clan:
+    material: GREEN_BANNER
+    slot: 29
+    display_name: '&9&lClans'
+    lore:
+      - '&7Join or create a clan.'
+      - ''
+      - '&7Your clan&8: &6%simpleclans_clan_tag_label%'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] clan'
+      - '[close]'
+
+  pvp:
+    material: NETHERITE_SWORD
+    slot: 30
+    display_name: '&c&lPvP Arena'
+    lore:
+      - '&7Enter the PvP arena.'
+      - ''
+      - '&cWarning&8: &7Real damage!'
+      - ''
+      - '&eClick to warp'
+    hide_attributes: true
+    left_click_commands:
+      - '[player] warp pvp'
+      - '[close]'
+
+  bosses:
+    material: DRAGON_HEAD
+    slot: 31
+    display_name: '&4&lBosses'
+    lore:
+      - '&7Fight Mythic bosses.'
+      - ''
+      - '&eClick to warp'
+    left_click_commands:
+      - '[player] warp bosses'
+      - '[close]'
+
+  cosmetics:
+    material: FIREWORK_ROCKET
+    slot: 32
+    display_name: '&d&lCosmetics'
+    lore:
+      - '&7Pets, trails, tags.'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] pp gui'
+      - '[close]'
+
+  vote:
+    material: PAPER
+    slot: 33
+    display_name: '&b&lVote'
+    lore:
+      - '&7Vote for the server'
+      - '&7and get free rewards.'
+      - ''
+      - '&eClick to view links'
+    left_click_commands:
+      - '[player] vote'
+      - '[close]'
+
+  battlepass:
+    material: NETHER_STAR
+    slot: 34
+    display_name: '&c&lBattle Pass'
+    lore:
+      - '&7Seasonal rewards track.'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] battlepass'
+      - '[close]'
+
+  rules:
+    material: BOOK
+    slot: 37
+    display_name: '&6&lRules'
+    lore:
+      - '&7Read server rules.'
+      - ''
+      - '&eClick to read'
+    left_click_commands:
+      - '[player] rules'
+      - '[close]'
+
+  discord:
+    material: PURPLE_DYE
+    slot: 38
+    display_name: '&9&lDiscord'
+    lore:
+      - '&7discord.gg/example'
+      - ''
+      - '&eClick to copy invite'
+    left_click_commands:
+      - '[player] discord'
+      - '[close]'
+
+  ranks:
+    material: DIAMOND
+    slot: 39
+    display_name: '&6&lRanks (Store)'
+    lore:
+      - '&7VIP / MVP / Elite.'
+      - '&7Support the server.'
+      - ''
+      - '&eClick to open'
+    left_click_commands:
+      - '[player] warp store'
+      - '[close]'
+
+  help:
+    material: KNOWLEDGE_BOOK
+    slot: 40
+    display_name: '&e&lHelp'
+    lore:
+      - '&7Open help menu.'
+      - ''
+      - '&eClick'
+    left_click_commands:
+      - '[player] help'
+      - '[close]'
+
+  spawn:
+    material: ENDER_PEARL
+    slot: 41
+    display_name: '&a&lSpawn'
+    lore:
+      - '&7Return to spawn.'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[player] spawn'
+      - '[close]'
+
+  daily:
+    material: SUNFLOWER
+    slot: 42
+    display_name: '&e&lDaily Rewards'
+    lore:
+      - '&7Claim your daily crate.'
+      - ''
+      - '&eClick to view'
+    left_click_commands:
+      - '[player] crate preview daily'
+      - '[close]'
+
+  settings:
+    material: REDSTONE
+    slot: 43
+    display_name: '&7Settings'
+    lore:
+      - '&7Toggle PvP, chat, etc.'
+    left_click_commands:
+      - '[player] sb'
+      - '[message] &7Scoreboard toggled.'

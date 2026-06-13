@@ -1,0 +1,67 @@
+# DESTINATION: plugins/Multiverse-Core/worlds.yml
+# World-specific Multiverse settings. The "wild" world below is the RTP target.
+
+worlds:
+  world:
+    alias: '&aSurvival'
+    color: GREEN
+    pvp: true
+    difficulty: hard
+    gameMode: SURVIVAL
+    hunger: true
+    autoHeal: true
+    portalForm: ALL
+    respawnWorld: world
+    keepSpawnInMemory: true
+    spawnLocation:
+      world: world
+      x: 0
+      y: 101
+      z: 0
+      yaw: 0
+      pitch: 0
+    entryFee: 0
+    currency: ''
+
+  world_nether:
+    alias: '&cNether'
+    color: RED
+    pvp: true
+    difficulty: hard
+    gameMode: SURVIVAL
+    hunger: true
+    portalForm: ALL
+    respawnWorld: world
+
+  world_the_end:
+    alias: '&5End'
+    color: LIGHT_PURPLE
+    pvp: true
+    difficulty: hard
+    gameMode: SURVIVAL
+    hunger: true
+    portalForm: ALL
+    respawnWorld: world
+
+  wild:
+    alias: '&6Wild'
+    color: GOLD
+    pvp: true
+    difficulty: hard
+    gameMode: SURVIVAL
+    hunger: true
+    autoHeal: true
+    portalForm: NONE          # no portals into wild (RTP only)
+    respawnWorld: world       # die in wild -> back to spawn
+    keepSpawnInMemory: false  # don't waste RAM, players RTP everywhere
+    allowFlight: false
+    monsters: true
+    animals: true
+    spawnLocation:
+      world: wild
+      x: 0
+      y: 100
+      z: 0
+    entryFee: 0
+    bedRespawn: true
+    worldBlacklist: []

@@ -1,0 +1,23 @@
+command-block-overrides: []
+ignore-vanilla-permissions: false
+aliases:
+  icanhasbukkit:
+  - version $1-
+  wild:
+  - tpr wild $1-
+  rtp:
+  - tpr wild $1-
+  menu:
+  - deluxemenus open main $1-
+  hub:
+  - deluxemenus open main $1-
+  warps:
+  - deluxemenus open warps $1-
+  profile:
+  - deluxemenus open profile $1-
+  shopmenu:
+  - deluxemenus open shop $1-
+  rtpmenu:
+  - deluxemenus open rtp $1-
+  wildmenu:
+  - deluxemenus open rtp $1-

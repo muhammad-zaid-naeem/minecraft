@@ -1,0 +1,60 @@
+# EssentialsX Warps Setup Script
+# Run from in-game console (op required) - /setwarp uses YOUR location.
+# Lines starting with # are comments.
+#
+# Flow:
+#   1. /tp to the coordinate.
+#   2. /setwarp <name>.
+#   3. Repeat for each warp.
+#
+# Warps persist in: plugins/Essentials/warps/<name>.yml
+# Default access perm: essentials.warps.<name>
+# All players have essentials.warps.spawn (in ranks_setup.txt).
+
+# === spawn (central platform) ===
+tp 0 101 0
+setwarp spawn
+
+# === pvp (PvP arena, 50 blocks away) ===
+tp 50 80 50
+setwarp pvp
+# perm: essentials.warps.pvp (granted to default)
+
+# === bosses (Mythic Boss arena) ===
+tp -50 80 50
+setwarp bosses
+# perm: essentials.warps.bosses (granted to default)
+
+# === info (info platform with rules holograms) ===
+tp -10 101 8
+setwarp info
+
+# === store (rank purchase area / sign linked to webstore) ===
+tp 7 101 -2
+setwarp store
+
+# === tour (NPC tour starting point) ===
+tp 0 101 5
+setwarp tour
+
+# === market (community-built player shop district) ===
+tp 100 70 100
+setwarp market
+
+# === events (event area for seasonal events) ===
+tp 200 80 200
+setwarp events
+# perm: essentials.warps.events (granted to default; staff can /event start)
+
+# === Permission notes ===
+# Default rank already has:
+#   essentials.warp
+#   essentials.warp.list
+#   essentials.warps.spawn / pvp / bosses / info / store / tour / market / events
+#
+# Restrict a specific warp to a rank:
+#   lp group vip permission set essentials.warps.<warpname> true
+#   lp group default permission set essentials.warps.<warpname> false
+
+# === Verification ===
+warps

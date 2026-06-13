@@ -1,0 +1,113 @@
+# DESTINATION: plugins/Essentials/config.yml
+# EssentialsX template for LifeSteal SMP.
+# Copy over the auto-generated config after first boot.
+
+# Starting balance for new players (Vault economy).
+starting-balance: 500
+
+# Currency
+currency-symbol: '$'
+max-money: 10000000000
+min-money: -1000
+
+# Spawn handling (EssentialsX Spawn)
+respawn-at-home: false
+respawn-listener-priority: high
+spawn-on-join: true
+ess-spawn-on-join: true
+new-players:
+  kit: tools
+  announce-format: '&7[&a+&7] &f{DISPLAYNAME} &7joined for the first time. Welcome!'
+
+# Homes per rank (sethome.multiple.<group>)
+sethome-multiple:
+  default: 1
+  vip: 3
+  mvp: 5
+  elite: 10
+  owner: 50
+
+# Teleport
+teleport-cooldown: 3
+teleport-delay: 0
+teleport-invulnerability: true
+teleport-invulnerability-length: 4
+tpa-accept-cancellation: 120
+tpa-request-timeout: 120
+back-on-death: true
+
+# Worlds
+nether: true
+end: true
+world-teleport-permissions: true
+
+# Sleep skipping
+sleeping-ignored-after-sleep-percent: 50
+sleeping-ignores-afk-players: true
+sleeping-ignores-creative-players: true
+sleeping-ignores-spectator-players: true
+
+# Kits + cooldowns
+kit-auto-equip: false
+kit-cooldowns-persist: true
+
+# Chat
+chat:
+  format: '{PREFIX} &f{DISPLAYNAME}&7: &f{MESSAGE}'
+  radius: 0
+  quick-wildcard: true
+
+# AFK
+auto-afk: 600       # 10 min idle = AFK
+auto-afk-kick: 3600 # 1 hr AFK = kick
+afk-list-name: '&7[AFK] {0}'
+freeze-afk-players: true
+
+# Vanish
+vanish:
+  vanish-on-join: false
+  hide-in-tab: true
+
+# Anti-build / anti-spam
+nuke-protection: true
+no-god-in-worlds:
+  - world
+
+# Death
+keep-experience: false       # XP drops on death
+keep-inventory: false        # default false; lifesteal rules apply
+
+# Joinquit
+remove-god-on-disconnect: true
+death-messages: true
+join-message: '&7[&a+&7] &f{DISPLAYNAME}'
+quit-message: '&7[&c-&7] &f{DISPLAYNAME}'
+
+# Spawn protection (extra layer beyond server.properties)
+spawn-protection:
+  enabled: true
+  radius: 30
+
+# RTP
+rtp:
+  cooldown: 60
+  max-tries: 50
+  border-min: 500
+  border-max: 5000
+  blacklist-biomes:
+    - ocean
+    - deep_ocean
+    - frozen_ocean
+    - warm_ocean
+
+# Cooldowns per command
+command-cooldowns:
+  /heal: 180
+  /repair: 600
+  /feed: 86400          # mvp+: daily
+  /rtp: 60
+
+# Misc
+auto-update: false
+debug: false
+locale: en

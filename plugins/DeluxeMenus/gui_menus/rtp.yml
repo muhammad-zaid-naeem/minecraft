@@ -1,0 +1,102 @@
+# DESTINATION: plugins/DeluxeMenus/gui_menus/rtp.yml
+# RTP / Wild menu - picks a biome region to teleport to.
+
+menu_title: '&2&lRandom Teleport'
+open_command:
+  - rtpmenu
+  - wildmenu
+size: 27
+
+items:
+
+  filler:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 0
+    slots: [0,1,2,3,4,5,6,7,8,9,17,18,19,20,21,22,23,24,25,26]
+    display_name: ' '
+
+  random:
+    material: ENDER_PEARL
+    slot: 10
+    display_name: '&a&lRandom Wild'
+    lore:
+      - '&7Drop somewhere random in the'
+      - '&awild &7resource world.'
+      - ''
+      - '&7Cooldown&8: &c60s'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[player] wild'
+      - '[close]'
+      - '[sound] ENTITY_ENDERMAN_TELEPORT'
+
+  forest:
+    material: OAK_SAPLING
+    slot: 11
+    display_name: '&2&lForest'
+    lore:
+      - '&7Land in a forested biome.'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[console] essentials:tpr wild %player_name%'
+      - '[close]'
+
+  desert:
+    material: SAND
+    slot: 12
+    display_name: '&e&lDesert'
+    lore:
+      - '&7Land near a desert biome.'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[console] essentials:tpr wild %player_name%'
+      - '[close]'
+
+  mountain:
+    material: STONE
+    slot: 13
+    display_name: '&7&lMountains'
+    lore:
+      - '&7Land in a mountainous area.'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[console] essentials:tpr wild %player_name%'
+      - '[close]'
+
+  jungle:
+    material: JUNGLE_SAPLING
+    slot: 14
+    display_name: '&a&lJungle'
+    lore:
+      - '&7Lush, dangerous jungle.'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[console] essentials:tpr wild %player_name%'
+      - '[close]'
+
+  snow:
+    material: SNOW_BLOCK
+    slot: 15
+    display_name: '&b&lSnow'
+    lore:
+      - '&7Snowy biome teleport.'
+      - ''
+      - '&eClick to teleport'
+    left_click_commands:
+      - '[console] essentials:tpr wild %player_name%'
+      - '[close]'
+
+  spawn:
+    material: GRASS_BLOCK
+    slot: 16
+    display_name: '&a&lBack to Spawn'
+    lore:
+      - '&7Return to safe spawn.'
+    left_click_commands:
+      - '[player] spawn'
+      - '[close]'

@@ -1,0 +1,18 @@
+# DESTINATION: plugins/Multiverse-Core/config.yml
+# Multiverse-Core 5.7.0 settings.
+
+config:
+  enforce-access: true
+  prefix-chat: true
+  prefix-chat-format: '&8[&3%world%&8] &r%message%'
+  teleport-cooldown: 1
+  default-respawn-world: world
+  first-spawn-world: world
+  first-spawn-override: true
+  use-finer-teleport-permissions: false
+  silent-start: false
+  show-donation-message: false
+  global-debug: 0
+
+# Default generator overrides per world
+generator-overrides: {}

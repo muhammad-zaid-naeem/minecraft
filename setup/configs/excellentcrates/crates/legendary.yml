@@ -1,0 +1,67 @@
+# DESTINATION: plugins/ExcellentCrates/crates/legendary.yml
+name: '&c&lLegendary Crate'
+
+block:
+  enabled: true
+  type: CHEST
+  hologram:
+    enabled: true
+    lines:
+      - '&c&lLegendary Crate'
+      - '&6Right-click to open'
+
+key:
+  ids:
+    - legendary_key
+
+opening:
+  type: GACHA
+  config:
+    duration: 160
+    sound-win: ENTITY_WITHER_SPAWN
+
+rewards:
+  money_huge:
+    chance: 25.0
+    name: '&a$50000'
+    commands: ['eco give %player_name% 50000']
+
+  boss_drop:
+    chance: 30.0
+    name: '&cBoss Item Drop'
+    commands:
+      - 'mm i give %player_name% Pyrosword 1'
+      - 'mm i give %player_name% FrostBow 1'
+      - 'mm i give %player_name% VoidBlade 1'
+      - 'mm i give %player_name% EarthHammer 1'
+    select-one: true
+
+  dragonscale_piece:
+    chance: 15.0
+    name: '&5DragonScale Piece'
+    commands:
+      - 'mm i give %player_name% DragonScale_Helmet 1'
+      - 'mm i give %player_name% DragonScale_Chestplate 1'
+      - 'mm i give %player_name% DragonScale_Leggings 1'
+      - 'mm i give %player_name% DragonScale_Boots 1'
+    select-one: true
+
+  boss_egg:
+    chance: 15.0
+    name: '&5Boss Spawn Egg'
+    commands: ['mm i give %player_name% boss_egg_high 1']
+    broadcast: true
+    broadcast-message: '&c%player_name% &7won a &5Boss Spawn Egg &7from a Legendary Crate!'
+
+  pet_egg:
+    chance: 10.0
+    name: '&dPet Egg'
+    commands: ['mm i give %player_name% phoenix_pet_egg 1']
+    broadcast: true
+
+  exclusive_cosmetic:
+    chance: 5.0
+    name: '&5Exclusive Cosmetic'
+    commands: ['lp user %player_name% meta setsuffix 1 " &7| &5&lLegend"']
+    broadcast: true
+    broadcast-message: '&c%player_name% &7unlocked the &5Legend &7tag from a Legendary Crate!'

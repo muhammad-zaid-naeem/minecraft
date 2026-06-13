@@ -1,0 +1,54 @@
+# DESTINATION: plugins/ExcellentCrates/crates/epic.yml
+name: '&6&lEpic Crate'
+
+block:
+  enabled: true
+  type: CHEST
+  hologram:
+    enabled: true
+    lines:
+      - '&6&lEpic Crate'
+      - '&fRight-click to open'
+
+key:
+  ids:
+    - epic_key
+
+opening:
+  type: WHEEL
+  config:
+    duration: 120
+    sound-win: ENTITY_ENDER_DRAGON_GROWL
+
+rewards:
+  money_big:
+    chance: 35.0
+    name: '&a$10000'
+    commands: ['eco give %player_name% 10000']
+
+  netherite_piece:
+    chance: 25.0
+    name: '&7Netherite Piece'
+    items:
+      - 'NETHERITE_HELMET:1'
+      - 'NETHERITE_CHESTPLATE:1'
+      - 'NETHERITE_LEGGINGS:1'
+      - 'NETHERITE_BOOTS:1'
+      - 'NETHERITE_SWORD:1'
+
+  custom_enchant_book:
+    chance: 20.0
+    name: '&dCustom Enchant Book'
+    commands: ['mm i give %player_name% lifesteal_book 1']
+
+  legendary_key:
+    chance: 15.0
+    name: '&cLegendary Key'
+    commands: ['crate key give %player_name% legendary 1']
+    broadcast: true
+
+  rare_boss_egg:
+    chance: 5.0
+    name: '&5Rare Boss Egg'
+    commands: ['mm i give %player_name% boss_egg_mid 1']
+    broadcast: true

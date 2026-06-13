@@ -1,0 +1,152 @@
+# ZNPCsPlus 2.0.0 NPC Creation Script
+# Run from console or RCON (op required).
+# Lines starting with # are comments - skip them when pasting.
+#
+# All NPCs spawn at default coordinates around spawn (0, 101, 0) in world "world".
+# Move any NPC after creation:  /npc move <id>           (uses your current pos)
+# Or:                            /npc move <id> <x> <y> <z>
+# Delete:                        /npc delete <id>
+# Inspect:                       /npc list  |  /npc near 50
+#
+# Skins use Mojang names via:    /npc skin set <id> <name>
+# Holograms above the NPC via:   /npc holo add <id> "<text>"
+# Click actions via:             /npc action add <id> RUN_COMMAND "<cmd>"
+#
+# NPCs persist in: plugins/ZNPCsPlus/storage/npcs.yml
+
+# === 1. Spawn Guide NPC ===
+npc create spawn_guide PLAYER world 0 101 5
+npc skin set spawn_guide Hypixel
+npc holo add spawn_guide "&6&lSpawn Guide"
+npc holo add spawn_guide "&fRight-click for tour"
+npc action add spawn_guide RUN_COMMAND "warp spawn"
+
+# === 2. Server Shop NPC ===
+npc create shop_npc PLAYER world 5 101 0
+npc skin set shop_npc MHF_Villager
+npc holo add shop_npc "&a&lServer Shop"
+npc holo add shop_npc "&fBuy and sell items"
+npc action add shop_npc RUN_COMMAND "shop"
+
+# === 3. Daily Rewards NPC ===
+npc create daily_npc PLAYER world 7 101 2
+npc skin set daily_npc MHF_PigZombie
+npc holo add daily_npc "&e&lDaily Rewards"
+npc holo add daily_npc "&fClaim daily loot"
+npc action add daily_npc RUN_COMMAND "crate preview daily"
+
+# === 4. Vote Rewards NPC ===
+npc create vote_npc PLAYER world 9 101 0
+npc skin set vote_npc MHF_Cactus
+npc holo add vote_npc "&b&lVote Rewards"
+npc holo add vote_npc "&fVote = free loot"
+npc action add vote_npc RUN_COMMAND "vote"
+
+# === 5. Quests NPC ===
+npc create quests_npc PLAYER world -5 101 0
+npc skin set quests_npc MHF_Librarian
+npc holo add quests_npc "&d&lQuests"
+npc holo add quests_npc "&fDaily and weekly tasks"
+npc action add quests_npc RUN_COMMAND "quests gui"
+
+# === 6. Battle Pass NPC ===
+npc create bp_npc PLAYER world -7 101 2
+npc skin set bp_npc Notch
+npc holo add bp_npc "&c&lBattle Pass"
+npc holo add bp_npc "&fSeasonal rewards"
+npc action add bp_npc RUN_COMMAND "battlepass"
+
+# === 7. Crates NPC ===
+npc create crates_npc PLAYER world 0 101 -5
+npc skin set crates_npc MHF_Present1
+npc holo add crates_npc "&5&lCrates"
+npc holo add crates_npc "&fOpen your keys"
+npc action add crates_npc RUN_COMMAND "crate menu"
+
+# === 8. Rules NPC ===
+npc create rules_npc PLAYER world 3 101 -5
+npc skin set rules_npc MHF_Lawyer
+npc holo add rules_npc "&6&lRules"
+npc holo add rules_npc "&fRead before playing"
+npc action add rules_npc RUN_COMMAND "rules"
+
+# === 9. RTP NPC (-> wild world) ===
+npc create rtp_npc PLAYER world -3 101 -5
+npc skin set rtp_npc MHF_Steve
+npc holo add rtp_npc "&2&lRandom TP"
+npc holo add rtp_npc "&fGo into the wild"
+npc action add rtp_npc RUN_COMMAND "wild"
+
+# === 10. Clans NPC ===
+npc create clans_npc PLAYER world 5 101 -3
+npc skin set clans_npc MHF_Pirate
+npc holo add clans_npc "&9&lClans"
+npc holo add clans_npc "&fJoin or create one"
+npc action add clans_npc RUN_COMMAND "clan"
+
+# === 11. PvP Arena NPC ===
+npc create pvp_npc PLAYER world 10 101 0
+npc skin set pvp_npc MHF_Skeleton
+npc holo add pvp_npc "&c&lPvP Arena"
+npc holo add pvp_npc "&fFight other players"
+npc action add pvp_npc RUN_COMMAND "warp pvp"
+
+# === 12. Bosses NPC ===
+npc create bosses_npc PLAYER world -10 101 0
+npc skin set bosses_npc MHF_Wither
+npc holo add bosses_npc "&4&lBosses"
+npc holo add bosses_npc "&fFight mythic mobs"
+npc action add bosses_npc RUN_COMMAND "warp bosses"
+
+# === 13. Help NPC ===
+npc create help_npc PLAYER world 0 101 8
+npc skin set help_npc MHF_Question
+npc holo add help_npc "&e&lHelp"
+npc holo add help_npc "&fOpen help menu"
+npc action add help_npc RUN_COMMAND "help"
+
+# === 14. Discord NPC ===
+npc create discord_npc PLAYER world 5 101 8
+npc skin set discord_npc MHF_Enderman
+npc holo add discord_npc "&9&lDiscord"
+npc holo add discord_npc "&fJoin our community"
+npc action add discord_npc RUN_COMMAND "discord"
+
+# === 15. Information NPC ===
+npc create info_npc PLAYER world -5 101 8
+npc skin set info_npc MHF_Alex
+npc holo add info_npc "&a&lInformation"
+npc holo add info_npc "&fServer info and MOTD"
+npc action add info_npc RUN_COMMAND "warp info"
+
+# === 16. Ranks NPC ===
+npc create ranks_npc PLAYER world 7 101 -2
+npc skin set ranks_npc MHF_Chest
+npc holo add ranks_npc "&6&lRanks"
+npc holo add ranks_npc "&fVIP / MVP / Elite"
+npc action add ranks_npc RUN_COMMAND "warp store"
+
+# === 17. Auction House NPC ===
+npc create ah_npc PLAYER world 8 101 -8
+npc skin set ah_npc MHF_CaveSpider
+npc holo add ah_npc "&e&lAuction House"
+npc holo add ah_npc "&fBid on rare items"
+npc action add ah_npc RUN_COMMAND "ah"
+
+# === 18. Player Shops NPC ===
+npc create pshop_npc PLAYER world -8 101 -8
+npc skin set pshop_npc MHF_Golem
+npc holo add pshop_npc "&3&lPlayer Shops"
+npc holo add pshop_npc "&fBrowse player listings"
+npc action add pshop_npc RUN_COMMAND "qs list"
+
+# === 19. Menu NPC (DeluxeMenus main hub) ===
+npc create menu_npc PLAYER world 0 101 3
+npc skin set menu_npc MHF_Exclamation
+npc holo add menu_npc "&6&lMenu"
+npc holo add menu_npc "&fOpen the hub"
+npc action add menu_npc RUN_COMMAND "menu"
+
+# === Verification ===
+npc list
+npc near 50

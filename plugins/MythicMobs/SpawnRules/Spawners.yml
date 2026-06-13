@@ -1,0 +1,81 @@
+# DESTINATION: plugins/MythicMobs/SpawnRules/Spawners.yml
+# RandomSpawn rules for natural mob spawning.
+
+ShadowZombieNetherSpawn:
+  Worlds: world_nether
+  Action: replace
+  MobType: ShadowZombie
+  Conditions:
+    - biome NETHER_WASTES
+    - biome CRIMSON_FOREST
+    - biome WARPED_FOREST
+  Chance: 0.30
+  Priority: 5
+  MobLevel: 1
+  Cooldown: 0
+  MaxMobsPerChunk: 4
+  Reasons:
+    - NATURAL
+
+ForestArcherSpawn:
+  Worlds: world
+  Action: replace
+  MobType: ForestArcher
+  Conditions:
+    - biome FOREST
+    - biome DARK_FOREST
+    - biome TAIGA
+  Chance: 0.15
+  Priority: 5
+  MaxMobsPerChunk: 3
+  Reasons:
+    - NATURAL
+
+CaveWardenSpawn:
+  Worlds: world
+  Action: replace
+  MobType: CaveWarden
+  Conditions:
+    - biome DEEP_DARK
+    - height < 0
+  Chance: 0.01
+  Priority: 10
+  MaxMobsPerChunk: 1
+  Reasons:
+    - NATURAL
+
+IceGolemSpawn:
+  Worlds: world
+  Action: replace
+  MobType: IceGolem
+  Conditions:
+    - biome SNOWY_PLAINS
+    - biome FROZEN_PEAKS
+    - biome SNOWY_TAIGA
+  Chance: 0.05
+  Priority: 5
+  MaxMobsPerChunk: 2
+  Reasons:
+    - NATURAL
+
+InfernalCreeperSpawn:
+  Worlds: world_nether
+  Action: replace
+  MobType: InfernalCreeper
+  Conditions:
+    - biome BASALT_DELTAS
+    - biome SOUL_SAND_VALLEY
+  Chance: 0.10
+  Priority: 5
+  MaxMobsPerChunk: 2
+
+SwampWitchSpawn:
+  Worlds: world
+  Action: replace
+  MobType: SwampWitch
+  Conditions:
+    - biome SWAMP
+    - biome MANGROVE_SWAMP
+  Chance: 0.10
+  Priority: 5
+  MaxMobsPerChunk: 1

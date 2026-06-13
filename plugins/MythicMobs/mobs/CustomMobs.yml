@@ -1,0 +1,99 @@
+# DESTINATION: plugins/MythicMobs/Mobs/CustomMobs.yml
+# 6 regular custom mobs.
+
+ShadowZombie:
+  Type: ZOMBIE
+  Display: '&8&lShadow Zombie'
+  Health: 60
+  Damage: 8
+  Options:
+    MovementSpeed: 0.28
+    Despawn: false
+    AlwaysShowName: true
+  Equipment:
+    - IRON_SWORD HAND
+  Skills:
+    - effect:particles{p=smoke;a=10} @self ~onSpawn
+    - damage{a=8} @target ~onAttack
+  Faction: undead
+  Drops:
+    - common_mob_loot
+
+ForestArcher:
+  Type: SKELETON
+  Display: '&2&lForest Archer'
+  Health: 40
+  Damage: 6
+  Options:
+    MovementSpeed: 0.3
+    AlwaysShowName: true
+  Equipment:
+    - BOW HAND
+  Skills:
+    - shoot{} @target ~onTimer:60
+  Faction: hostile
+  Drops:
+    - common_mob_loot
+    - ARROW 4-12 0.5
+
+CaveWarden:
+  Type: WARDEN
+  Display: '&8&lCave Warden'
+  Health: 200
+  Damage: 15
+  Options:
+    MovementSpeed: 0.25
+    AlwaysShowName: true
+  Skills:
+    - effect:sound{s=ENTITY_WARDEN_ROAR;v=2;p=0.8} @self ~onSpawn
+    - damage{a=15;ignoreArmor=true} @PlayersInRadius{r=3} ~onTimer:80
+  Faction: hostile
+  Drops:
+    - rare_mob_loot
+    - ECHO_SHARD 1-3 1.0
+
+IceGolem:
+  Type: SNOWMAN
+  Display: '&b&lIce Golem'
+  Health: 100
+  Damage: 6
+  Options:
+    MovementSpeed: 0.2
+  Skills:
+    - effect:particles{p=snowflake;a=30} @self ~onTimer:20
+    - potion{type=SLOW;duration=60;lvl=1} @PlayersInRadius{r=5} ~onTimer:60
+  Faction: ice
+  Drops:
+    - common_mob_loot
+    - SNOWBALL 8-16 1.0
+
+InfernalCreeper:
+  Type: CREEPER
+  Display: '&c&lInfernal Creeper'
+  Health: 50
+  Damage: 10
+  Options:
+    Powered: false
+    MovementSpeed: 0.35
+  Skills:
+    - effect:particles{p=flame;a=20} @self ~onTimer:10
+    - damage{a=12;element=fire} @PlayersInRadius{r=3} ~onTimer:40
+  Faction: fire
+  Drops:
+    - common_mob_loot
+    - BLAZE_POWDER 1-3 1.0
+
+SwampWitch:
+  Type: WITCH
+  Display: '&2&lSwamp Witch'
+  Health: 70
+  Damage: 8
+  Options:
+    MovementSpeed: 0.28
+  Skills:
+    - effect:particles{p=witch;a=20} @self ~onTimer:30
+    - throw{velocityY=0.8;velocityZ=1} @target ~onTimer:50
+  Faction: magic
+  Drops:
+    - common_mob_loot
+    - SPLASH_POTION 1 0.5

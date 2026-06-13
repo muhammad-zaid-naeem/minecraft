@@ -1,0 +1,93 @@
+# DESTINATION: plugins/DeluxeMenus/gui_menus/shop.yml
+# Shop category picker - shortcut to /shop's categories.
+
+menu_title: '&a&lShop Categories'
+open_command: shopmenu
+size: 27
+
+items:
+
+  filler:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 0
+    slots: [0,1,2,3,4,5,6,7,8,9,17,18,19,20,21,22,23,24,25,26]
+    display_name: ' '
+
+  blocks:
+    material: STONE
+    slot: 10
+    display_name: '&7&lBlocks'
+    lore:
+      - '&7Cobble, ore, glass, etc.'
+    left_click_commands:
+      - '[player] shop'
+      - '[close]'
+
+  tools:
+    material: IRON_PICKAXE
+    slot: 11
+    display_name: '&b&lTools'
+    lore:
+      - '&7Picks, axes, hoes.'
+    hide_attributes: true
+    left_click_commands:
+      - '[player] shop'
+      - '[close]'
+
+  combat:
+    material: DIAMOND_SWORD
+    slot: 12
+    display_name: '&c&lCombat'
+    lore:
+      - '&7Weapons and armor.'
+    hide_attributes: true
+    left_click_commands:
+      - '[player] shop'
+      - '[close]'
+
+  food:
+    material: COOKED_BEEF
+    slot: 13
+    display_name: '&6&lFood'
+    lore:
+      - '&7Meat, bread, apples.'
+    left_click_commands:
+      - '[player] shop'
+      - '[close]'
+
+  special:
+    material: NETHER_STAR
+    slot: 14
+    display_name: '&e&lSpecial'
+    lore:
+      - '&7Rare items, elytra, totems.'
+    left_click_commands:
+      - '[player] shop'
+      - '[close]'
+
+  ah:
+    material: GOLD_INGOT
+    slot: 15
+    display_name: '&6&lAuction House'
+    lore:
+      - '&7Player listings.'
+    left_click_commands:
+      - '[player] ah'
+      - '[close]'
+
+  pshop:
+    material: CHEST
+    slot: 16
+    display_name: '&3&lPlayer Shops'
+    lore:
+      - '&7Browse community shops.'
+    left_click_commands:
+      - '[player] qs list'
+      - '[close]'
+
+  back:
+    material: ARROW
+    slot: 22
+    display_name: '&c&lBack'
+    left_click_commands:
+      - '[openguimenu] main'

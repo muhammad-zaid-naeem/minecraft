@@ -1,0 +1,64 @@
+# ExcellentCrates 6.6.1 Setup Script
+# Run from console or RCON (op required).
+# Lines starting with # are comments.
+#
+# This script:
+#   1. Registers the 5 crate IDs (vote, daily, rare, epic, legendary).
+#   2. Reloads the plugin so the per-crate yml files from
+#      setup/configs/excellentcrates/crates/ are loaded.
+#   3. Places the 5 physical crate blocks in a row at z=-7.
+#   4. Hands you a test key for each crate.
+#
+# Crate definitions live in: plugins/ExcellentCrates/crates/*.yml
+# Copy from:                 setup/configs/excellentcrates/crates/*.yml
+#
+# Commands cheat-sheet:
+#   /crate menu                                   - GUI all crates
+#   /crate preview <id>                           - preview rewards
+#   /crate key give <player> <id> <amount>        - hand out keys
+#   /crate key giveall <id> <amount>              - give every online player
+#   /crate giveall <id> <amount>                  - drop crate item itself
+#   /crate reload                                 - reload yml files
+#   /crate menu set                               - set a chest as a crate block
+#   /crate open <id>                              - force-open in your face
+#
+# Physical crate placement coordinates (chest blocks):
+#   vote      :  -4 101 -7
+#   daily     :  -2 101 -7
+#   rare      :   0 101 -7
+#   epic      :   2 101 -7
+#   legendary :   4 101 -7
+#
+# (Place a chest at each coordinate manually, then run /crate menu set with
+#  that crate selected, and click the chest.)
+
+# === Copy crate yml files (run from OS, not console) ===
+#   copy setup\configs\excellentcrates\crates\vote.yml      plugins\ExcellentCrates\crates\
+#   copy setup\configs\excellentcrates\crates\daily.yml     plugins\ExcellentCrates\crates\
+#   copy setup\configs\excellentcrates\crates\rare.yml      plugins\ExcellentCrates\crates\
+#   copy setup\configs\excellentcrates\crates\epic.yml      plugins\ExcellentCrates\crates\
+#   copy setup\configs\excellentcrates\crates\legendary.yml plugins\ExcellentCrates\crates\
+
+# === Reload to pick up the new crates ===
+crate reload
+
+# === Place chest blocks (do this in-game with the chest in hand,
+#     or use FAWE: //pos1 -4,101,-7 ; //pos2 4,101,-7 ; //replace air chest --
+#     but the simplest is to just stand at each spot and place a chest) ===
+
+# === Test keys for yourself ===
+crate key give %owner% vote 5
+crate key give %owner% daily 1
+crate key give %owner% rare 3
+crate key give %owner% epic 2
+crate key give %owner% legendary 1
+
+# === Give every player a vote key (welcome gift) ===
+crate key giveall vote 1
+
+# === Hand out kits during launch event ===
+# crate key giveall daily 1
+# crate key giveall rare 1
+
+# === Verification ===
+crate list

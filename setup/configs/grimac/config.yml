@@ -1,0 +1,66 @@
+# DESTINATION: plugins/GrimAC/config.yml
+# GrimAC 2.3.74 template.
+
+# Max ping allowed before kick
+max-ping: 400
+max-transaction-time: 60
+
+# Async check toggle (cheap CPU)
+async-checks: true
+
+# Alerts to staff
+alerts:
+  enabled: true
+  permission: 'grim.alerts'
+  format: '&7[&cGrim&7] &f%player% &7failed &e%check% &7(%vl%)'
+  console-log: true
+
+# Auto-actions per VL threshold
+punishments:
+  KillAura:
+    - alert
+    - kick:KillAura combat detection
+  Reach:
+    - alert
+    - kick:Reach detected
+  Speed:
+    - alert
+    - kick:Speed too high
+  Fly:
+    - alert
+    - kick:Fly detection
+  Scaffold:
+    - alert
+    - kick:Scaffold detected
+  Phase:
+    - alert
+    - kick:Phase detected
+  Timer:
+    - alert
+    - kick:Tick speed mismatch
+  AutoClicker:
+    - alert
+    - kick:Auto-click pattern
+
+# Exempt list for staff
+exempt:
+  - 'grim.exempt'
+  - 'staffplus.staffmode'
+
+# Combat tuning
+combat:
+  knockback-resync: true
+  enforce-server-pos: true
+
+# Update notifications
+update-checker: true
+
+# Debug
+debug-mode: false
+
+# Bypass permissions (default OFF for staff)
+bypass:
+  killaura: false
+  reach: false
+  speed: false
+  fly: false

@@ -1,0 +1,55 @@
+# DESTINATION: plugins/ExcellentCrates/crates/rare.yml
+name: '&b&lRare Crate'
+description:
+  - '&7Open with: &bRare Key'
+
+block:
+  enabled: true
+  type: CHEST
+  hologram:
+    enabled: true
+    lines:
+      - '&b&lRare Crate'
+      - '&fRight-click to open'
+
+key:
+  ids:
+    - rare_key
+
+opening:
+  type: CASINO
+  config:
+    duration: 100
+    sound-win: ENTITY_PLAYER_LEVELUP
+
+rewards:
+  money_mid:
+    chance: 40.0
+    name: '&a$1000-$5000'
+    commands: ['eco give %player_name% 3000']
+
+  enchanted_set:
+    chance: 30.0
+    name: '&bEnchanted Diamond Set'
+    items:
+      - 'DIAMOND_HELMET:1:enchant{PROTECTION_ENVIRONMENTAL=4}'
+      - 'DIAMOND_CHESTPLATE:1:enchant{PROTECTION_ENVIRONMENTAL=4}'
+      - 'DIAMOND_LEGGINGS:1:enchant{PROTECTION_ENVIRONMENTAL=4}'
+      - 'DIAMOND_BOOTS:1:enchant{PROTECTION_ENVIRONMENTAL=4,DEPTH_STRIDER=3}'
+      - 'DIAMOND_SWORD:1:enchant{DAMAGE_ALL=4,KNOCKBACK=2,FIRE_ASPECT=1}'
+
+  epic_key:
+    chance: 20.0
+    name: '&6Epic Key'
+    commands: ['crate key give %player_name% epic 1']
+
+  legendary_key:
+    chance: 7.0
+    name: '&cLegendary Key'
+    commands: ['crate key give %player_name% legendary 1']
+    broadcast: true
+
+  boss_egg_low:
+    chance: 3.0
+    name: '&dRare Boss Spawn Egg'
+    commands: ['mm i give %player_name% boss_egg_low 1']

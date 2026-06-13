@@ -1,0 +1,267 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 4294967296 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3714), pid=18696, tid=11988
+#
+# JRE version:  (21.0.11+10) (build )
+# Java VM: OpenJDK 64-Bit Server VM (21.0.11+10-LTS, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xmx4G -Xms4G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true paper-1.21.1.jar nogui
+
+Host: AMD Ryzen 5 4500U with Radeon Graphics         , 6 cores, 7G,  Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+Time: Sat Jun 13 16:33:12 2026 Pakistan Standard Time elapsed time: 0.019972 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000019df04c9f60):  JavaThread "Unknown thread" [_thread_in_vm, id=11988, stack(0x0000007513300000,0x0000007513400000) (1024K)]
+
+Stack: [0x0000007513300000,0x0000007513400000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6d7e19]
+V  [jvm.dll+0x8b5096]
+V  [jvm.dll+0x8b764e]
+V  [jvm.dll+0x8b7d33]
+V  [jvm.dll+0x284596]
+V  [jvm.dll+0x6d4735]
+V  [jvm.dll+0x6c845a]
+V  [jvm.dll+0x35ef08]
+V  [jvm.dll+0x366b46]
+V  [jvm.dll+0x3b7c2e]
+V  [jvm.dll+0x3b7ed8]
+V  [jvm.dll+0x33310c]
+V  [jvm.dll+0x333c5b]
+V  [jvm.dll+0x87f04b]
+V  [jvm.dll+0x3c4bb1]
+V  [jvm.dll+0x868295]
+V  [jvm.dll+0x457c41]
+V  [jvm.dll+0x459831]
+C  [jli.dll+0x52dc]
+C  [ucrtbase.dll+0x2cd30]
+C  [KERNEL32.DLL+0x2e957]
+C  [ntdll.dll+0x87c1c]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffa9b64b1c8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000019df051a960 WorkerThread "GC Thread#0"                     [id=18760, stack(0x0000007513400000,0x0000007513500000) (1024K)]
+  0x0000019df051f860 ConcurrentGCThread "G1 Main Marker"            [id=11052, stack(0x0000007513500000,0x0000007513600000) (1024K)]
+  0x0000019df0520280 WorkerThread "G1 Conc#0"                       [id=4144, stack(0x0000007513600000,0x0000007513700000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa9ad457f7]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffa9b6bf670] Heap_lock - owner thread: 0x0000019df04c9f60
+
+Heap address: 0x0000000700000000, size: 4096 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 64 size 144 Howl #buckets 8 coarsen threshold 14745 Howl Bitmap #cards 2048 size 272 coarsen threshold 1843 Card regions per heap region 1 cards per card region 16384
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x0000000700000000, 0x0000000800000000)
+  region size 8192K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa9b131789]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.010 Loaded shared library C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff605ab0000 - 0x00007ff605abe000 	C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\java.exe
+0x00007ffae12e0000 - 0x00007ffae1546000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffadf1b0000 - 0x00007ffadf279000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffadec50000 - 0x00007ffadf04a000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffadea50000 - 0x00007ffadeb9c000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffad1590000 - 0x00007ffad15ae000 	C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\VCRUNTIME140.dll
+0x00007ffad1510000 - 0x00007ffad1528000 	C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\jli.dll
+0x00007ffae0fa0000 - 0x00007ffae1167000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffabf510000 - 0x00007ffabf7a2000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3\COMCTL32.dll
+0x00007ffadf2c0000 - 0x00007ffadf369000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffadf050000 - 0x00007ffadf07b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffade780000 - 0x00007ffade7a7000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffade860000 - 0x00007ffade98b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffadeba0000 - 0x00007ffadec43000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffadf280000 - 0x00007ffadf2b2000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffadaf20000 - 0x00007ffadaf2c000 	C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\vcruntime140_1.dll
+0x00007ffab7c60000 - 0x00007ffab7ced000 	C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\msvcp140.dll
+0x00007ffa9aa00000 - 0x00007ffa9b7a2000 	C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\server\jvm.dll
+0x00007ffae0370000 - 0x00007ffae0426000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffae0d60000 - 0x00007ffae0e0a000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffae0430000 - 0x00007ffae0548000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffae1200000 - 0x00007ffae1280000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffade3d0000 - 0x00007ffade42e000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffad6920000 - 0x00007ffad6956000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffad6910000 - 0x00007ffad691b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffade3b0000 - 0x00007ffade3c4000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffadd2c0000 - 0x00007ffadd2db000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffadaeb0000 - 0x00007ffadaeba000 	C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\jimage.dll
+0x00007ffadbc60000 - 0x00007ffadbea2000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffadf370000 - 0x00007ffadf6f3000 	C:\WINDOWS\System32\combase.dll
+0x00007ffae0290000 - 0x00007ffae0369000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffabcf30000 - 0x00007ffabcf6b000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffade7b0000 - 0x00007ffade858000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffad14c0000 - 0x00007ffad14e0000 	C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\java.dll
+
+JVMTI agents: none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3;C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin\server
+
+VM Arguments:
+jvm_args: -Xmx4G -Xms4G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true 
+java_command: paper-1.21.1.jar nogui
+java_class_path (initial): paper-1.21.1.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool AlwaysPreTouch                           = true                                      {product} {command line}
+     bool AlwaysTenure                             = false                                     {product} {command line}
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     bool DisableExplicitGC                        = true                                      {product} {command line}
+     uint G1ConcRefinementThreads                  = 6                                         {product} {ergonomic}
+     uint G1EagerReclaimRemSetThreshold            = 64                                   {experimental} {ergonomic}
+   size_t G1HeapRegionSize                         = 8388608                                   {product} {command line}
+    uintx G1HeapWastePercent                       = 5                                         {product} {command line}
+    uintx G1MaxNewSizePercent                      = 40                                   {experimental} {command line}
+    uintx G1MixedGCCountTarget                     = 4                                         {product} {command line}
+    uintx G1MixedGCLiveThresholdPercent            = 90                                   {experimental} {command line}
+    uintx G1NewSizePercent                         = 30                                   {experimental} {command line}
+     intx G1RSetUpdatingPauseTimePercent           = 5                                         {product} {command line}
+     uint G1RemSetArrayOfCardsEntries              = 64                                   {experimental} {ergonomic}
+     uint G1RemSetHowlMaxNumBuckets                = 8                                    {experimental} {ergonomic}
+     uint G1RemSetHowlNumBuckets                   = 8                                    {experimental} {ergonomic}
+    uintx G1ReservePercent                         = 20                                        {product} {command line}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 4294967296                                {product} {command line}
+    uintx InitialTenuringThreshold                 = 1                                         {product} {ergonomic}
+    uintx InitiatingHeapOccupancyPercent           = 15                                        {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+    uintx MaxGCPauseMillis                         = 200                                       {product} {command line}
+   size_t MaxHeapSize                              = 4294967296                                {product} {command line}
+    uintx MaxTenuringThreshold                     = 1                                         {product} {command line}
+   size_t MinHeapDeltaBytes                        = 8388608                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 4294967296                                {product} {command line}
+     bool NeverTenure                              = false                                     {product} {command line}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+     bool ParallelRefProcEnabled                   = true                                      {product} {command line}
+     bool PerfDisableSharedMem                     = true                                      {product} {command line}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4294967296                             {manageable} {ergonomic}
+    uintx SurvivorRatio                            = 32                                        {product} {command line}
+     bool UnlockExperimentalVMOptions              = true                                 {experimental} {command line}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {command line}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Release file:
+<release file has not been read>
+Environment Variables:
+JAVA_HOME=C:\Users\Hp\scoop\apps\temurin21-jdk\current
+PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\GitHub CLI\;C:\Users\Hp\scoop\apps\temurin21-jdk\current\bin;C:\Users\Hp\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Hp\AppData\Local\Programs\Python\Python312\;C:\Users\Hp\AppData\Local\Programs\Python\Launcher\;C:\Users\Hp\.cargo\bin;C:\Users\Hp\scoop\apps\flutter\current\bin;C:\Users\Hp\scoop\shims;C:\Users\Hp\AppData\Local\Microsoft\WindowsApps;C:\Users\Hp\AppData\Roaming\npm;C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Hp\.bun\bin;C:\Users\Hp\AppData\Local\Programs\Ollama
+USERNAME=Hp
+LANG=en_US.UTF-8
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+TMP=C:\Users\Hp\AppData\Local\Temp
+TEMP=C:\Users\Hp\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+OS uptime: 2 days 17:01 hours
+Hyper-V role detected
+
+CPU: total 6 (initial active 6) (6 cores per cpu, 1 threads per core) family 23 model 96 stepping 1 microcode 0x860010f, cx8, cmov, fxsr, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, hv, rdtscp, rdpid, f16c
+Processor Information for the first 6 processors :
+  Max Mhz: 2375, Current Mhz: 2375, Mhz Limit: 2375
+
+Memory: 4k page, system-wide physical 7505M (194M free)
+TotalPageFile size 22662M (AvailPageFile size 3555M)
+current process WorkingSet (physical memory assigned to process): 19M, peak: 19M
+current process commit charge ("private bytes"): 56M, peak: 4152M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.11+10-LTS) for windows-amd64 JRE (21.0.11+10-LTS), built on 2026-04-21T00:00:00Z by "admin" with MS VC++ 17.12 (VS2022)
+
+END.

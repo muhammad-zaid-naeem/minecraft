@@ -1,0 +1,120 @@
+# EconomyShop GUI 1.1.4 Server Shop Seed
+# Run from console or RCON (op required).
+# Lines starting with # are comments.
+#
+# Currency: $ (Vault via EssentialsX)
+# Format:   /eshop additem <category> <material> <buy_price> <sell_price>
+#
+# Categories created below:
+#   Blocks   - dirt, stone, logs, sand, glass, etc.
+#   Tools    - picks, axes, hoes, shovels
+#   Combat   - weapons, armor, arrows
+#   Food     - meat, bread, golden apples
+#   Special  - rare / event items
+#
+# Players open with: /shop
+# Permissions: essentials.shop (granted to default)
+#
+# After running this script, also consider:
+#   /eshop reload
+#   /eshop verify           (lists invalid prices)
+
+# === Create categories ===
+eshop create Blocks
+eshop create Tools
+eshop create Combat
+eshop create Food
+eshop create Special
+
+# === Blocks (buy_price / sell_price) ===
+eshop additem Blocks DIRT 1 0.1
+eshop additem Blocks COBBLESTONE 2 0.5
+eshop additem Blocks STONE 4 1
+eshop additem Blocks OAK_LOG 5 2
+eshop additem Blocks BIRCH_LOG 5 2
+eshop additem Blocks SPRUCE_LOG 5 2
+eshop additem Blocks SAND 3 1
+eshop additem Blocks GRAVEL 3 1
+eshop additem Blocks GLASS 4 1
+eshop additem Blocks IRON_INGOT 50 25
+eshop additem Blocks GOLD_INGOT 80 40
+eshop additem Blocks DIAMOND 300 150
+eshop additem Blocks EMERALD 200 100
+eshop additem Blocks NETHERITE_INGOT 1500 750
+eshop additem Blocks COAL 5 2
+eshop additem Blocks REDSTONE 6 3
+eshop additem Blocks LAPIS_LAZULI 8 4
+eshop additem Blocks QUARTZ 10 5
+eshop additem Blocks OBSIDIAN 50 20
+
+# === Tools ===
+eshop additem Tools WOODEN_PICKAXE 30 5
+eshop additem Tools STONE_PICKAXE 60 10
+eshop additem Tools IRON_PICKAXE 200 75
+eshop additem Tools DIAMOND_PICKAXE 800 300
+eshop additem Tools NETHERITE_PICKAXE 5000 1500
+eshop additem Tools IRON_AXE 200 75
+eshop additem Tools DIAMOND_AXE 800 300
+eshop additem Tools IRON_SHOVEL 150 50
+eshop additem Tools DIAMOND_HOE 400 100
+eshop additem Tools SHEARS 50 15
+eshop additem Tools FISHING_ROD 75 20
+eshop additem Tools FLINT_AND_STEEL 25 5
+
+# === Combat ===
+eshop additem Combat WOODEN_SWORD 40 5
+eshop additem Combat IRON_SWORD 250 75
+eshop additem Combat DIAMOND_SWORD 1000 400
+eshop additem Combat NETHERITE_SWORD 6000 2000
+eshop additem Combat BOW 100 25
+eshop additem Combat CROSSBOW 150 40
+eshop additem Combat ARROW 3 1
+eshop additem Combat SHIELD 50 15
+eshop additem Combat IRON_HELMET 200 75
+eshop additem Combat IRON_CHESTPLATE 350 130
+eshop additem Combat IRON_LEGGINGS 300 110
+eshop additem Combat IRON_BOOTS 175 65
+eshop additem Combat DIAMOND_HELMET 800 300
+eshop additem Combat DIAMOND_CHESTPLATE 1400 500
+eshop additem Combat DIAMOND_LEGGINGS 1200 450
+eshop additem Combat DIAMOND_BOOTS 700 260
+eshop additem Combat NETHERITE_HELMET 4500 1500
+eshop additem Combat NETHERITE_CHESTPLATE 8000 2750
+eshop additem Combat NETHERITE_LEGGINGS 7000 2400
+eshop additem Combat NETHERITE_BOOTS 4000 1300
+
+# === Food ===
+eshop additem Food BREAD 6 2
+eshop additem Food APPLE 4 1
+eshop additem Food COOKED_BEEF 12 4
+eshop additem Food COOKED_CHICKEN 8 3
+eshop additem Food COOKED_PORKCHOP 12 4
+eshop additem Food COOKED_MUTTON 10 3
+eshop additem Food COOKED_SALMON 12 4
+eshop additem Food CARROT 3 1
+eshop additem Food POTATO 3 1
+eshop additem Food BAKED_POTATO 6 2
+eshop additem Food MELON_SLICE 2 0.5
+eshop additem Food CAKE 30 10
+eshop additem Food GOLDEN_APPLE 200 75
+eshop additem Food GOLDEN_CARROT 30 10
+eshop additem Food ENCHANTED_GOLDEN_APPLE 2000 600
+
+# === Special ===
+eshop additem Special TOTEM_OF_UNDYING 5000 1500
+eshop additem Special ELYTRA 10000 3000
+eshop additem Special NETHERITE_SCRAP 800 400
+eshop additem Special ANCIENT_DEBRIS 1200 600
+eshop additem Special END_CRYSTAL 250 80
+eshop additem Special EXPERIENCE_BOTTLE 50 15
+eshop additem Special NETHER_STAR 8000 2500
+eshop additem Special DRAGON_HEAD 15000 5000
+eshop additem Special SHULKER_SHELL 750 300
+eshop additem Special ENCHANTING_TABLE 500 100
+eshop additem Special ANVIL 300 75
+eshop additem Special BREWING_STAND 200 50
+eshop additem Special BEACON 12000 4000
+
+# === Reload + verify ===
+eshop reload
+eshop verify

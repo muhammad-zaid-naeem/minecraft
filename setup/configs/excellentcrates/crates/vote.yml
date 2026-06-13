@@ -1,0 +1,55 @@
+# DESTINATION: plugins/ExcellentCrates/crates/vote.yml
+name: '&a&lVote Crate'
+description:
+  - '&7Open with: &eVote Key'
+  - '&7Get one for every vote.'
+
+block:
+  enabled: true
+  type: CHEST
+  hologram:
+    enabled: true
+    lines:
+      - '&a&lVote Crate'
+      - '&7Right-click to open'
+
+key:
+  ids:
+    - vote_key
+
+opening:
+  type: ROULETTE
+  config:
+    duration: 60
+    sound-tick: UI_BUTTON_CLICK
+    sound-win: ENTITY_PLAYER_LEVELUP
+
+rewards:
+  money_basic:
+    chance: 60.0
+    weight: -1
+    name: '&a$500'
+    items: []
+    commands: ['eco give %player_name% 500']
+    broadcast: false
+
+  diamonds:
+    chance: 20.0
+    name: '&b16 Diamonds'
+    items:
+      - 'DIAMOND:16'
+    commands: []
+
+  xp_levels:
+    chance: 15.0
+    name: '&a30 XP Levels'
+    commands: ['xp add %player_name% 30 levels']
+
+  legendary_key:
+    chance: 5.0
+    name: '&6&lLegendary Key'
+    commands: ['crate key give %player_name% legendary 1']
+    broadcast: true
+    broadcast-message: '&6%player_name% &7won a &6Legendary Key &7from the &aVote Crate!'
+
+cooldown: 0

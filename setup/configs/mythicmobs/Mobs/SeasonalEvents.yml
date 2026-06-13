@@ -1,0 +1,94 @@
+# DESTINATION: plugins/MythicMobs/Mobs/SeasonalEvents.yml
+# Holiday / seasonal boss definitions. Trigger manually with /mm m spawn
+# or via cron + RCON (see EVENTS.md).
+
+PetalGuardian:
+  Type: IRON_GOLEM
+  Display: '&d&lPetalGuardian'
+  Health: 2000
+  Damage: 18
+  BossBar:
+    Enabled: true
+    Title: '&d&lPetalGuardian (Spring)'
+    Color: PINK
+    Style: SEGMENTED_10
+  Skills:
+    - effect:particles{p=cherry_leaves;a=80} @self ~onTimer:20
+    - summon{type=ForestArcher;amount=2;radius=4} @self ~onTimer:200 ?health.percent.<0.5
+    - message{m="&d&l!!! Spring has fallen !!!"} @PlayersInRadius{r=128} ~onDeath
+  Faction: boss-event
+  Drops:
+    - command{c="eco give <trigger.name> 5000"} 1.0
+    - command{c="crate key give <trigger.name> legendary 1"} 1.0
+    - command{c="mm i give <trigger.name> bunny_pet_egg 1"} 1.0
+    - PINK_TULIP 16-32 1.0
+
+BeachKing:
+  Type: DROWNED
+  Display: '&3&lBeachKing'
+  Health: 2200
+  Damage: 20
+  BossBar:
+    Enabled: true
+    Title: '&3&lBeachKing (Summer)'
+    Color: BLUE
+    Style: SEGMENTED_10
+  Equipment:
+    - TRIDENT HAND
+  Skills:
+    - effect:particles{p=splash;a=60} @self ~onTimer:30
+    - throw{velocity=2} @target ~onTimer:80
+  Faction: boss-event
+  Drops:
+    - command{c="eco give <trigger.name> 6000"} 1.0
+    - TRIDENT 1 1.0
+    - command{c="crate key give <trigger.name> legendary 1"} 1.0
+
+PumpkinKing:
+  Type: WITHER_SKELETON
+  Display: '&6&lPumpkinKing'
+  Health: 4000
+  Damage: 25
+  BossBar:
+    Enabled: true
+    Title: '&6&lPumpkinKing (Halloween)'
+    Color: YELLOW
+    Style: SEGMENTED_12
+  Equipment:
+    - CARVED_PUMPKIN HEAD
+    - NETHERITE_SWORD HAND
+  Skills:
+    - effect:particles{p=soul_fire_flame;a=80} @self ~onTimer:20
+    - summon{type=ShadowZombie;amount=3} @self ~onTimer:200 ?health.percent.<0.6
+    - message{m="&6&lThe Pumpkin King roars!"} @PlayersInRadius{r=64} ~onDamaged ?health.percent.<0.5
+  Faction: boss-event-halloween
+  Drops:
+    - command{c="eco give <trigger.name> 15000"} 1.0
+    - CARVED_PUMPKIN 1 1.0
+    - command{c="crate key give <trigger.name> legendary 2"} 1.0
+    - command{c="mm i give <trigger.name> krampus_pet_egg 1"} 0.05
+    - command{c="lp user <trigger.name> permission set cosmetic.trail.halloween true"} 1.0
+
+KrampusKing:
+  Type: PIGLIN_BRUTE
+  Display: '&c&lKrampusKing'
+  Health: 4500
+  Damage: 28
+  BossBar:
+    Enabled: true
+    Title: '&c&lKrampusKing (Winter)'
+    Color: RED
+    Style: SEGMENTED_12
+  Equipment:
+    - NETHERITE_AXE HAND
+  Skills:
+    - effect:particles{p=snowflake;a=80} @self ~onTimer:20
+    - summon{type=IceGolem;amount=3} @self ~onTimer:200 ?health.percent.<0.5
+    - damage{a=12;element=cold} @PlayersInRadius{r=5} ~onTimer:140
+  Faction: boss-event-winter
+  Drops:
+    - command{c="eco give <trigger.name> 18000"} 1.0
+    - SNOW_BLOCK 32 1.0
+    - command{c="crate key give <trigger.name> legendary 2"} 1.0
+    - command{c="mm i give <trigger.name> polar_pet_egg 1"} 0.05
+    - command{c="lp user <trigger.name> permission set cosmetic.trail.winter true"} 1.0

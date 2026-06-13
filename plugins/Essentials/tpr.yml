@@ -1,0 +1,71 @@
+# Configuration for the random teleport command.
+# Use the /settpr command in-game to set random teleport locations.
+
+default-location: wild
+default-center:
+  world: wild
+  x: 0.0
+  y: 100.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+default-min-range: 500
+default-max-range: 5000
+excluded-biomes:
+- cold_ocean
+- deep_cold_ocean
+- deep_frozen_ocean
+- deep_lukewarm_ocean
+- deep_ocean
+- deep_warm_ocean
+- frozen_ocean
+- frozen_river
+- lukewarm_ocean
+- ocean
+- river
+- warm_ocean
+locations:
+  world:
+    center:
+      world: 435fe112-fd3b-494e-bcbf-5be9a50af4a2
+      world-name: wild
+      x: 3.2737554567686855
+      y: 134.0
+      z: -2.0238412819090446
+      yaw: 110.39993286132812
+      pitch: 10.649992942810059
+    min-range: 500
+    max-range: 5000
+  world_the_end:
+    center:
+      world: 435fe112-fd3b-494e-bcbf-5be9a50af4a2
+      world-name: wild
+      x: 5.068104147407293
+      y: 135.0
+      z: -1.885762947390885
+      yaw: 94.19994354248047
+      pitch: 47.849971771240234
+    min-range: 500
+    max-range: 5000
+  wild:
+    center:
+      world: 435fe112-fd3b-494e-bcbf-5be9a50af4a2
+      world-name: wild
+      x: 3.2737554567686855
+      y: 134.0
+      z: -2.0238412819090446
+      yaw: 110.39993286132812
+      pitch: 10.649992942810059
+    min-range: 500
+    max-range: 5000
+  world_nether:
+    center:
+      world: 435fe112-fd3b-494e-bcbf-5be9a50af4a2
+      world-name: wild
+      x: 3.2737554567686855
+      y: 134.0
+      z: -2.0238412819090446
+      yaw: 110.39993286132812
+      pitch: 10.649992942810059
+    min-range: 500
+    max-range: 5000

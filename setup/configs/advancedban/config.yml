@@ -1,0 +1,90 @@
+# DESTINATION: plugins/AdvancedBan/config.yml
+# AdvancedBan 2.3.0 template.
+
+ConfigVersion: 2.3.0
+
+Storage:
+  Type: SQLite
+  Database:
+    URL: jdbc:sqlite:plugins/AdvancedBan/data/advancedban.db
+    User: ''
+    Password: ''
+
+# Time formats accepted by /tempban, /tempmute, /warn
+TimeFormats:
+  s: 1
+  m: 60
+  h: 3600
+  d: 86400
+  w: 604800
+  mo: 2592000
+  y: 31536000
+
+# Default reasons
+DefaultReasons:
+  Ban:
+    - Cheating
+    - Griefing
+    - Toxic chat
+    - Spam
+  Mute:
+    - Toxic chat
+    - Spam
+    - Caps
+  Warn:
+    - First warning
+    - Continue and you will be muted
+  Kick:
+    - AFK
+    - Reconnect please
+
+# Warn auto-escalation
+WarnLayouts:
+  3:
+    - 'tempmute %player% 1h Auto: 3 warnings'
+  4:
+    - 'tempmute %player% 24h Auto: 4 warnings'
+  5:
+    - 'tempban %player% 24h Auto: 5 warnings'
+  7:
+    - 'tempban %player% 7d Auto: 7 warnings'
+  10:
+    - 'ban %player% Auto: 10 warnings'
+
+# Discord webhook (paste URL from your Discord channel webhooks).
+Discord:
+  Enabled: true
+  WebhookURL: 'https://discord.com/api/webhooks/PASTE/HERE'
+  Username: 'Punishment Log'
+  AvatarURL: ''
+  EmbedColors:
+    Ban: 16711680     # red
+    Tempban: 16753920 # orange
+    Mute: 16776960    # yellow
+    Tempmute: 16776960
+    Warn: 16766720    # gold
+    Kick: 12895428    # pink
+
+# Broadcast in-game on punishment
+Broadcast:
+  Ban: '&c%player% &7was banned by &e%operator% &7for &f%reason%'
+  Tempban: '&c%player% &7was tempbanned by &e%operator% &7for &f%duration% (%reason%)'
+  Mute: '&c%player% &7was muted by &e%operator% &7for &f%reason%'
+  Tempmute: '&c%player% &7was tempmuted by &e%operator% &7for &f%duration% (%reason%)'
+  Warn: '&e%player% &7was warned by &e%operator% &7for &f%reason%'
+
+# Filter (chat anti-toxicity)
+Filter:
+  Enabled: true
+  Action: WARN          # WARN | MUTE | TEMPMUTE
+  ActionDuration: 30m
+  Words:
+    - 'badword1'
+    - 'badword2'
+    - 'slur1'
+
+Notify:
+  PunishmentToAdmins: true
+
+# Cleanup
+CleanupOldPunishmentsAfterDays: 365

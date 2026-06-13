@@ -1,0 +1,193 @@
+# LuckPerms Rank Tree Setup
+# Run via RCON or in-server console. Lines starting with # are comments.
+#
+# Rank ladder (lowest -> highest):
+#   default -> vip -> mvp -> elite -> mod -> admin -> owner
+#
+# After loading, sync Discord roles:
+#   /discord reload
+
+# === GROUPS ===
+lp creategroup default
+lp creategroup vip
+lp creategroup mvp
+lp creategroup elite
+lp creategroup mod
+lp creategroup admin
+lp creategroup owner
+
+# === TRACK (for promote/demote chains) ===
+lp createtrack donor
+lp track donor append vip
+lp track donor append mvp
+lp track donor append elite
+
+lp createtrack staff
+lp track staff append mod
+lp track staff append admin
+lp track staff append owner
+
+# === WEIGHTS ===
+lp group default setweight 10
+lp group vip     setweight 20
+lp group mvp     setweight 30
+lp group elite   setweight 40
+lp group mod     setweight 80
+lp group admin   setweight 90
+lp group owner   setweight 100
+
+# === PREFIXES ===
+lp group default meta setprefix 1 "&7[Player]"
+lp group vip     meta setprefix 1 "&a[VIP]"
+lp group mvp     meta setprefix 1 "&b[MVP]"
+lp group elite   meta setprefix 1 "&5[ELITE]"
+lp group mod     meta setprefix 1 "&2[MOD]"
+lp group admin   meta setprefix 1 "&c[ADMIN]"
+lp group owner   meta setprefix 1 "&4&l[OWNER]"
+
+# === DEFAULT (every player) ===
+lp group default permission set essentials.spawn true
+lp group default permission set essentials.help true
+lp group default permission set essentials.list true
+lp group default permission set essentials.rules true
+lp group default permission set essentials.msg true
+lp group default permission set essentials.r true
+lp group default permission set essentials.mail true
+lp group default permission set essentials.warp true
+lp group default permission set essentials.warp.list true
+lp group default permission set essentials.warps.spawn true
+lp group default permission set essentials.warps.pvp true
+lp group default permission set essentials.warps.bosses true
+lp group default permission set essentials.warps.info true
+lp group default permission set essentials.warps.store true
+lp group default permission set essentials.warps.tour true
+lp group default permission set essentials.warps.market true
+lp group default permission set essentials.warps.events true
+lp group default permission set essentials.tpa true
+lp group default permission set essentials.tpaccept true
+lp group default permission set essentials.tpdeny true
+lp group default permission set essentials.tpacancel true
+lp group default permission set essentials.tpahere true
+lp group default permission set essentials.back true
+lp group default permission set essentials.sethome true
+lp group default permission set essentials.home true
+lp group default permission set essentials.delhome true
+lp group default permission set essentials.balance true
+lp group default permission set essentials.pay true
+lp group default permission set essentials.afk true
+lp group default permission set essentials.tpaall true
+lp group default permission set essentials.suicide true
+lp group default permission set essentials.workbench true
+lp group default permission set essentials.echest true
+lp group default permission set essentials.rtp true
+lp group default permission set essentials.kit true
+lp group default permission set essentials.kits.starter true
+# Vault economy
+lp group default permission set vault.economy.balance true
+# GriefPrevention
+lp group default permission set griefprevention.claim true
+lp group default permission set griefprevention.claims true
+lp group default permission set griefprevention.trust true
+lp group default permission set griefprevention.untrust true
+# AuraSkills
+lp group default permission set auraskills.command.skills true
+lp group default permission set auraskills.command.stats true
+lp group default permission set auraskills.command.top true
+# Quests
+lp group default permission set quests.command.use true
+lp group default permission set quests.quest true
+lp group default permission set quests.questinfo true
+# SimpleClans
+lp group default permission set simpleclans.member.* true
+# QuickShop
+lp group default permission set quickshop.create.shop true
+lp group default permission set quickshop.use true
+lp group default permission set quickshop.commands.list true
+# Crates
+lp group default permission set excellentcrates.player true
+# Cosmetics
+lp group default permission set playerparticles.use true
+lp group default permission set playerparticles.style true
+# AdvancedBan
+lp group default permission set advancedban.history true
+# DiscordSRV
+lp group default permission set discordsrv.link true
+
+# === VIP ===
+lp group vip parent add default
+lp group vip permission set essentials.sethome.multiple.vip true
+lp group vip permission set essentials.chat.color true
+lp group vip permission set essentials.fly true
+lp group vip permission set essentials.kit.vip true
+lp group vip permission set essentials.nick true
+lp group vip permission set essentials.feed true
+lp group vip permission set playerparticles.particles.13 true
+
+# === MVP ===
+lp group mvp parent add vip
+lp group mvp permission set essentials.sethome.multiple.mvp true
+lp group mvp permission set essentials.chat.format true
+lp group mvp permission set essentials.heal true
+lp group mvp permission set essentials.kit.mvp true
+lp group mvp permission set essentials.repair true
+lp group mvp permission set playerparticles.particles.25 true
+
+# === ELITE ===
+lp group elite parent add mvp
+lp group elite permission set essentials.sethome.multiple.elite true
+lp group elite permission set essentials.god true
+lp group elite permission set essentials.kit.elite true
+lp group elite permission set essentials.invsee true
+lp group elite permission set essentials.hat true
+lp group elite permission set playerparticles.particles.50 true
+
+# === MOD ===
+lp group mod parent add elite
+lp group mod permission set essentials.kick true
+lp group mod permission set essentials.mute true
+lp group mod permission set essentials.tempmute true
+lp group mod permission set essentials.warn true
+lp group mod permission set essentials.tphere true
+lp group mod permission set essentials.vanish true
+lp group mod permission set advancedban.* true
+lp group mod permission set staffplus.* true
+lp group mod permission set staffplus.chat true
+lp group mod permission set coreprotect.lookup true
+lp group mod permission set coreprotect.inspect true
+lp group mod permission set quickshop.staff true
+lp group mod permission set griefprevention.staff true
+lp group mod permission set grim.alerts true
+lp group mod permission set discordsrv.staff true
+lp group mod permission set essentials.chat.staff true
+lp group mod permission set essentials.broadcast true
+lp group mod permission set essentials.socialspy true
+lp group mod permission set essentials.commandspy true
+lp group mod permission set essentials.freeze true
+
+# === ADMIN ===
+lp group admin parent add mod
+lp group admin permission set essentials.* true
+lp group admin permission set worldedit.* true
+lp group admin permission set fawe.* true
+lp group admin permission set luckperms.editor true
+lp group admin permission set luckperms.user.* true
+lp group admin permission set discordsrv.admin true
+lp group admin permission set griefprevention.admin true
+lp group admin permission set quests.admin true
+lp group admin permission set coreprotect.* true
+lp group admin permission set excellentcrates.admin true
+lp group admin permission set znpcsplus.* true
+lp group admin permission set decentholograms.admin true
+lp group admin permission set economyshop.admin true
+lp group admin permission set vault.admin true
+lp group admin permission set auraskills.* true
+
+# === OWNER ===
+lp group owner parent add admin
+lp group owner permission set * true
+
+# === Sample owner promotion ===
+lp user Itx_Zaid_3 parent set owner
+
+# Apply
+lp sync

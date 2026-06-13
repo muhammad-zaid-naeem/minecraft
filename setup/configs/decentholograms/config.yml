@@ -1,0 +1,27 @@
+# DESTINATION: plugins/DecentHolograms/config.yml
+# DecentHolograms 2.10.0 template.
+
+# Default update interval (server ticks). 20 = 1 second.
+defaultUpdateInterval: 100
+
+# Default view distance (blocks)
+defaultRange: 64
+
+# Click handling
+allow-pages-on-clicks: true
+allow-block-clicks: true
+
+# Animations
+defaultAnimationInterval: 4
+
+# Save interval
+save-interval-minutes: 5
+
+# Placeholder support
+placeholderapi: true
+
+# Logging
+debug: false
+
+# Update checker
+update-checker: true

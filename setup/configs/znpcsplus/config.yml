@@ -1,0 +1,34 @@
+# DESTINATION: plugins/ZNPCsPlus/config.yml
+# ZNPCsPlus 2.0.0 template.
+
+# Visual tuning
+enable-hologram-update-task: true
+hologram-update-interval-ticks: 20      # 1s
+npc-look-at-player: true
+default-look-range: 8
+sneak-on-interact: false
+fix-skin-cache: true
+
+# Persistence
+storage:
+  type: yaml
+  file: 'plugins/ZNPCsPlus/storage/npcs.yml'
+  save-interval-seconds: 300
+
+# Tab-list cleanup
+remove-from-tab-list-ticks: 60
+
+# Default skin used if a skin lookup fails
+default-skin: Steve
+
+# Click action defaults
+right-click-cooldown-ms: 1000
+left-click-action-enabled: false
+
+# Performance
+async-tasks: true
+tick-rate: 1
+view-distance-blocks: 64
+
+# Update check
+update-checker: true

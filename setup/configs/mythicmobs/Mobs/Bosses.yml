@@ -1,0 +1,133 @@
+# DESTINATION: plugins/MythicMobs/Mobs/Bosses.yml
+# 5 phased bosses.
+
+PyroLord:
+  Type: BLAZE
+  Display: '&c&lPyro Lord'
+  Health: 1500
+  Damage: 18
+  Options:
+    MovementSpeed: 0.3
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSlimeSplit: true
+  BossBar:
+    Enabled: true
+    Title: '&c&lPyro Lord'
+    Color: RED
+    Style: SEGMENTED_10
+    Range: 64
+  Skills:
+    # Phase 1 (100-66%)
+    - skill{s=PyroNova} @self ~onTimer:120 ?health.percent.>0.66
+    # Phase 2 (66-33%) summons minions
+    - skill{s=MinionSummonShadow} @self ~onTimer:200 ?health.percent.<0.66 ?health.percent.>0.33
+    # Phase 3 (33-0%) enrage
+    - effect:particles{p=lava;a=80} @self ~onTimer:20 ?health.percent.<0.33
+    - skill{s=PyroNova} @self ~onTimer:60 ?health.percent.<0.33
+    - message{m="&c&lPYRO LORD is enraged!"} @PlayersInRadius{r=64} ~onTimer:1 ?health.percent.<0.33
+    - skill{s=PyroDeathFinale} @self ~onDeath
+  Faction: boss-fire
+  Drops:
+    - boss_pyrolord_drops
+
+FrostMonarch:
+  Type: STRAY
+  Display: '&b&lFrost Monarch'
+  Health: 1800
+  Damage: 20
+  Options:
+    MovementSpeed: 0.28
+    AlwaysShowName: true
+  BossBar:
+    Enabled: true
+    Title: '&b&lFrost Monarch'
+    Color: BLUE
+    Style: SEGMENTED_10
+  Equipment:
+    - BOW HAND
+  Skills:
+    - skill{s=IceShards} @target ~onTimer:80
+    - summon{type=IceGolem;amount=3} @self ~onTimer:300 ?health.percent.<0.5
+    - potion{type=SLOW;duration=80;lvl=2} @target ~onAttack
+    - skill{s=FrostDeathFinale} @self ~onDeath
+  Faction: boss-ice
+  Drops:
+    - boss_frostmonarch_drops
+
+VoidEntity:
+  Type: ENDERMAN
+  Display: '&5&lVoid Entity'
+  Health: 2500
+  Damage: 25
+  Options:
+    MovementSpeed: 0.35
+    AlwaysShowName: true
+  BossBar:
+    Enabled: true
+    Title: '&5&lVoid Entity'
+    Color: PURPLE
+    Style: SEGMENTED_12
+  Skills:
+    - skill{s=VoidStep} @target ~onTimer:60
+    - effect:particles{p=portal;a=40} @self ~onTimer:10
+    - potion{type=BLINDNESS;duration=40;lvl=1} @target ~onAttack
+    - skill{s=VoidDeathFinale} @self ~onDeath
+    - lifesteal{p=20} @target ~onAttack
+  Faction: boss-void
+  Drops:
+    - boss_void_drops
+
+EarthShaker:
+  Type: IRON_GOLEM
+  Display: '&6&lEarth Shaker'
+  Health: 3000
+  Damage: 30
+  Options:
+    MovementSpeed: 0.22
+    AlwaysShowName: true
+    KnockbackResistance: 1.0
+  BossBar:
+    Enabled: true
+    Title: '&6&lEarth Shaker'
+    Color: YELLOW
+    Style: SEGMENTED_12
+  Skills:
+    - skill{s=EarthQuake} @self ~onTimer:120
+    - damage{a=15} @EntitiesInRadius{r=4} ~onAttack
+    - potion{type=SLOW;duration=60;lvl=2} @PlayersInRadius{r=6} ~onTimer:140
+    - skill{s=EarthDeathFinale} @self ~onDeath
+  Faction: boss-earth
+  Drops:
+    - boss_earth_drops
+
+DragonOfAges:
+  Type: ENDER_DRAGON
+  Display: '&4&lDragon of Ages'
+  Health: 5000
+  Damage: 35
+  Options:
+    MovementSpeed: 0.4
+    AlwaysShowName: true
+    PreventOtherDrops: true
+  BossBar:
+    Enabled: true
+    Title: '&4&lDragon of Ages'
+    Color: RED
+    Style: SEGMENTED_20
+    Range: 128
+  Skills:
+    # 8-phase fight by 12.5% increments
+    - skill{s=DragonBreath} @target ~onTimer:80 ?health.percent.>0.87
+    - skill{s=DragonBreath} @target ~onTimer:70 ?health.percent.<0.87 ?health.percent.>0.75
+    - skill{s=MinionSummonShadow} @self ~onTimer:200 ?health.percent.<0.75 ?health.percent.>0.62
+    - skill{s=DragonBreath} @target ~onTimer:60 ?health.percent.<0.62 ?health.percent.>0.50
+    - skill{s=IceShards} @target ~onTimer:80 ?health.percent.<0.50 ?health.percent.>0.37
+    - skill{s=EarthQuake} @self ~onTimer:90 ?health.percent.<0.37 ?health.percent.>0.25
+    - skill{s=PyroNova} @self ~onTimer:60 ?health.percent.<0.25 ?health.percent.>0.12
+    - skill{s=DragonBreath} @target ~onTimer:30 ?health.percent.<0.12
+    - skill{s=DragonDeathFinale} @self ~onDeath
+    - message{m="&4&lDRAGON OF AGES has entered phase " + math.floor((1 - health.percent) * 8 + 1)} @PlayersInRadius{r=128} ~onDamaged
+  Faction: boss-dragon
+  Drops:
+    - boss_dragon_drops

@@ -1,0 +1,118 @@
+# DESTINATION: plugins/Quests/quests.yml
+# Quests (Pikamug) 5.3.1 sample quest definitions.
+
+quests:
+  daily_kill_zombies:
+    name: '&eDaily: Slay Zombies'
+    ask-message: '&fKill 10 zombies anywhere.'
+    finish-message: '&aQuest complete! +$150'
+    options:
+      external-party-plugin: ''
+    requirements:
+      permission: 'quests.quest'
+      permission-display: '&7Open to all'
+    stages:
+      ordered:
+        '1':
+          kill-mobs: [ZOMBIE]
+          kill-amounts: [10]
+          script-to-run: ''
+    rewards:
+      money: 150
+      commands: ['quests questpoint give %player_name% 1']
+      commands-overrides: ['+1 Battle Pass XP']
+
+  daily_mine_stone:
+    name: '&eDaily: Stone Cutter'
+    ask-message: '&fMine 50 stone.'
+    finish-message: '&aQuest complete! +$100'
+    stages:
+      ordered:
+        '1':
+          break-block-names: [STONE]
+          break-block-amounts: [50]
+          break-block-durability: [-1]
+    rewards:
+      money: 100
+      commands: ['quests questpoint give %player_name% 1']
+
+  daily_harvest_wheat:
+    name: '&eDaily: Farmer'
+    ask-message: '&fHarvest 20 fully-grown wheat.'
+    finish-message: '&aQuest complete! +$100'
+    stages:
+      ordered:
+        '1':
+          break-block-names: [WHEAT]
+          break-block-amounts: [20]
+    rewards:
+      money: 100
+      commands: ['quests questpoint give %player_name% 1']
+
+  daily_fish:
+    name: '&eDaily: Fisherman'
+    ask-message: '&fCatch 5 fish.'
+    finish-message: '&aQuest complete! +$150'
+    stages:
+      ordered:
+        '1':
+          fish-to-catch: 5
+    rewards:
+      money: 150
+      commands: ['quests questpoint give %player_name% 1']
+
+  daily_walk:
+    name: '&eDaily: Wanderer'
+    ask-message: '&fWalk 1000 blocks.'
+    finish-message: '&aQuest complete! +$200'
+    stages:
+      ordered:
+        '1':
+          walk-distance: 1000
+    rewards:
+      money: 200
+      commands: ['quests questpoint give %player_name% 1']
+
+  weekly_dragon:
+    name: '&cWeekly: Dragonslayer'
+    ask-message: '&fKill the Ender Dragon.'
+    finish-message: '&6You felled the dragon! +$5000, 1 Legendary Key'
+    stages:
+      ordered:
+        '1':
+          kill-mobs: [ENDER_DRAGON]
+          kill-amounts: [1]
+    rewards:
+      money: 5000
+      commands:
+        - 'crate key give %player_name% legendary 1'
+        - 'quests questpoint give %player_name% 10'
+
+  weekly_diamonds:
+    name: '&cWeekly: Diamond Tycoon'
+    ask-message: '&fMine 50 diamonds.'
+    finish-message: '&bRich! +$3000, 1 Epic Key'
+    stages:
+      ordered:
+        '1':
+          break-block-names: [DIAMOND_ORE, DEEPSLATE_DIAMOND_ORE]
+          break-block-amounts: [50]
+    rewards:
+      money: 3000
+      commands:
+        - 'crate key give %player_name% epic 1'
+        - 'quests questpoint give %player_name% 10'
+
+  weekly_dailies:
+    name: '&cWeekly: Habitual'
+    ask-message: '&fComplete 20 daily quests this week.'
+    finish-message: '&aHabit formed! +$2500, 1 Rare Key'
+    stages:
+      ordered:
+        '1':
+          custom-completion-events: ['daily_quest_completed:20']
+    rewards:
+      money: 2500
+      commands:
+        - 'crate key give %player_name% rare 1'
+        - 'quests questpoint give %player_name% 10'
