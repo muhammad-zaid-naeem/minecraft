@@ -5,9 +5,11 @@ GriefPrevention:
     world: -1
     world_nether: -1
     world_the_end: -1
+    amity: -1
     wild: -1
   Claims:
     Mode:
+      amity: Survival
       world: Survival
       wild: Survival
       world_nether: Disabled
@@ -77,6 +79,7 @@ GriefPrevention:
       world: true
       world_nether: true
       world_the_end: true
+      amity: true
       wild: true
     ProtectFreshSpawns: true
     PunishLogout: true
