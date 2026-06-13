@@ -28,3 +28,13 @@ c0e58d64-24c3-371e-b934-726963bf17ed:
   - XRAY;true
   - MENTION;true
   - NAME_CHANGE;true
+c09a44ba-10a0-3ecc-bc46-8255e4ecf6ba:
+  name: rexy_187
+  glass-color: 0
+  reports: []
+  warnings: []
+  notes: []
+  alert-options:
+  - XRAY;true
+  - MENTION;true
+  - NAME_CHANGE;true

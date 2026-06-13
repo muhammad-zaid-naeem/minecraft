@@ -1,0 +1,163 @@
+==========================================================================
+ LEGENDxPROs  -  LuckPerms full rank setup
+ Run these in the SERVER CONSOLE (no leading slash) or in-game (add /).
+ Copy-paste block by block. Safe to re-run.
+==========================================================================
+
+--------------------------------------------------------------------------
+ 1) CREATE THE 12 RANK GROUPS
+--------------------------------------------------------------------------
+lp creategroup founder
+lp creategroup ceo
+lp creategroup cto
+lp creategroup leaddev
+lp creategroup developer
+lp creategroup admin
+lp creategroup moderator
+lp creategroup helper
+lp creategroup legendplus
+lp creategroup legend
+lp creategroup survivor
+lp creategroup rookie
+
+--------------------------------------------------------------------------
+ 2) SET WEIGHTS  (higher number = higher rank = sorts to top of TAB)
+--------------------------------------------------------------------------
+lp group founder    setweight 1000
+lp group ceo        setweight 900
+lp group cto        setweight 800
+lp group leaddev    setweight 700
+lp group developer  setweight 600
+lp group admin      setweight 500
+lp group moderator  setweight 400
+lp group helper     setweight 300
+lp group legendplus setweight 200
+lp group legend     setweight 150
+lp group survivor   setweight 100
+lp group rookie     setweight 50
+
+--------------------------------------------------------------------------
+ 3) PREFIXES  (priority = weight; name color set inside the prefix)
+    NOTE: emojis (👑🚀⚙ etc.) only render if the client has an emoji
+    font / resource pack. Plain clients show a box. Colors always work.
+--------------------------------------------------------------------------
+lp group founder    meta setprefix 1000 "&8[&4&l👑 Founder&8] &4"
+lp group ceo        meta setprefix 900  "&8[&c&l🚀 CEO&8] &c"
+lp group cto        meta setprefix 800  "&8[&6&l⚙ CTO&8] &6"
+lp group leaddev    meta setprefix 700  "&8[&e&l💻 LeadDev&8] &e"
+lp group developer  meta setprefix 600  "&8[&2&l🛠 Developer&8] &2"
+lp group admin      meta setprefix 500  "&8[&4&l🛡 Admin&8] &c"
+lp group moderator  meta setprefix 400  "&8[&9&l🎯 Mod&8] &9"
+lp group helper     meta setprefix 300  "&8[&b&l💎 Helper&8] &b"
+lp group legendplus meta setprefix 200  "&8[&d&l🔥 Legend+&8] &d"
+lp group legend     meta setprefix 150  "&8[&5&l⭐ Legend&8] &5"
+lp group survivor   meta setprefix 100  "&8[&7👤 Survivor&8] &7"
+lp group rookie     meta setprefix 50   "&8[&8🌱 Rookie&8] &7"
+
+--------------------------------------------------------------------------
+ 4) SUFFIXES  (optional badge after the name; leave blank for most ranks)
+--------------------------------------------------------------------------
+lp group founder    meta setsuffix 1000 " &4✦"
+lp group ceo        meta setsuffix 900  " &c✦"
+lp group legendplus meta setsuffix 200  " &d✧"
+lp group legend     meta setsuffix 150  " &5✧"
+
+--------------------------------------------------------------------------
+ 5) GROUP COLORS  (used by chat/some plugins; matches the prefix accent)
+--------------------------------------------------------------------------
+lp group founder    meta setmetacolor "&4"
+lp group ceo        meta setmetacolor "&c"
+
+--------------------------------------------------------------------------
+ 6) BASIC INHERITANCE  (each rank inherits the one below it)
+    so higher ranks automatically get every lower rank's permissions.
+--------------------------------------------------------------------------
+lp group survivor   parent add rookie
+lp group legend     parent add survivor
+lp group legendplus parent add legend
+lp group helper     parent add legendplus
+lp group moderator  parent add helper
+lp group admin      parent add moderator
+lp group developer  parent add admin
+lp group leaddev    parent add developer
+lp group cto        parent add leaddev
+lp group ceo        parent add cto
+lp group founder    parent add ceo
+
+--------------------------------------------------------------------------
+ 7) STARTER PERMISSIONS  (sensible defaults; expand as you like)
+--------------------------------------------------------------------------
+# Everyone (rookie) - basics
+lp group rookie permission set essentials.spawn true
+lp group rookie permission set essentials.msg true
+lp group rookie permission set essentials.help true
+lp group rookie permission set tab.scoreboard.toggle true
+
+# Donor perks
+lp group legend     permission set essentials.kit.legend true
+lp group legendplus permission set essentials.fly true
+lp group legendplus permission set essentials.nick true
+
+# Staff tools
+lp group helper    permission set essentials.kick true
+lp group moderator permission set essentials.mute true
+lp group moderator permission set essentials.tempban true
+lp group admin     permission set essentials.ban true
+lp group admin     permission set coreprotect.inspect true
+lp group admin     permission set tab.staff true
+lp group developer permission set luckperms.* true
+lp group founder   permission set "*" true
+
+--------------------------------------------------------------------------
+ 8) PROMOTION TRACK  (use /lp user <name> promote ranks  to move up)
+--------------------------------------------------------------------------
+lp createtrack ranks
+lp track ranks append rookie
+lp track ranks append survivor
+lp track ranks append legend
+lp track ranks append legendplus
+lp track ranks append helper
+lp track ranks append moderator
+lp track ranks append admin
+lp track ranks append developer
+lp track ranks append leaddev
+lp track ranks append cto
+lp track ranks append ceo
+lp track ranks append founder
+
+--------------------------------------------------------------------------
+ 9) MAKE NEW PLAYERS = ROOKIE AUTOMATICALLY
+    Run this command:
+--------------------------------------------------------------------------
+lp group default parent add rookie
+
+#  OR (cleaner: gives them rookie as their PRIMARY group on first join)
+#  edit plugins/LuckPerms/config.yml -> add this block, then  /lp reload :
+#
+#  default-assignments:
+#    new-players:
+#      if:
+#        has-true: "group.default"
+#      give:
+#        - "group.rookie"
+#      set-primary-group: "rookie"
+
+--------------------------------------------------------------------------
+ 10) DAILY USAGE - assign / change ranks
+--------------------------------------------------------------------------
+# Set someone's rank directly (removes other rank groups, sets primary):
+lp user <player> parent set helper
+
+# Promote / demote along the track:
+lp user <player> promote ranks
+lp user <player> demote ranks
+
+# Temporary rank (e.g. 30-day Legend+):
+lp user <player> parent addtemp legendplus 30d
+
+# Check a player:
+lp user <player> info
+
+==========================================================================
+ After running everything:   lp reload   AND   /tab reload
+==========================================================================

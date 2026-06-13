@@ -1,0 +1,246 @@
+# =====================================================================
+#  LEGENDxPROs  -  TAB 6.0.3 main configuration
+#  Drop-in replacement for: plugins/TAB/config.yml
+#  https://github.com/NEZNAMY/TAB/wiki
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# ANIMATED HEADER / FOOTER  (the big banner above/below the player list)
+# ---------------------------------------------------------------------
+header-footer:
+  enabled: true
+  header:
+    - "&8&m                                                    "
+    - "%animation:Brand%"
+    - "&7Welcome &f%player%&7, to &bLEGEND&fxPROS"
+    - "&7Online&8: &a%online%  &8|  &7Staff&8: &e%staffonline%"
+    - ""
+  footer:
+    - ""
+    - "&7Your ping&8: &a%ping%ms  &8|  &7TPS&8: &a%tps%"
+    - "%animation:Store%"
+    - "&9discord.gg/legendxpros"
+    - "&8&m                                                    "
+
+# ---------------------------------------------------------------------
+# TABLIST NAME FORMATTING  (prefix + name + suffix in the player list)
+# ---------------------------------------------------------------------
+tablist-name-formatting:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+
+# ---------------------------------------------------------------------
+# NAMETAGS + SORTING (sort the tablist by rank automatically)
+# ---------------------------------------------------------------------
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  sorting-types:
+    # Highest rank first. Names MUST match your LuckPerms group names.
+    - "GROUPS:founder,ceo,cto,leaddev,developer,admin,moderator,helper,legendplus,legend,survivor,rookie"
+    - "PLACEHOLDER_A_TO_Z:%player%"
+  case-sensitive-sorting: false
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+
+# ---------------------------------------------------------------------
+# PING IN TABLIST  (number/bars shown next to each player)
+# ---------------------------------------------------------------------
+playerlist-objective:
+  enabled: true
+  value: "%ping%"
+  fancy-value: "&7Ping&8: &a%ping%ms"
+  title: "Ping"
+  render-type: INTEGER
+  disable-condition: '%world%=disabledworld'
+
+# ---------------------------------------------------------------------
+# BELOWNAME  (health under the player's nametag in-world) - optional
+# ---------------------------------------------------------------------
+belowname-objective:
+  enabled: true
+  value: "%player_health%"
+  fancy-value: "&c%player_health% &4❤"
+  fancy-value-default: "&cBOSS"
+  title: "&cHealth"
+  disable-condition: '%world%=disabledworld'
+
+prevent-spectator-effect:
+  enabled: false
+
+# ---------------------------------------------------------------------
+# BOSS BAR  (animated server branding bar at top of screen)
+# ---------------------------------------------------------------------
+bossbar:
+  enabled: true
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    Branding:
+      style: "PROGRESS"
+      color: "%animation:BarColors%"
+      progress: "100"
+      text: "%animation:Brand%  &8|  &9discord.gg/legendxpros"
+
+# ---------------------------------------------------------------------
+# MMORPG-STYLE SCOREBOARD (right-side sidebar)
+# ---------------------------------------------------------------------
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: true
+  hidden-by-default: false
+  delay-on-join-milliseconds: 0
+  scoreboards:
+    # Modern clients (1.20.3+) - longer lines, no width limit
+    legend-modern:
+      title: "%animation:Brand%"
+      display-condition: "%player-version-id%>=765;%bedrock%=false"
+      lines:
+        - "&8&m─────────────────"
+        - "&7● &fPlayer &8» &b%player%"
+        - "&7● &fRank &8» %luckperms_prefix%"
+        - "&7● &fMoney &8» &a$%vault_eco_balance_formatted%"
+        - ""
+        - "&c&l⚔ COMBAT"
+        - "&7● &fKills &8» &c%statistic_player_kills%"
+        - "&7● &fDeaths &8» &4%statistic_deaths%"
+        - "&7● &fBoss Kills &8» &d%bosskills%"
+        - ""
+        - "&e&l❖ SERVER"
+        - "&7● &fOnline &8» &a%online%"
+        - "&7● &fPing &8» &b%ping%ms"
+        - "&7● &fPlaytime &8» &e%statistic_time_played%"
+        - "&8&m─────────────────"
+        - "&bplay.legendxpros.net"
+        - "&9discord.gg/legendxpros"
+    # Legacy clients (1.8 - 1.20.2) - kept short to avoid the 1.12- width limit
+    legend-legacy:
+      title: "&b&lLEGEND&f&lxPROS"
+      lines:
+        - "&8&m─────────────"
+        - "&fName&8: &b%player%"
+        - "&fRank&8: %luckperms_prefix%"
+        - "&fMoney&8: &a$%vault_eco_balance_formatted%"
+        - " "
+        - "&fKills&8: &c%statistic_player_kills%"
+        - "&fDeaths&8: &4%statistic_deaths%"
+        - "&fBoss&8: &d%bosskills%"
+        - "  "
+        - "&fOnline&8: &a%online%"
+        - "&fPing&8: &b%ping%ms"
+        - "&8&m─────────────"
+        - "&9discord.gg/legendxpros"
+
+# ---------------------------------------------------------------------
+# Features intentionally left OFF for a single survival server
+# ---------------------------------------------------------------------
+layout:
+  enabled: false
+ping-spoof:
+  enabled: false
+global-playerlist:
+  enabled: false
+
+placeholders:
+  date-format: "dd.MM.yyyy"
+  time-format: "[HH:mm:ss / h:mm a]"
+  time-offset: 0
+  register-tab-expansion: false
+  locale: en-US
+
+placeholder-output-replacements:
+  "%essentials_vanished%":
+    "yes": "&7| Vanished"
+    "no": ""
+
+conditions: {}
+
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  "%server_uptime%": 1000
+  "%tps%": 1000
+  "%player_health%": 200
+  "%ping%": 1000
+  "%online%": 2000
+  "%staffonline%": 2000
+  "%luckperms_prefix%": 1000
+  "%luckperms_suffix%": 1000
+  "%vault_eco_balance_formatted%": 2000
+  "%statistic_player_kills%": 2000
+  "%statistic_deaths%": 2000
+  "%statistic_time_played%": 5000
+  "%bosskills%": 2000
+
+assign-groups-by-permissions: false
+
+primary-group-finding-list:
+  - founder
+  - ceo
+  - cto
+  - leaddev
+  - developer
+  - admin
+  - moderator
+  - helper
+  - legendplus
+  - legend
+  - survivor
+  - rookie
+
+permission-refresh-interval: 1000
+
+debug: false
+
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+  useSSL: true
+
+# IMPORTANT: this is a single Paper server (NOT behind a proxy), so keep this false.
+# If you later put LEGENDxPROs behind Velocity/BungeeCord, set this to true.
+proxy-support:
+  enabled: false
+  channel-name-suffix: "TAB"
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+  redis:
+    url: 'redis://:password@localhost:6379/0'
+  rabbitmq:
+    exchange: 'plugin'
+    url: 'amqp://guest:guest@localhost:5672/%2F'
+
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+
+config-version: 6
+
+########################################################################
+# BUKKIT ONLY - backend-installation section
+########################################################################
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+    - ignoredworld
+    - build
+  shared-playerlist-world-groups:
+    lobby:
+      - lobby1
+      - lobby2
+
+compensate-for-packetevents-bug: false
+
+#####################################################################
+# PROXY ONLY
+#####################################################################
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true

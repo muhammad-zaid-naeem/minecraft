@@ -12,29 +12,29 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1781354340293
+  lastteleport: 1781365041857
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1781354223594
-  login: 1781354291813
+  logout: 1781365127345
+  login: 1781364885961
 money: '0'
 last-account-name: NA3UTO_PRO
 lastlocation:
   world: 1b588bb4-8af4-4e8e-a7d2-ef6dc3879d7f
   world-name: world
-  x: -2.118108125582182
-  y: 103.0
-  z: 4.000726227418148
-  yaw: 53.100006103515625
-  pitch: 22.049999237060547
+  x: 6.056657652772376
+  y: 108.0625
+  z: -7.892225522966024
+  yaw: 109.9493408203125
+  pitch: 69.75000762939453
 logoutlocation:
-  world: 1b588bb4-8af4-4e8e-a7d2-ef6dc3879d7f
-  world-name: world
-  x: 0.5
-  y: 104.0
-  z: 0.5
-  yaw: 0.0
-  pitch: 0.0
+  world: 435fe112-fd3b-494e-bcbf-5be9a50af4a2
+  world-name: wild
+  x: -706.5
+  y: 70.0
+  z: 4204.5
+  yaw: -170.8507080078125
+  pitch: 41.10000991821289
 nickname: NARUTO

@@ -1,0 +1,34 @@
+# =====================================================================
+#  LEGENDxPROs  -  Custom boss-kill tracker (MythicMobs)
+#  Place at: plugins/MythicMobs/Skills/BossKillTracker.yml
+#
+#  WHY:  Vanilla statistics cannot count custom MythicMobs bosses, so we
+#        keep our own per-player counter in a vanilla scoreboard
+#        objective called "bosskills". It persists in level.dat forever
+#        and can feed scoreboards, holograms, leaderboards and rewards.
+# =====================================================================
+
+# ---- ONE-TIME SETUP -------------------------------------------------
+# Run this ONCE in console to create the counter objective:
+#     scoreboard objectives add bosskills dummy "Boss Kills"
+# ---------------------------------------------------------------------
+
+TrackBossKill:
+  Skills:
+  # +1 boss kill for the player who landed the killing blow
+  - command{c="scoreboard players add <trigger.name> bosskills 1"} @trigger
+  - message{m="&d&l⚔ BOSS SLAIN! &7You have now defeated &d<trigger.score.bosskills> &7bosses."} @trigger
+  - sound{s=ui.toast.challenge_complete;v=1;p=1} @trigger
+
+# ---------------------------------------------------------------------
+# HOW TO HOOK IT INTO YOUR BOSSES
+# In each boss .yml under plugins/MythicMobs/Mobs/, add an onDeath line:
+#
+#   MyBoss:
+#     Type: WITHER
+#     Display: '&5&lThe Void Warden'
+#     Skills:
+#     - skill{s=TrackBossKill} @trigger ~onDeath
+#
+# @trigger on ~onDeath = the killer. Done — every kill is now counted.
+# ---------------------------------------------------------------------
