@@ -3,14 +3,14 @@ title Minecraft Paper Server - 1.21.1
 
 REM ===========================================================
 REM  Paper Minecraft Server Start Script
-REM  RAM: 4GB allocated (system has 7GB total)
+REM  RAM: 8GB allocated (system has 32GB total)
 REM ===========================================================
 
 :start
 echo Starting Paper 1.21.1 server...
 echo.
 
-java -Xmx4G -Xms4G ^
+java -Xmx8G -Xms8G ^
  -XX:+UseG1GC ^
  -XX:+ParallelRefProcEnabled ^
  -XX:MaxGCPauseMillis=200 ^
