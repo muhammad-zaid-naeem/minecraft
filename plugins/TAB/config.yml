@@ -1,17 +1,19 @@
 header-footer:
   enabled: true
-  header:
-  - '&8&m                                                    '
-  - '%animation:Brand%'
-  - '&7Welcome &f%player%&7, to &bLEGEND&fxPROS'
-  - '&7Online&8: &a%online%  &8|  &7Staff&8: &e%staffonline%'
-  - ''
-  footer:
-  - ''
-  - '&7Your ping&8: &a%ping%ms  &8|  &7TPS&8: &a%tps%'
-  - '%animation:Store%'
-  - '&9discord.gg/legendxpros'
-  - '&8&m                                                    '
+  designs:
+    default:
+      header:
+      - '&8&m                                                    '
+      - '%animation:Brand%'
+      - '&7Welcome &f%player%&7, to &bLEGEND&fxPROS'
+      - '&7Online&8: &a%online%  &8|  &7Staff&8: &e%staffonline%'
+      - ''
+      footer:
+      - ''
+      - '&7Your ping&8: &a%ping%ms  &8|  &7TPS&8: &a%tps%'
+      - '%animation:Store%'
+      - '&9discord.gg/legendxpros'
+      - '&8&m                                                    '
 tablist-name-formatting:
   enabled: true
   disable-condition: '%world%=disabledworld'
@@ -20,7 +22,7 @@ scoreboard-teams:
   enable-collision: true
   invisible-nametags: false
   sorting-types:
-  - GROUPS:founder,ceo,cto,leaddev,developer,admin,moderator,helper,legendplus,legend,survivor,rookie
+  - GROUPS:founder,ceo,cto,leaddev,developer,admin,moderator,helper,legendplus,legend,survivor,rookie,default
   - PLACEHOLDER_A_TO_Z:%player%
   case-sensitive-sorting: false
   can-see-friendly-invisibles: false

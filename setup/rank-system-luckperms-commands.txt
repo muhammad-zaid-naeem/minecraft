@@ -1,0 +1,83 @@
+# ============================================================================
+#  LEGENDxPROs - LuckPerms Rank Setup Commands
+#  Paste these into the SERVER CONSOLE one block at a time.
+#  (If you run them in-game as an OP, prefix each line with "/")
+#  These create the Rookie + Survivor ranks and the promotion track.
+#  Staff ranks are created separately at the bottom and stay 100% manual.
+# ============================================================================
+
+# ---------------------------------------------------------------------------
+# 1) CREATE THE TWO AUTOMATIC RANKS
+# ---------------------------------------------------------------------------
+lp creategroup rookie
+lp creategroup survivor
+
+# ---------------------------------------------------------------------------
+# 2) WEIGHTS (higher weight = higher priority for prefix/sorting)
+# ---------------------------------------------------------------------------
+lp group rookie setweight 10
+lp group survivor setweight 20
+
+# ---------------------------------------------------------------------------
+# 3) DISPLAY NAMES + CHAT PREFIXES (shown by EssentialsXChat / TAB via Vault)
+#    Edit the colors/text to taste. The trailing space keeps it off the name.
+# ---------------------------------------------------------------------------
+lp group rookie meta setprefix "&7[Rookie] "
+lp group survivor meta setprefix "&a[Survivor] "
+lp group rookie setdisplayname Rookie
+lp group survivor setdisplayname Survivor
+
+# ---------------------------------------------------------------------------
+# 4) PERMISSIONS
+#    Survivor inherits everything Rookie has, then add extras as you wish.
+#    (Adjust these to match what your server should grant each tier.)
+# ---------------------------------------------------------------------------
+lp group rookie permission set essentials.spawn true
+lp group rookie permission set essentials.msg true
+lp group rookie permission set essentials.helpop true
+
+lp group survivor parent add rookie
+lp group survivor permission set essentials.sethome.multiple.survivor true
+lp group survivor permission set essentials.home true
+lp group survivor permission set essentials.tpa true
+
+# ---------------------------------------------------------------------------
+# 5) CREATE THE PROMOTION TRACK (Rookie -> Survivor ONLY)
+#    The track contains exactly these two ranks so there is no further
+#    automatic step beyond Survivor.
+# ---------------------------------------------------------------------------
+lp createtrack ranks
+lp track ranks append rookie
+lp track ranks append survivor
+
+# ---------------------------------------------------------------------------
+# 6) (OPTIONAL) STAFF RANKS - MANUAL ONLY
+#    These are NOT on the "ranks" track, so PlayTimeManager will never touch
+#    them. Assign them by hand with `lp user <name> parent set <group>`.
+#    Skip this block if you already manage staff groups via StaffPlus, etc.
+# ---------------------------------------------------------------------------
+lp creategroup helper
+lp creategroup moderator
+lp creategroup admin
+lp group helper setweight 50
+lp group moderator setweight 60
+lp group admin setweight 100
+lp group helper meta setprefix "&b[Helper] "
+lp group moderator meta setprefix "&2[Mod] "
+lp group admin meta setprefix "&c[Admin] "
+# Give staff at least the Survivor baseline, then their own staff perms:
+lp group helper parent add survivor
+lp group moderator parent add survivor
+lp group admin parent add survivor
+
+# ---------------------------------------------------------------------------
+# 7) HOW TO ASSIGN A STAFF MEMBER MANUALLY (example)
+#    `parent set` replaces ALL their groups, so it cleanly removes
+#    rookie/survivor/default and prevents the auto-rules from interfering.
+# ---------------------------------------------------------------------------
+# lp user SomePlayerName parent set moderator
+
+# ---------------------------------------------------------------------------
+# 8) APPLY CHANGES
+# ---------------------------------------------------------------------------
+lp reload

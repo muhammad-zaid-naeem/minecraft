@@ -3,4 +3,13 @@ f789f8a1-a020-375c-aaed-976a864da4cc:
     ==: org.bukkit.inventory.ItemStack
     v: 3955
     type: DIAMOND
-    amount: 11
+    amount: 8
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: WIND_CHARGE
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3955
+    type: ENDER_CHEST

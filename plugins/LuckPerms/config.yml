@@ -760,3 +760,21 @@ commands-read-only-mode:
 disable-luckperms-commands:
   players: false
   console: false
+
+# ============================================================================
+# LEGENDxPROs - Automatic Rank System
+# ----------------------------------------------------------------------------
+# Every brand-new player (who only has the built-in `default` group) is moved
+# off `default` and given the `rookie` group on their first join.
+# After this, players are never in `default` again, so this rule is a no-op for
+# anyone already ranked (rookie / survivor / staff).
+# Promotion Rookie -> Survivor is handled by PlayTimeManager at 2h playtime.
+# ============================================================================
+default-assignments:
+  rookie-on-first-join:
+    if:
+      has-true: group.default
+    take:
+      - group.default
+    give:
+      - group.rookie

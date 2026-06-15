@@ -1,7 +1,7 @@
 teleportenabled: true
 teleportauto: false
 godmode: false
-flymode: true
+flymode: false
 muted: false
 jailed: false
 ip-address: 0:0:0:0:0:0:0:1
@@ -17,8 +17,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1781365127243
-  login: 1781364819839
+  logout: 1781428423093
+  login: 1781428401370
 money: '0'
 last-account-name: NotHaadi_
 lastlocation:
@@ -32,8 +32,8 @@ lastlocation:
 logoutlocation:
   world: 1b588bb4-8af4-4e8e-a7d2-ef6dc3879d7f
   world-name: world
-  x: -30.22761020100901
-  y: 101.9375
-  z: 30.631085916719837
-  yaw: 75.6007080078125
-  pitch: 4.949988842010498
+  x: -3.5697126183553656
+  y: 100.9375
+  z: 23.81528629780975
+  yaw: 76.35064697265625
+  pitch: 10.049988746643066

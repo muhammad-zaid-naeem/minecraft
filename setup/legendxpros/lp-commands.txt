@@ -1,0 +1,70 @@
+lp creategroup founder
+lp creategroup ceo
+lp creategroup cto
+lp creategroup leaddev
+lp creategroup developer
+lp creategroup admin
+lp creategroup moderator
+lp creategroup helper
+lp creategroup legendplus
+lp creategroup legend
+lp creategroup survivor
+lp creategroup rookie
+lp group founder setweight 1000
+lp group ceo setweight 900
+lp group cto setweight 800
+lp group leaddev setweight 700
+lp group developer setweight 600
+lp group admin setweight 500
+lp group moderator setweight 400
+lp group helper setweight 300
+lp group legendplus setweight 200
+lp group legend setweight 150
+lp group survivor setweight 100
+lp group rookie setweight 50
+lp group founder meta setprefix 1000 "&8[&4&lFounder&8] &4"
+lp group ceo meta setprefix 900 "&8[&c&lCEO&8] &c"
+lp group cto meta setprefix 800 "&8[&6&lCTO&8] &6"
+lp group leaddev meta setprefix 700 "&8[&e&lLeadDev&8] &e"
+lp group developer meta setprefix 600 "&8[&2&lDeveloper&8] &2"
+lp group admin meta setprefix 500 "&8[&4&lAdmin&8] &c"
+lp group moderator meta setprefix 400 "&8[&9&lMod&8] &9"
+lp group helper meta setprefix 300 "&8[&b&lHelper&8] &b"
+lp group legendplus meta setprefix 200 "&8[&d&lLegend+&8] &d"
+lp group legend meta setprefix 150 "&8[&5&lLegend&8] &5"
+lp group survivor meta setprefix 100 "&8[&7Survivor&8] &7"
+lp group rookie meta setprefix 50 "&8[&8Rookie&8] &7"
+lp group survivor parent add rookie
+lp group legend parent add survivor
+lp group legendplus parent add legend
+lp group helper parent add legendplus
+lp group moderator parent add helper
+lp group admin parent add moderator
+lp group developer parent add admin
+lp group leaddev parent add developer
+lp group cto parent add leaddev
+lp group ceo parent add cto
+lp group founder parent add ceo
+lp group rookie permission set essentials.spawn true
+lp group rookie permission set essentials.msg true
+lp group rookie permission set tab.scoreboard.toggle true
+lp group helper permission set essentials.kick true
+lp group moderator permission set essentials.mute true
+lp group moderator permission set essentials.tempban true
+lp group admin permission set essentials.ban true
+lp group admin permission set tab.staff true
+lp group founder permission set "*" true
+lp createtrack ranks
+lp track ranks append rookie
+lp track ranks append survivor
+lp track ranks append legend
+lp track ranks append legendplus
+lp track ranks append helper
+lp track ranks append moderator
+lp track ranks append admin
+lp track ranks append developer
+lp track ranks append leaddev
+lp track ranks append cto
+lp track ranks append ceo
+lp track ranks append founder
+lp group default parent add rookie

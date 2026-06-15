@@ -4,7 +4,7 @@ godmode: false
 flymode: false
 muted: false
 jailed: false
-ip-address: 127.0.0.1
+ip-address: 0:0:0:0:0:0:0:1
 afk: false
 socialspy: false
 npc: false
@@ -12,28 +12,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1781354110846
+  lastteleport: 1781367042480
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1781348454083
-  login: 1781352767190
+  logout: 1781367641058
+  login: 1781367602016
 money: '0'
 last-account-name: Itx_Zaid_3
 lastlocation:
   world: fdb46cbd-ebee-499e-b5db-13cb28dc7d05
   world-name: amity
-  x: -14.023442188776803
-  y: 135.0
-  z: -1.5272385726574171
-  yaw: 145.8000030517578
-  pitch: 18.900001525878906
+  x: 28.934976589533036
+  y: 149.4019678621531
+  z: -16.034200877270358
+  yaw: -163.3500213623047
+  pitch: 28.95000648498535
 logoutlocation:
   world: 1b588bb4-8af4-4e8e-a7d2-ef6dc3879d7f
   world-name: world
-  x: -5.253688893882654
-  y: 103.0
-  z: -0.9343273985911956
-  yaw: 129.74876403808594
-  pitch: 21.59999656677246
+  x: 0.5
+  y: 104.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0

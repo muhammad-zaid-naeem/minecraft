@@ -50,7 +50,26 @@
       "Bash(git push *)",
       "Bash(gh auth *)",
       "Bash(gh repo *)",
-      "Bash(git branch *)"
+      "Bash(git branch *)",
+      "PowerShell(& powershell -ExecutionPolicy Bypass -File \"D:\\\\minecraft\\\\minecraft\\\\setup\\\\legendxpros\\\\rcon.ps1\" \"list\")",
+      "PowerShell(Start-Process -FilePath \"cmd.exe\" -ArgumentList \"/c\",\"D:\\\\minecraft\\\\minecraft\\\\start.bat\" -WorkingDirectory \"D:\\\\minecraft\\\\minecraft\")",
+      "Bash(break)",
+      "PowerShell(& powershell -ExecutionPolicy Bypass -File \"D:\\\\minecraft\\\\minecraft\\\\setup\\\\legendxpros\\\\rcon.ps1\" \"tab reload\")",
+      "PowerShell(& powershell -ExecutionPolicy Bypass -File \"D:\\\\minecraft\\\\minecraft\\\\setup\\\\legendxpros\\\\rcon-batch.ps1\" \"D:\\\\minecraft\\\\minecraft\\\\setup\\\\legendxpros\\\\lp-commands.txt\")",
+      "PowerShell(& powershell -ExecutionPolicy Bypass -File \"D:\\\\minecraft\\\\minecraft\\\\setup\\\\legendxpros\\\\rcon.ps1\" \"lp group founder info\")",
+      "PowerShell(& powershell -ExecutionPolicy Bypass -File \"D:\\\\minecraft\\\\minecraft\\\\setup\\\\legendxpros\\\\rcon.ps1\" \"lp listgroups\")",
+      "Bash(gunzip -c legendxpros-verify.json.gz)",
+      "Bash(cp setup/legendxpros/TAB/config.yml plugins/TAB/config.yml)",
+      "Bash(rm -f plugins/LuckPerms/legendxpros-verify.json.gz /tmp/lpverify.json)",
+      "WebFetch(domain:hangar.papermc.io)",
+      "WebFetch(domain:www.spigotmc.org)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:luckperms.net)",
+      "WebFetch(domain:api.ipify.org)",
+      "PowerShell(\\(Invoke-WebRequest -Uri \"https://api.ipify.org\" -UseBasicParsing\\).Content)",
+      "PowerShell(git log *)",
+      "PowerShell(git push *)"
     ]
   }
 }
